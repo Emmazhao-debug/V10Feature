@@ -1,0 +1,349 @@
+{
+  "Rows": {
+    "Count": 28
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "17": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 97.0,
+          "IsHidden": true
+        }
+      }
+    },
+    "InLogicalVisibleIndexes": [
+      17
+    ],
+    "Count": 18
+  },
+  "Values": {
+    "1,11": "高级查询",
+    "5,17": "类别",
+    "7,17": "支付方式",
+    "9,17": "min",
+    "11,17": "max"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "销售明细",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "销售明细",
+                    "ColumnName": "订单编号",
+                    "GUID": "691a0141-6833-49b1-9677-35734097a331"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=Drawer!B2"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "销售明细",
+                    "ColumnName": "类别名称",
+                    "GUID": "21d04e42-305f-4d68-8d2e-94d060afbe15"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=Drawer!B2"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 5,
+                  "ColumnBindingInfo": {
+                    "TableName": "销售明细",
+                    "ColumnName": "订单利润",
+                    "GUID": "52756c15-cfdf-4445-bb81-a2d5a0bac734"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=Drawer!B2"
+                  }
+                }
+              ],
+              "RelationType": 1
+            },
+            "ID": "7e3dac5f3c694fe88140e716ae81aeb5"
+          }
+        ]
+      }
+    },
+    "1,11": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PopupDisplayMode": 3,
+            "DrawerDirection": 2,
+            "ShowDrawerHeader": true,
+            "ClosePopupCallbackCommand": {
+              "Commands": [
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                          "cellLocations": [
+                            {
+                              "SerializeProperty": "=Drawer!IsOK"
+                            }
+                          ]
+                        },
+                        "value": "1"
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                          "TargetTableName": "销售明细",
+                          "SqlCondition": {
+                            "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                            "SubConditions": [
+                              {
+                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                "ColumnBindingInfo": {
+                                  "TableName": "销售明细",
+                                  "ColumnName": "类别名称",
+                                  "GUID": "f258585f-82c7-4f3c-8eee-e5e42443f46a"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=Drawer!类别"
+                                }
+                              },
+                              {
+                                "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                                "CompareType": 8,
+                                "ColumnBindingInfo": {
+                                  "TableName": "销售明细",
+                                  "ColumnName": "支付方式",
+                                  "GUID": "9cc24289-7734-4bef-a895-dcf931e562a6"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=Drawer!支付方式"
+                                }
+                              },
+                              {
+                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                "CompareType": 3,
+                                "ColumnBindingInfo": {
+                                  "TableName": "销售明细",
+                                  "ColumnName": "订单金额",
+                                  "GUID": "2de709c7-c292-4b4b-b667-1296402498cd"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=Drawer!订单金额_min"
+                                },
+                                "LeftBracket": 1
+                              },
+                              {
+                                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                "CompareType": 5,
+                                "ColumnBindingInfo": {
+                                  "TableName": "销售明细",
+                                  "ColumnName": "订单金额",
+                                  "GUID": "6fc24cab-7bf9-4efb-8661-0b56957e8c2a"
+                                },
+                                "Value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=Drawer!订单金额_max"
+                                },
+                                "RightBracket": 1
+                              }
+                            ]
+                          },
+                          "ID": "a5e859e62cfe48ffa7ebcf299bb83a90"
+                        }
+                      ],
+                      "ID": "4a1b865e-12a7-4dfa-816d-527be4e1821c"
+                    },
+                    {
+                      "CommandList": [],
+                      "ID": "c48e6c53-6bd4-4e3b-8c1a-ed2096a96319"
+                    }
+                  ]
+                }
+              ],
+              "ParamProperties": {
+                "IsOK": "IsOK",
+                "类别": "类别",
+                "支付方式": "支付方式",
+                "订单金额_min": "订单金额_min",
+                "订单金额_max": "订单金额_max"
+              }
+            },
+            "PageName": "Page8",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=Drawer!R7"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=Page8!F3"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=Drawer!R9"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=Page8!F15"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=Drawer!R11"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=Page8!F26"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=Drawer!R13"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=Page8!F30"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "高级查询",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "4,1": {
+      "ListViewInfo": {
+        "Name": "Listview1",
+        "TableName": "销售明细",
+        "RowIndex": 4,
+        "ColumnIndex": 1,
+        "RowCount": 18,
+        "ColumnCount": 15,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "5,1": {
+      "NameUsedInJavaScript": "订单编号",
+      "BindingInfo": {
+        "TableName": "销售明细",
+        "ColumnName": "订单编号",
+        "GUID": "48512c14-d182-4dd6-8734-29f2ac37cb77"
+      }
+    },
+    "5,5": {
+      "NameUsedInJavaScript": "订购日期",
+      "BindingInfo": {
+        "TableName": "销售明细",
+        "ColumnName": "订购日期",
+        "GUID": "1bc838d3-20dd-4c31-9254-2368317db2af"
+      }
+    },
+    "5,9": {
+      "NameUsedInJavaScript": "类别名称",
+      "BindingInfo": {
+        "TableName": "销售明细",
+        "ColumnName": "类别名称",
+        "GUID": "9a3ff9d7-b9fd-44dd-a29a-914f4ae63ebf"
+      }
+    },
+    "5,13": {
+      "NameUsedInJavaScript": "订单金额",
+      "BindingInfo": {
+        "TableName": "销售明细",
+        "ColumnName": "订单金额",
+        "GUID": "c7613ece-ca10-417b-bca1-52b7c91adb82"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Formatter": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "@",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "6,1,16,15",
+    "5,1,1,4",
+    "5,5,1,4",
+    "5,9,1,4",
+    "5,13,1,3",
+    "1,1,2,9",
+    "1,11,2,4",
+    "4,1,1,4",
+    "4,5,1,4",
+    "4,9,1,4",
+    "4,13,1,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//eItPnacT/7BdJ5tGd4e3/AyI7/VmXhsvXC1Wdpns4Klami/ZVzH+12dkvlP/4n7Vgebte3/jfj4gc4APVh5LPAFFSpAkQaenHrrYz29AWHoATJVQ96NAq4aSsSL5vmDaWV033l615u+K+RzsGIIYQXq3r7R33X+BtGUAoFMdpMGEqvSGNf3kEu6Hlr8QBNPtw4vhRvW9pV1KRxlV+Xc+z8ANYNUCW5lGryWVPyk0pGF5SeVFaNu8nWMAvu7MP2lup80QUoaoUk6Ml47mFhNpihuGxgny1qZEIXJRKPNJushxnW04/SDYl8RMBIPckmq30Bih/HOe2+gpU+/OZuXm9JGUA9H9PluNz4XMEhzT6r98NJHRL2kY1e4+TDYNaj5h3rxcA7ntDQox6bbXMS6zzlmKWiljsju8ZT3T95CcddyhsoJN/oBEUyJJXT6gkvuHQVQsiPg5Sd4AzTL7tBLMRo1+KnezSfceWXSY2LoQUESDFpwtyfr1e7sBjImlzJgW4z6g8j2SG/svB9s+MJ48o1+5W57otg9mITKYdGzgyQAUUBrzfMOcOt+xja7sWw+5XAh/i89WkxQSPmijqlSC/ppzEXWzNLM58hv8MZlH80Ph1L9ZQ1YtE1H+W1PLiKYWun0/HJF0oR1op6e14GWHw3rWN9yjGvjnncndjzMbCfmof0/6eFeIt7jYAIIieXLK4XE5Tui1bNcavJKHCBZkXLqPR4spprKWUfoAvXnrNPfWFF6TKzEhOVmZ6W+a6SdnwVOtynSOlherJpjLqeXqDkpJ2nLQgcmrf9buF9IbxOXTvA/zSsbps3JI+8iDt+VzkSTkuN6qZ5OLZ+BaSggDTrqqhGKaxSZz962JrPLJCe4mJW/5nqUSgcYY+sAmhsi6zC8HOwzh8TOytk8mNKx8pQ==|920

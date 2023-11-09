@@ -1,0 +1,318 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "11": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "Count": 12,
+    "DefaultSize": 30.0
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 60.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 60.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 60.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 60.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 60.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 60.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 60.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 60.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 60.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 60.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 60.0
+        }
+      }
+    },
+    "Count": 11,
+    "DefaultSize": 60.0
+  },
+  "Values": {
+    "10,5": "ok",
+    "10,8": "关闭"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.UserControlPageCellType, ServerDesignerCommon",
+        "UserControlPageName": "组件弹出框"
+      }
+    },
+    "10,5": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=弹出组件设置框!A1"
+            },
+            "TargetType": "Forguncy.UserControlPageCellType, ServerDesignerCommon, Version=10.0.0.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "GetPropertyValue",
+            "ParameterValues": {
+              "propertyNameList": {
+                "$type": "System.Collections.Generic.List`1[[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "$values": [
+                  "文本",
+                  "Combo",
+                  "日期",
+                  "数字"
+                ]
+              },
+              "userControlPageName": null
+            },
+            "RetrunParamNames": {
+              "文本": {
+                "SerializeProperty": "文本"
+              },
+              "Combo": {
+                "SerializeProperty": "Combo"
+              },
+              "日期": {
+                "SerializeProperty": "日期"
+              },
+              "数字": {
+                "SerializeProperty": "数字"
+              }
+            }
+          },
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=弹出组件设置框!text"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=弹出组件设置框!文本"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=弹出组件设置框!combo"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=弹出组件设置框!Combo"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=弹出组件设置框!date"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=弹出组件设置框!日期"
+                }
+              },
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=弹出组件设置框!number"
+                },
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=弹出组件设置框!数字"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true,
+            "ClosePopupReturnValues": [
+              {
+                "Name": "ReturnValue1",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=弹出组件设置框!文本"
+                }
+              },
+              {
+                "Name": "ReturnValue2",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=弹出组件设置框!Combo"
+                }
+              },
+              {
+                "Name": "ReturnValue3",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=弹出组件设置框!日期"
+                }
+              },
+              {
+                "Name": "ReturnValue4",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=弹出组件设置框!数字"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "ok",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "10,8": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true,
+            "ClosePopupResult": 1,
+            "ClosePopupReturnValues": [
+              {
+                "Name": "cancel",
+                "Value": "Nothing@!"
+              }
+            ]
+          }
+        ],
+        "Text": "关闭",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "10,5": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "0,0,9,10",
+    "10,5,1,2",
+    "10,8,1,2"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.UserControlPage, ServerDesignerCommon",
+    "PropertyDefinitions": [],
+    "CommandDefinitions": [],
+    "PageResponsiveMode": 1,
+    "PageLoadedCommandList": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//i+moRT1tE7ge5fNH+iKfG4xpW0LpMERywu2TYMwlyzMWf8G5FaqOJwv2qW2PB9aLu+6eTKTpo+sS2wXOpTMEohQC9m5ZFxlJU3WVIaQ7hZarbddM7JiV1J9ER44BRnsJL8nRBtU0VzsyUSTv3nn4pbWQnUIUt9MZw4l6Hx1E8bhmw3iT2TjxWZ1uGxkMgNrltJA1RqT6mnyXhJ65fI4hvBwTAeeIve9NDxpA5Uv8nLzGUZM84jkIfLwZfK+UYdL4crObbUV4OSj2gOOm8ABBXy91uW1+bd7A5nzQ+T47Lw4lsYO1iTDhcBo4ORWMgcHNhGiU+PWVM34c2kaqfh1Bz0BNWpTC5ROr2MiUO68qvHpUTE+CBtpCckmmr7Y0v+Y8NAhJvyf8lfUxb1ogevsx9kyhbvZeAuCKDzIbdBP8MdHh2FQk6OFzy+aK2xeXKHsmThhjbu6vzgpFB9pEZnwSzqNwQTLxl+y5xbB0h1r6vPm3iM/tX0wb47b9QBeyDeZmHgDHKiKxvC5fN9h1RUrwAIw/6sLqgp5pUd/aELog2hvpJozrGnOjk+t++eGBmYO8SCKo6UiEzEqhXAxmy8B5aUM9Th/PvNdc1wQwyhorKKlIZ/EqHPXuVCblv537nAzZeCIjkgZdNzkpMqbg6XhDs1oYKwKUUdHgabxUp3hL3g47Qyf2Lr0iI6oz3U6AayMNX7+kxgj1jdrNI9VUk2vjP+vrvaXa0c6fJykNYE+mMo2po25Q7l0gdxD+aRZ3ra3whC3VaSGfEfUAVCp6PxUvxJ/PymDsWRAkk30MxvTmBWklYdkbP69KDfsLpK+1LC6sg8T0JLC61dCDfUukEMC66Uq9BHOTXxQasK5lFoTbPbaek8ecngxsc3tBnQacNe2Q25F0yosE3AnMXyPL6a0CZg==|920

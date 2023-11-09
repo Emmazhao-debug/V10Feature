@@ -1,0 +1,214 @@
+{
+  "Rows": {
+    "Count": 24
+  },
+  "Cols": {
+    "Count": 18
+  },
+  "Values": {
+    "1,12": "show popup"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "汽车企业信息",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+              "ColumnBindingInfo": {
+                "TableName": "汽车企业信息",
+                "ColumnName": "企业",
+                "GUID": "8cf1c1ce-255c-447f-a890-922dae81b998"
+              },
+              "Value": {
+                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                "SerializeProperty": "='关闭弹出框之后加载listview (2)'!B1"
+              }
+            },
+            "ID": "0e2ac63d92884be388bc74f6c54c0199"
+          }
+        ],
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "1,12": {
+      "CellComment": {
+        "Comments": "ok---> reload listview\r\ncancel--> reload page"
+      },
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "ClosePopupCallbackCommand": {
+              "Commands": [
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                          "cellLocations": [
+                            {
+                              "SerializeProperty": "='关闭弹出框之后加载listview (2)'!IsOK"
+                            }
+                          ]
+                        },
+                        "value": "1"
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "SetFocusCommand.SetFocusCommand, SetFocusCommand",
+                          "TargetCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "='关闭弹出框之后加载listview (2)'!B2"
+                          }
+                        }
+                      ],
+                      "ID": "0fec753d-923f-47f3-9af1-b5f6d7ee278d"
+                    },
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                          "cellLocations": [
+                            {
+                              "SerializeProperty": "='关闭弹出框之后加载listview (2)'!IsOK"
+                            }
+                          ]
+                        },
+                        "value": "0"
+                      },
+                      "CommandList": [],
+                      "ID": "6170f079-6905-4842-8f3b-833e08bcdcf1"
+                    }
+                  ]
+                }
+              ],
+              "ParamProperties": {
+                "IsOK": "IsOK"
+              }
+            },
+            "PageName": "选中cobo",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='关闭弹出框之后加载listview (2)'!B1"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=选中cobo!C3"
+                }
+              }
+            ],
+            "DeleteCachedQuery": true
+          }
+        ],
+        "Text": "show popup",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "4,1": {
+      "ListViewInfo": {
+        "Name": "Listview1",
+        "TableName": "汽车企业信息",
+        "RowIndex": 4,
+        "ColumnIndex": 1,
+        "RowCount": 17,
+        "ColumnCount": 16,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "5,1": {
+      "NameUsedInJavaScript": "企业",
+      "BindingInfo": {
+        "TableName": "汽车企业信息",
+        "ColumnName": "企业",
+        "GUID": "0dcda515-3b21-4e91-8dc3-bda589406ed0"
+      }
+    },
+    "5,5": {
+      "NameUsedInJavaScript": "联系人",
+      "BindingInfo": {
+        "TableName": "汽车企业信息",
+        "ColumnName": "联系人",
+        "GUID": "9c21dfc5-5c6e-4ca4-bcab-964ae999d5c6"
+      }
+    },
+    "5,9": {
+      "NameUsedInJavaScript": "电话",
+      "BindingInfo": {
+        "TableName": "汽车企业信息",
+        "ColumnName": "电话",
+        "GUID": "1b75b71a-0c70-4a50-9d5f-c1a005e8dad6"
+      }
+    },
+    "5,13": {
+      "NameUsedInJavaScript": "地址",
+      "BindingInfo": {
+        "TableName": "汽车企业信息",
+        "ColumnName": "地址",
+        "GUID": "584d5fbd-8cda-497b-bcc9-571b1bba6113"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Types": {
+      "Strs": [
+        "Body"
+      ]
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "1,12,2,5",
+    "5,1,1,4",
+    "5,5,1,4",
+    "5,9,1,4",
+    "5,13,1,4",
+    "6,1,15,16",
+    "1,1,2,6",
+    "0,1,1,9",
+    "4,1,1,4",
+    "4,5,1,4",
+    "4,9,1,4",
+    "4,13,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//40kpCdq7atJgLuP9C0eJGOpEigEnq5I7W+M5VfixaMsHhLVaJiPr8wlAQUqKvNx7Ko5xpRwRYK3vtGYsgUpojX0vrajFnKmGHPgiIQlek+ZmcocOyc0EL3bbf9qlIDDjL+KVTkkNxVQTjBo9bKNVRmHwRJQ/B19TNRXB7yTpQnztHXYlVJLVauCZZWaAdnLCTZz5s05/G7vyOtIBytCQuk/iumWQB+lw5gBRl6r/e7rdL7f34cas8OCMBlj2UagMA5ZBn5MQgY0lcAQwAyajWtnqJo65WFEnor0VJXZ3Z6udKRFPyaWu8IQHfh5DnbZopi4yMG+PB4DQEbkkoJCXbS55A4eVxkw6siZSddYcbEwNOLqadYB1QpMhMaQ8gb7BUqacR/pOVqSA/EPpF+DPpBW1A8bHPMZ+6RDDCKpfNYTjpVwD7spZw2h1OX5XWgM6IMBfeH2/POQrBVgEauRCPknzUMcBPyUlxC+ljw0O7R4YmbpxVLLcfnGiVnaYGWlsqJwLE3OxWRSy+nNPtFpy/Te43zfAa7fwxnQYeex6S5+OGo+hiAMnUkEh3ym3yKHljGBWyFvR1sbVhkmWb+Aa/cbCzd3j/yN0YiRsu9887dBQsG7ipgMa7TexTtyPgmSXDza1k/zaqV7E9o/s09XaIuvFFcnUQ20J29N79T7Kq7naFmb8UgV1vXeKu9EzuiiY9IoR6s7WM6FHvw8t5U2ip5FGspyQyjmg1YbOyEn5MH+UG7IXUT/lBgxm+KBaFC02NhLBMzTuhFsy9JgcIFjKOp/Fh7O2fxdhI9h3jawjbQxajLnRcGehx48vv7Jp0ezP1rvzD2OXEadw3KXD93Kmv/BFzriUnVksISOd/Wf1+flmSz1mxt64YYWGmKgE0hh166MnoNK8rgcrYivXPL47Nw==|920

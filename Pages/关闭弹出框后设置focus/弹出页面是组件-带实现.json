@@ -1,0 +1,107 @@
+{
+  "Rows": {
+    "Count": 19
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "31": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 258.0
+        }
+      }
+    },
+    "Count": 32
+  },
+  "Values": {
+    "4,31": "文本",
+    "6,31": "combo",
+    "8,31": "日期",
+    "10,31": "数字"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.UserControlPageCellType, ServerDesignerCommon",
+        "UserControlPageName": "弹出组件设置框"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "black",
+        "Body"
+      ],
+      "Borders": [
+        {
+          "Color": 0
+        }
+      ]
+    },
+    "CellStyles": {
+      "4,31": 0,
+      "5,31": 0,
+      "6,31": 0,
+      "7,31": 0,
+      "8,31": 0,
+      "9,31": 0,
+      "10,31": 0,
+      "11,31": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "0,0,19,31"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "text",
+      "Formula": "'弹出页面是组件-带实现'!$AF$6"
+    },
+    {
+      "Name": "combo",
+      "Formula": "'弹出页面是组件-带实现'!$AF$8"
+    },
+    {
+      "Name": "date",
+      "Formula": "'弹出页面是组件-带实现'!$AF$10"
+    },
+    {
+      "Name": "number",
+      "Formula": "'弹出页面是组件-带实现'!$AF$12"
+    }
+  ]
+}//MBhhSeKeVbFPJc7VBXhLIgGxeeMzN2phW9SZi6234WIDZ48U04JA6S1YIiOZtciGhzEF2QvYyemw9A1q6LNG9iHZxNFg6RIBqnmtCCAhCRoWFEPfPM883y6Zy14TKSBeu8SCZ1sOw2SVy8G9+ZB6TBG8oONAEO58Y6DT0d1vPNTBlyK7tAXvzhY81WafUK1v50MCarofFo8D8X2ANZIFFCMZgGP4eM13y6ADd8aUcjNFmmkpPZ98c6MhR2Y5M06+vA7bAqSMOP3vnCMGVTZ4T6j0s8S9YcV5nnQ9JtQ9LBwSMv87B6moKFgyIy8F6yuK+aF+tHk5MISiPZlDArbNk7BFU/IBTXuelwGHRRZx41uhhC8WDeIc4o0IMJ59HH6H58lP2xx/0rpf0/dnonhNwnQEVW280sXuF4fyCtTL+FudTiivuiwZ+TGUVOfpJ/SOa8Uvml2WI0AF0WtywmA8O+IpdL85Gq0dy76EUQCZ7BwnZ9PNYa8JZzIftNUsw+AsDzeOLVEnH9519pO0kfeNJ7eph0pIHNcEi/1Lvdi7cdvZkwzYUwdZmEzn6jpiJgZMRaLm19+QIF5PEj+kX8+5YBiED6IZbfGQ43+OU5QX2iAbZONXjPVdoWRnyydtOyk0mHMlHWkMBTDsHou+rlyV2w/ENCavLDVSweB8VasjWXbZOZlqfsWav9c2gtPPcJ7soNtvNdoqP6Ku5mjiTqZyi8joII57DWWSeMa/r4jfj0TarHosGpketONJntJLaBlYtYMCpH2biDOLE14Nm2KYoP/H+DbhRyQAjJBgfWEIc8JicyFYWAdYlSeBgviNOrNOwTKlKnAYpm9WtfutukS+sqDEiPuTSKxtuAeZpPetqplX1P15Z4WhhL7nMYTH4cjpNpxtDvUoUS6aeQ66uZNHkQ==|920

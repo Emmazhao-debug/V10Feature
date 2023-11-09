@@ -1,0 +1,76 @@
+{
+  "ID": "db4bd5a6-8aaa-4873-a7fa-46f797147e47",
+  "Name": "关闭弹出框调用命令1",
+  "Params": [
+    {
+      "ID": "967962ae-6554-4494-baba-da5970acd334",
+      "Name": "cell"
+    },
+    {
+      "ID": "28d3d09d-d765-4df4-969f-aee4fcb05bdb",
+      "Name": "IsOk"
+    },
+    {
+      "ID": "0f4c72b4-31df-4fdb-ac3d-ce52cee9006c",
+      "Name": "返回值1"
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionContextPropertyParam, ServerDesignerCommon",
+              "contextProperty": {
+                "Display": "IsOk",
+                "ContextInfoType": 2
+              }
+            },
+            "value": "1"
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+              "PropertyItemsList": [
+                {
+                  "TargetCells": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=cell"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=返回值1"
+                  }
+                }
+              ]
+            }
+          ],
+          "ID": "6ef33886-f4d7-4cf5-afc6-9181f1f0ebc3"
+        },
+        {
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+              "PropertyItemsList": [
+                {
+                  "TargetCells": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=cell"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=返回值1"
+                  }
+                }
+              ]
+            }
+          ],
+          "ID": "fb84f0c7-a2fb-428a-b91f-f51117eda9ae"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "ID": "6e0f2e4e-e67a-4b2e-bbe5-f04136a81be3",
+  "Name": "关闭弹出框调用命令",
+  "Params": [
+    {
+      "ID": "9f4dc74c-8750-4676-9a50-d0ddca26f154",
+      "Name": "Parameter1"
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+              "cellLocations": [
+                {
+                  "SerializeProperty": "=IsOK"
+                }
+              ]
+            },
+            "value": "1"
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+              "PropertyItemsList": [
+                {
+                  "TargetCells": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=Parameter1"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=返回值1"
+                  }
+                }
+              ]
+            }
+          ],
+          "ID": "f40eac24-62bf-4f57-b27a-6d2fac914b6c"
+        },
+        {
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+              "PropertyItemsList": [
+                {
+                  "TargetCells": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=Parameter1"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=返回值1"
+                  }
+                }
+              ]
+            }
+          ],
+          "ID": "3f6c3299-06fe-4b7a-bdd8-79a370638405"
+        }
+      ]
+    }
+  ]
+}

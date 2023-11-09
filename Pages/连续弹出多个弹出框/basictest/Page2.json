@@ -1,0 +1,183 @@
+{
+  "Rows": {
+    "Count": 24
+  },
+  "Cols": {
+    "Count": 25
+  },
+  "Values": {
+    "0,2": "Result Info"
+  },
+  "AttachInfos": {
+    "1,2": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "6,5": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+            "PropertyItemsList": [
+              {
+                "TargetCells": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=Page2!C2"
+                }
+              }
+            ]
+          },
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "ClosePopupCallbackCommand": {
+              "Commands": [
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionContextPropertyParam, ServerDesignerCommon",
+                          "contextProperty": {
+                            "Display": "IsOK",
+                            "ContextInfoType": 2
+                          }
+                        },
+                        "value": 1
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                          "PropertyItemsList": [
+                            {
+                              "TargetCells": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=Page2!C2"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=Page2!answer"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                          "ConditionAndCommandPairList": [
+                            {
+                              "Condition": {
+                                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                "param": {
+                                  "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                  "cellLocations": [
+                                    {
+                                      "SerializeProperty": "=Page2!C2"
+                                    }
+                                  ]
+                                },
+                                "value": "%Null%",
+                                "compareType": 1
+                              },
+                              "CommandList": [
+                                {
+                                  "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                                  "PageName": "Page4"
+                                }
+                              ],
+                              "ID": "47dcdb30-62e9-4e6a-b270-03b2d40b6727"
+                            },
+                            {
+                              "CommandList": [],
+                              "ID": "58417cca-26dc-4a9a-9ba6-2d065e09bca0"
+                            }
+                          ]
+                        }
+                      ],
+                      "ID": "a7ca07de-cda2-49b5-8b1f-24e3850e24aa"
+                    },
+                    {
+                      "CommandList": [],
+                      "ID": "fef8944a-02e7-413c-b8aa-2d93e62a889d"
+                    }
+                  ]
+                }
+              ],
+              "ParamProperties": {
+                "IsOK": "IsOK",
+                "answer": "answer"
+              }
+            },
+            "PageName": "Page3",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=Page2!C2"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=Page3!C2"
+                }
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Formatter": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "@",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "1,2": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "6,5,2,5",
+    "1,2,2,14"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//cs5sgTqe3hrGROTa1tEF+dBWGqDynnGpCyI50LpN+gawz+9j2dHQMlWx27f+TojxDoCYgRnfIlujBeInfWYhKP+ABuu73dbr6iMW7qb0MePiFyoGbMO6jcQ3aw11ii9GHgNF1bbdg3xwJZXrvleZr3a31o2V7a6ewP8/vzyPgSMfw2d2nq36sQ9Klck9gLk2spArD+yoC4PHO7OwZTNSbgOH3ya5ZkvbbNAIYhfKj/2rKluCeMIdZlhyPHY1FwPT73G14X3icQPJaz87F7nzV/AOGm88cg7kfTPALNnPwH5Yd88eOPcLIJP9GXJXg7lmnVjZL0lbt7AkD68EMPXkeozyVphHC/6nr23Wh/SUETN6oIogXaWabikRS+Tu9Dz/YgYV4yDg2ohp2TetlLElWmiICXcaZFwrqhxXeJEEnoEEXj5dlCNR8TdMj4Nc5fD8vGxbX3qzi7fnoDjMfXcv6VHp8LPu38VlttM+Njgk+OSkF1TKH47zBKBoQVvRt7d/zCC39FeJf1h8MPCaE2/WWX/2TQMkrZdhzSy6QqGflbLatc+Ab+N+NIvwz7sYEmc3D8oS2BolH6foYlPxS4RO6P29raMg7R5gn3mH+cp6IgKY3YVoZUZiE7LspXWfcXRxq63ouM5gbZ0CEtwPFq/zrarq3Wz+ETKa5EO1d4bx4nPF5LveNUMr05R8LSO71DYOFXrE+HogHWPUo35g3HR9WUgytjZkKMh1jLxiFMZYbo95QSbl1elFTtVtT1h/uX9iqJa0v0ZS1da/cm3q4YRN/O+dAFJtF235wdKEpt45KW3Fr9fPkPT5CBDFBLM4MmsusAw1PduFvKY14KmNd557aBNRsqFefoH1Z8B6NLQQysVoJjBhGvPx5gyfT9fdGuHn6CpfEdzrv7lDFnpRLSliBw==|920

@@ -1,0 +1,333 @@
+{
+  "Rows": {
+    "Count": 35
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "13": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 98.0
+        }
+      }
+    },
+    "Count": 19
+  },
+  "Values": {
+    "2,1": "类别名称",
+    "14,1": "支付方式",
+    "25,1": "订单金额",
+    "27,5": "~",
+    "32,7": "cancel",
+    "32,13": "查询"
+  },
+  "AttachInfos": {
+    "2,5": {
+      "CellType": {
+        "$type": "Forguncy.RadioGroupCellType, ServerDesignerCommon",
+        "Style": 1,
+        "LayoutMode": 1,
+        "IsBounding": true,
+        "DataSource": "类别名称",
+        "ValueColumnBindingInfo": {
+          "TableName": "类别名称",
+          "ColumnName": "Text",
+          "GUID": "8a99b18f-0782-4f8a-a255-f80f56a46463"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "类别名称",
+          "ColumnName": "Text",
+          "GUID": "87977d74-e64e-4612-bbae-8c960618f010"
+        },
+        "AddNullItemWhenBinding": true,
+        "NoneItemText": "<None>"
+      }
+    },
+    "14,5": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxGroupCellType, ServerDesignerCommon",
+        "Style": 1,
+        "LayoutMode": 1,
+        "IsBounding": true,
+        "DataSource": "支付方式",
+        "ValueColumnBindingInfo": {
+          "TableName": "支付方式",
+          "ColumnName": "Text",
+          "GUID": "354efea6-5a8c-4e14-ad1a-0bfe36190f2f"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "支付方式",
+          "ColumnName": "Text",
+          "GUID": "7246dc89-5d64-4c8d-b6a1-37b7ae9af020"
+        }
+      }
+    },
+    "25,5": {
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "DecimalPlacesNumber": 3,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "29,5": {
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "DecimalPlacesNumber": 3,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "32,7": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ClosePopupResult": 1
+          }
+        ],
+        "Text": "cancel",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "32,13": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true,
+            "ClosePopupReturnValues": [
+              {
+                "Name": "类别",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=Page8!F3"
+                }
+              },
+              {
+                "Name": "支付方式",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=Page8!F15"
+                }
+              },
+              {
+                "Name": "订单金额_min",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=Page8!F26"
+                }
+              },
+              {
+                "Name": "订单金额_max",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=Page8!F30"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "查询",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Center"
+      ]
+    },
+    "CellStyles": {
+      "2,1": 0,
+      "2,2": 0,
+      "2,3": 0,
+      "2,4": 0,
+      "2,5": 0,
+      "3,1": 0,
+      "3,2": 0,
+      "3,3": 0,
+      "3,4": 0,
+      "4,1": 0,
+      "4,2": 0,
+      "4,3": 0,
+      "4,4": 0,
+      "5,1": 0,
+      "5,2": 0,
+      "5,3": 0,
+      "5,4": 0,
+      "6,1": 0,
+      "6,2": 0,
+      "6,3": 0,
+      "6,4": 0,
+      "7,1": 0,
+      "7,2": 0,
+      "7,3": 0,
+      "7,4": 0,
+      "8,1": 0,
+      "8,2": 0,
+      "8,3": 0,
+      "8,4": 0,
+      "9,1": 0,
+      "9,2": 0,
+      "9,3": 0,
+      "9,4": 0,
+      "10,1": 0,
+      "10,2": 0,
+      "10,3": 0,
+      "10,4": 0,
+      "11,1": 0,
+      "11,2": 0,
+      "11,3": 0,
+      "11,4": 0,
+      "12,1": 0,
+      "12,2": 0,
+      "12,3": 0,
+      "12,4": 0,
+      "13,1": 0,
+      "13,2": 0,
+      "13,3": 0,
+      "13,4": 0,
+      "13,5": 0,
+      "13,6": 0,
+      "13,7": 0,
+      "13,8": 0,
+      "13,9": 0,
+      "13,10": 0,
+      "13,11": 0,
+      "13,12": 0,
+      "13,13": 0,
+      "14,1": 0,
+      "14,2": 0,
+      "14,3": 0,
+      "14,4": 0,
+      "14,5": 0,
+      "15,1": 0,
+      "15,2": 0,
+      "15,3": 0,
+      "15,4": 0,
+      "16,1": 0,
+      "16,2": 0,
+      "16,3": 0,
+      "16,4": 0,
+      "25,1": 0,
+      "25,2": 0,
+      "25,3": 0,
+      "25,4": 0,
+      "25,5": 0,
+      "25,6": 0,
+      "25,7": 0,
+      "25,8": 0,
+      "25,9": 0,
+      "25,10": 0,
+      "25,11": 0,
+      "26,1": 0,
+      "26,2": 0,
+      "26,3": 0,
+      "26,4": 0,
+      "26,5": 0,
+      "26,6": 0,
+      "26,7": 0,
+      "26,8": 0,
+      "26,9": 0,
+      "26,10": 0,
+      "26,11": 0,
+      "27,1": 0,
+      "27,2": 0,
+      "27,3": 0,
+      "27,4": 0,
+      "27,5": 1,
+      "27,6": 0,
+      "27,7": 0,
+      "27,8": 0,
+      "27,9": 0,
+      "27,10": 0,
+      "27,11": 0,
+      "28,1": 0,
+      "28,2": 0,
+      "28,3": 0,
+      "28,4": 0,
+      "28,5": 0,
+      "28,6": 0,
+      "28,7": 0,
+      "28,8": 0,
+      "28,9": 0,
+      "28,10": 0,
+      "28,11": 0,
+      "29,5": 0,
+      "29,6": 0,
+      "29,7": 0,
+      "29,8": 0,
+      "29,9": 0,
+      "29,10": 0,
+      "29,11": 0,
+      "30,5": 0,
+      "30,6": 0,
+      "30,7": 0,
+      "30,8": 0,
+      "30,9": 0,
+      "30,10": 0,
+      "30,11": 0,
+      "32,13": 0,
+      "32,14": 0,
+      "32,15": 0,
+      "32,16": 0,
+      "32,17": 0,
+      "32,18": 0,
+      "33,14": 0,
+      "33,15": 0,
+      "33,16": 0,
+      "33,17": 0,
+      "33,18": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "2,1,2,4",
+    "14,1,2,4",
+    "25,1,2,4",
+    "25,5,2,7",
+    "27,5,2,2",
+    "29,5,2,7",
+    "14,5,10,9",
+    "2,5,11,9",
+    "32,13,2,1",
+    "32,7,2,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//dT0X3eVQqsTXbUetCWtIlEm+v1LErSTXBT6/87vfA2OIV77cuC9OhYAre0gtymlOCaazfdGZluibk2yANazCfif4JTep3cIQrJE+0rF4xIRnI4enyZteud2XCjb+fPCBjXQ/bsQOIWxtAeHW2168T6hJaWWe1HrdJKVc7weR+yJKlNMpPQTqgk2mAFFucqzTlEyoX8zR6UXrnQa5c6/5PlNnvXfS5KHhJCUiEdgjaLz3sQNXdSnXLIsfKVUagRRdXo/wX0bPvcYOa6vYg5chDmEOvidK0lAIdvepAW4OAs+DU4vRHODGSdlPwptLbPrrta6oZxYW51G4cavg7ymmM30KakprmH/ekAWaiwERZj8fIVIDi62GtlWZ1knWvzCn6FlFp3K4WqYiIsBtfKG4//um35Vr7ftLB25OL+foOaMBh5o+g9s3x7ps3DBiccRTHYTiZ8J8jXoqQlNl9Gql23KS/9KfIqTf86PcjL8HplHBrlleVmDuhG8B2rtbW2VjY/ZKpqbuH05L+qBlyUZQpKo4KeRyx2s746KbEnJnquh48GnpqYPwjM02EsPdH7HAy0/9HhFxbKia+/2sgRZIqBSdjMaXyjDZLss9hH7VS6BDAYTDq0MiqBBwXRRytkySQt3A72rnRtnqmZnHpOP2hCayJck1agJMb6okSBVVb064FAHGl23jW0mpCbs6avXtYkjiVm/kh/jIbApQ+gSAcJp2U1T6gakzkXtTuq03a6B12Zy/0soPc+Jyp/C0UHN0EIRbHffg6eNtcAb52AVdaN8e0XOMoe3iNYZeubd2NaIf/qq7K/3x9WAIxrAb2NYc3so7AV9DguOGIOBw0lJsFw8Fi1s8LntLF8TIapvw0B98ZkqZJPuEvpjEDigBuYX6bd7Kpfv9yeTz2S5Qj3Wcsg==|920

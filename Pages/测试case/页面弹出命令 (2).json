@@ -1,0 +1,161 @@
+{
+  "Rows": {
+    "Count": 18
+  },
+  "Cols": {
+    "Count": 21
+  },
+  "Values": {
+    "15,9": "ok"
+  },
+  "AttachInfos": {
+    "2,2": {
+      "ListViewInfo": {
+        "Name": "Listview1",
+        "TableName": "originaltable",
+        "RowIndex": 2,
+        "ColumnIndex": 2,
+        "RowCount": 12,
+        "ColumnCount": 16,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderCheckBoxVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "3,6": {
+      "NameUsedInJavaScript": "ID",
+      "BindingInfo": {
+        "TableName": "originaltable",
+        "ColumnName": "ID",
+        "GUID": "488e36bf-5255-4348-99e2-ed6b7bd31ebd"
+      }
+    },
+    "3,10": {
+      "NameUsedInJavaScript": "Text",
+      "BindingInfo": {
+        "TableName": "originaltable",
+        "ColumnName": "Text",
+        "GUID": "607ebdca-352d-4458-9889-f56017cfb4e7"
+      }
+    },
+    "3,14": {
+      "NameUsedInJavaScript": "Integer",
+      "BindingInfo": {
+        "TableName": "originaltable",
+        "ColumnName": "Integer",
+        "GUID": "98bf81d2-3d4d-4c3e-b39c-ea911a5121d7"
+      }
+    },
+    "14,0": {
+      "CellType": {
+        "$type": "SelectionPanel.SelectionPanel, SelectionPanel",
+        "ListViewName": "Listview1"
+      }
+    },
+    "15,9": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ClosePopupReturnValues": [
+              {
+                "Name": "ReturnValue1",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='页面弹出命令 (2)'!A15"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "ok",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "15,15": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ClosePopupResult": 1
+          }
+        ],
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "HorizontalAlignment": 0,
+        "WordWrap": true
+      },
+      {
+        "Formatter": 1
+      },
+      {
+        "FontFamily": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Center",
+        "@",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "2,2": 0,
+      "10,2": 0,
+      "10,17": 0,
+      "11,2": 1,
+      "14,20": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "4,2,10,16",
+    "15,9,2,3",
+    "15,15,2,3",
+    "3,2,1,4",
+    "3,6,1,4",
+    "3,10,1,4",
+    "3,14,1,4",
+    "14,0,4,8",
+    "2,2,1,4",
+    "2,6,1,4",
+    "2,10,1,4",
+    "2,14,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//eq1UuWi521QqOBAgxCopVFXZLavEyNSquHb+Y5uTVfrxAFUn0IO8vlnU1uAlhZh21z/+7fN+Y7HtOXUZW5dCMsvDjX8BcvItRykpVnVONX2imtmVenkK8CDyE3HbpyhvBZdo0r8fDtEitlX5U8IalUL4hMsgpLqzPIBZsYQjFNCp8t4S0Yb1odbiX0GfUCI+Xm7YPxx+4amPLzzGqA3bYi4KqZy07SyFfrDUntmcXSn5fCz6g/tnosv/I3WEf+DFs6LKwncZ9dgsS0/7dAMnf7oXrzv6wS6Jgq+Emqp3aaGuF/nDOGaKfYnNw+tKgem0CuuIDn/pf8ZDNeNTBhzM266Yi2191PZoh8/UXhbOJ0t7xY/iudnIDY0D53/9hYS1R7fzp3Ro+QDlh6/EF4xYHQX6Ax4xhWLzXEFehOvLbd85DRRWTFkIR6yVOUy0+v041jbcapThuZpnlZ2IP0uZj/F9b23Jhw0cXzrv880lGzP7+18AbZ1ff2TjDjw3x88EEWkx5uYirWnCZPO9SToSt7WYv4bHS6WFz3dGLfpgQkA6gSAwdgLMIxksqVwrZO+YL6Irl16TOpjF5heAdrUHgEfb1YfFPAyxaRGYkhHnk3Abea5wq64s7+ErQ3XDjUsWvZBHFbAZvNIGbWlXAcIxZ7/2PZVVR0ve0RMorNGtOW1PI6yREWUGvXl4n7ur4X8fpWRneuO55n8AsqWX+SzOHSzZuF5zfWC/4fTCOd3pmNJFAA9C7FnXyf/HK+SAXQbprYUxViqLBbzjSBWgft9YC36Opl/HxczWv+R94bDUVUwmvEWWZrz29ILBZiGX0X6jx1xTFwlMZ3noMfqxXehp0bJpJlLxMIKroe/uvoFHTAi7gzCuTL17g1jTbMZnJ0SUb/0dqjKggFhawTMYfpHHcA==|920

@@ -1,0 +1,260 @@
+{
+  "Rows": {
+    "Count": 21
+  },
+  "Cols": {
+    "Count": 24
+  },
+  "Values": {
+    "1,19": "cell01",
+    "2,2": "名称",
+    "5,19": "cell02",
+    "6,2": "生日",
+    "10,2": "地址",
+    "13,2": "手机号码",
+    "17,5": "OK",
+    "17,12": "cancel"
+  },
+  "AttachInfos": {
+    "2,7": {
+      "BindingInfo": {
+        "TableName": "basictesttable",
+        "ColumnName": "Name",
+        "GUID": "fc187843-8b5b-47d4-ac5c-cc43e01a772c"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "2,19": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "6,7": {
+      "BindingInfo": {
+        "TableName": "basictesttable",
+        "ColumnName": "Birthday",
+        "GUID": "f94d5eb0-48b8-489d-bd69-b56e3ae36eee"
+      },
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "6,19": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "10,7": {
+      "BindingInfo": {
+        "TableName": "basictesttable",
+        "ColumnName": "Address",
+        "GUID": "f5f05c84-0817-4d8c-91b2-1c130904a5b0"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "13,7": {
+      "BindingInfo": {
+        "TableName": "basictesttable",
+        "ColumnName": "Phone_Number",
+        "GUID": "da65d975-6a25-4ada-8107-6456096e6bb3"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "17,5": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "basictesttable",
+            "UpdateType": "add",
+            "ShowConfirm": false
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true,
+            "ReloadData": true
+          }
+        ],
+        "Text": "OK",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "17,12": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true,
+            "ClosePopupResult": 1
+          }
+        ],
+        "Text": "cancel",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Formatter": 0
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "@",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "2,7": 0,
+      "2,18": 0,
+      "2,19": 0,
+      "3,18": 0,
+      "6,2": 1,
+      "6,3": 1,
+      "6,4": 1,
+      "6,5": 1,
+      "6,6": 1,
+      "6,19": 0,
+      "7,2": 1,
+      "7,3": 1,
+      "7,4": 1,
+      "7,5": 1,
+      "7,6": 1,
+      "10,2": 1,
+      "10,3": 1,
+      "10,4": 1,
+      "10,5": 1,
+      "10,6": 1,
+      "10,7": 0,
+      "10,18": 0,
+      "10,19": 0,
+      "10,20": 0,
+      "10,21": 0,
+      "11,2": 1,
+      "11,3": 1,
+      "11,4": 1,
+      "11,5": 1,
+      "11,6": 1,
+      "11,18": 0,
+      "11,19": 0,
+      "11,20": 0,
+      "11,21": 0,
+      "13,2": 1,
+      "13,3": 1,
+      "13,4": 1,
+      "13,5": 1,
+      "13,6": 1,
+      "13,7": 2,
+      "13,18": 2,
+      "13,19": 2,
+      "13,20": 2,
+      "13,21": 2,
+      "14,2": 1,
+      "14,3": 1,
+      "14,4": 1,
+      "14,5": 1,
+      "14,6": 1,
+      "14,18": 2,
+      "14,19": 2,
+      "14,20": 2,
+      "14,21": 2,
+      "17,12": 1,
+      "17,13": 1,
+      "17,14": 1,
+      "17,15": 1,
+      "17,16": 1,
+      "18,12": 1,
+      "18,13": 1,
+      "18,14": 1,
+      "18,15": 1,
+      "18,16": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "2,2,2,5",
+    "6,2,2,5",
+    "10,2,2,5",
+    "2,7,2,11",
+    "6,7,2,11",
+    "10,7,2,11",
+    "13,2,2,5",
+    "13,7,2,11",
+    "17,5,2,5",
+    "17,12,2,5",
+    "2,19,2,5",
+    "6,19,2,5"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//lj7ZL8JNjzsT4JNcj8Vv2RdsKyKsMF0v+4fI3b/2MT5WUtyj2tm3HgGITA12Qub2eptgmHFseGddyIgk5JeaMxJGCjCCz+DdL5739wljXC9Rx+AmWDc2ftvNe8XMGJ+VCyGsAIYTAED+ua9umpKoB7WTZ9fTuVQAcCzbR1cx5xMUgdaohyEHn+vRUvPfAAGfIEB4MnV0A/AEWIbcT/cuRk7odBnl/wZngKJX0yOUkUgGAWYXnkC7zb9ipC5HIZHmO7OBTF21Rcs3P2BGUFOp8K31XGSVPzG6JZb6lQ1cdN793faNOABShQ9cM9isF9LW8CbhgTdqWMPn1+/dQ6TXHrMzBg1ro6e7zDOSA5POVfTduXNcsfEmdXtCI0UT9EvFEMtqCMCa9h/ISt2PxNv0Or7uzx3fhtZT1W6dS2Lsk65PeMcbUgA+dfKUcoQCJ/Z2z4gCFJx1RxvcV8zyq0SfFagP5hT20lqXitLQOXPEJKDwo4FTFAxFwtoZeivbAvVqTEv/VANFZHdGAYchJmHjf+5KMFxHeMs0aIdLe9O1DuoBYRAMd+p2BqMJ6NhanRnxbrcxGoc2JGmB5oEn8FKLdIv5tzkrolemITOFqKgkhtFz3xVmfCtJAWwKw3P9TEM32FYjowoRYtvLjNIXaRLf/W221WJGrQmKclSgh8gTGrgasRsrihFfQjZGR3RmUkCuo9uZP4ZmS9myQYhdBvgbXp7O+IMguXB7feKBLXZK/svJutMgaJ+zs/BllBUgdfc6U9vV+gD0HlPvvHeJ1vuNf8mELNRr/+57i0fxcdKqJYHXK7KkenDJBEOOMh3ZV65LZggj4kiayaDyTWu7HvK1mmdMOxlEB8dw7qYuICtuZaYXl9C3Lic89oXRasOahvrh0ogLCoxmePNAu7GyS7z45Q==|920

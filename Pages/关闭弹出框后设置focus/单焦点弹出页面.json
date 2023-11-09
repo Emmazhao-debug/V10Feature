@@ -1,0 +1,109 @@
+{
+  "Rows": {
+    "Count": 11
+  },
+  "Cols": {
+    "Count": 18
+  },
+  "Values": {
+    "2,2": "传递值",
+    "7,5": "Cancel",
+    "7,11": "Ok"
+  },
+  "AttachInfos": {
+    "3,2": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "7,5": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ClosePopupResult": 1
+          }
+        ],
+        "Text": "Cancel",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "7,11": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true,
+            "ClosePopupReturnValues": [
+              {
+                "Name": "ReturnValue1",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=单焦点弹出页面!C4"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "Ok",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Formatter": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "@",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "3,2": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "3,2,2,14",
+    "7,11,2,5",
+    "7,5,2,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//k0SWckx2lsdt1/cpHq/NPSTZXFg2h3G8cQUCCcl00HRrXcv5PrJTixQSaPAMYSGeyNn3yQt+PbRrxWdC9/ntuRs7Po0SOq7onu4oJeCch+lIUDmf9/oCWo8isgf8khEOsLspfH31OG3zmaxqPgBUTPKKSrLdRANXYjiLWgS1GIIOHfGL7uUZPX9n+C9oeqmkrvtul5JpsfiLNMlVA6wCspTxZeh8WXRKTpTrIUX3PBRdZqjPDDGuTT8Qmblol/GpLXhOD6B7T2kfqNPsPOI7E2kxIGdstuYJOFQ7BG8J/7KCWGBFXUP3EHsKm3+KGRSsN31FTvQN5q7z0IrKRsQTqe5QM21sHVjTUYHdkpZXihPW8H0zc/Px7DN7uRqEthzTnwAmCUpvDtbQsXm/EorYr8qTMAykQJ9cB1bkCdnFP5ywEPb9agtnFmnXUIaEtL7VwiYUnIRaLhQXmEpMnzkVNHZoy1LlAAW5dySsFXT7O62sHKFJTxfe8JhPTO8EeB2KGozRTHRaq5idSzghqR1j4TYzw72HGCtRrMwl7vcojEFOC68ey8ndWN+ZQbl/iG2+mcwU3p53w8/CJWiW8Agj9gIhFfA+uQFZZC66EdV/srnLRInkA/hCrjoixQ6CVdw0wtnlQP/ItYC9YwV86w6wmCPT2aLrBi+kOi4Utl2ZIGmzChyIL7w/bR7m5aIQXl4yxkT8btgFLUpGaYvR9HAmvfF6RBUBpmECirBIdewcVQkdKnZLuDHK3J14qnMg627EwhlvR4sdCDdA6UqQiil2HvwHe27ctPJcoCEisvR0PJIamOZqgkBfgS2/UnjLA+V1GDjamlphtai7r8uPIXmk0awIXzXsdwb0gA65XQKoNZbPLfcSPcCPWsfarfbEhsN/5Q1TwIVwBY9tSlUydmaWnQ==|920

@@ -1,0 +1,211 @@
+{
+  "Rows": {
+    "Count": 20
+  },
+  "Cols": {
+    "Count": 21
+  },
+  "Values": {
+    "1,3": "return value",
+    "5,3": "定义返回值",
+    "6,3": "return value",
+    "11,4": "ok1",
+    "17,4": "cancel1",
+    "17,8": "cancel2",
+    "17,12": "cancel3"
+  },
+  "AttachInfos": {
+    "2,3": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "6,3": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "CellDefaultValue": "return value"
+      }
+    },
+    "11,4": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ClosePopupResult": 1,
+            "ClosePopupReturnValues": [
+              {
+                "Name": "cancel返回值001",
+                "Value": "2400-03"
+              },
+              {
+                "Name": "cancel返回值003",
+                "Value": "2023/11/3-03"
+              }
+            ]
+          }
+        ],
+        "Text": "ok1",
+        "TemplateKey": "_RS_Normal_Style7"
+      }
+    },
+    "17,4": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ClosePopupResult": 1,
+            "ClosePopupReturnValues": [
+              {
+                "Name": "cancel返回值01",
+                "Value": "2400-01"
+              }
+            ]
+          }
+        ],
+        "Text": "cancel1",
+        "TemplateKey": "_RS_Normal_Style3"
+      }
+    },
+    "17,8": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ClosePopupResult": 1,
+            "ClosePopupReturnValues": [
+              {
+                "Name": "cancel返回值03",
+                "Value": "2400-02"
+              },
+              {
+                "Name": "cancel返回值02",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=页面上只有cancel按钮!D7"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "cancel2",
+        "TemplateKey": "_RS_Normal_Style4"
+      }
+    },
+    "17,12": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ClosePopupResult": 1,
+            "ClosePopupReturnValues": [
+              {
+                "Name": "cancel返回值001",
+                "Value": "2400-03"
+              },
+              {
+                "Name": "cancel返回值003",
+                "Value": "2023/11/3-03"
+              }
+            ]
+          }
+        ],
+        "Text": "cancel3",
+        "TemplateKey": "_RS_Normal_Style7"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Formatter": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "@",
+        "Body",
+        "[AUTO]General"
+      ]
+    },
+    "CellStyles": {
+      "2,3": 0,
+      "6,3": 0,
+      "11,4": 1,
+      "11,5": 2,
+      "11,6": 2,
+      "12,4": 2,
+      "12,5": 2,
+      "12,6": 2,
+      "17,8": 1,
+      "17,9": 2,
+      "17,10": 2,
+      "17,12": 1,
+      "17,13": 2,
+      "17,14": 2,
+      "18,8": 2,
+      "18,9": 2,
+      "18,10": 2,
+      "18,12": 2,
+      "18,13": 2,
+      "18,14": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "17,4,2,3",
+    "2,3,2,12",
+    "2,17,2,3",
+    "6,3,2,12",
+    "17,8,2,3",
+    "17,12,2,3",
+    "11,4,2,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//G7CVmROHBG6OMyr5jHgO+RHjWVsnwD6vjX8rX8bcxUf974sYG35Ccy2+4arNMzcTPS0qTpMyy7yro+1olOIvSI2nC4gPE7LuPHNkKopMKMswJt/ivd8Y8E2sask4hSe6Yx6LPYXJfC2ZqsVRzOm87jCP/FYcs9bqnZbjIJLyiwyX093e73GYloetycX84qhc8TSEao41DgthvbA9UetUMwuMBWWQY36kY+dygOPqCVHnrj0ddDge0r4gnYvOOCdQz/HhRCkqVggoOaYQR+SJDoFtQ1sg/f+U8fywRgIcXbdCeMNp0wJ3gaiKvtAte9D15tjFqb7+1ITRR5sk07Hd8+Q5d+f4gM8YTCIMOJKWINj9smxPKWTiNE4NFKYjbZkhBpxRSNZl4aJKwVefOaVZFUo1WdnGp+5FSjlwHyf/GSzG3RjAIBieGiq3OI9BUZlqRcDQGJuIo+/D0MLM5Xhb80YbfvN7h5QS6J7T+85FNB3ggHvvZCrCLgZmgDHiXCn4JNeetV0UjGTCnSfeKhjIH9gc4LaTQjcxC/VUQWX9oik+SjZnHf9aSES33iOC5nCzP9mC7ChP9DAiJRe3AoWYjpbRUqmph3Mt5HsXg/RhO+rm23EThRd0tSxdRmlS0jyvOQ4TuXaQtfgfikaja33/nKsPsqJXjHPmkEavAB7Tm4E62fm/0mz1Qe1eZnPH7Tbo4N8I5G4gVnvFujtX/OiQmrOOOQXu3lv0iDudIySKUTS0bMkTYR/9z053yj8OxXTFD+Q3H5TQt4UBynZOA+554QBoie8frI48gMtrMVxYUOVByZfGEH5wq29RXTqYaZ1/tnv8qR7d0wFvC2f1zpL59ZJ82ZcUFJkjSivOVVxi/QHKlKx64zLk+xj3L1surwdL5I6V8fWK20g5lszN4qh6Hw==|920

@@ -1,0 +1,219 @@
+{
+  "Rows": {
+    "Count": 13
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 385.0
+        }
+      }
+    },
+    "Count": 27
+  },
+  "Values": {
+    "1,2": "类别名称",
+    "1,16": "编辑加载项",
+    "5,2": "订单金额",
+    "5,13": "~",
+    "10,16": "查询",
+    "10,23": "cancel"
+  },
+  "AttachInfos": {
+    "1,6": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxGroupCellType, ServerDesignerCommon",
+        "Style": 1,
+        "IsBounding": true,
+        "DataSource": "类别名称",
+        "ValueColumnBindingInfo": {
+          "TableName": "类别名称",
+          "ColumnName": "Text",
+          "GUID": "ca89d0dc-2793-4e32-a8f8-8fd0f08d87b2"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "类别名称",
+          "ColumnName": "Text",
+          "GUID": "9178cd65-c2af-4127-ad23-3d92d642871a"
+        }
+      }
+    },
+    "1,16": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "ClosePopupCallbackCommand": {
+              "Commands": [
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionContextPropertyParam, ServerDesignerCommon",
+                          "contextProperty": {
+                            "Display": "IsOK",
+                            "ContextInfoType": 2
+                          }
+                        },
+                        "value": 1
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+                          "TargetPageElement": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=高级查询页面_forChart!G2"
+                          },
+                          "TargetType": "Forguncy.CheckBoxGroupCellType, ServerDesignerCommon, Version=10.0.0.0, Culture=neutral, PublicKeyToken=967100671921c115",
+                          "MethodName": "ReloadForCommand"
+                        }
+                      ],
+                      "ID": "62c4f6f2-d87b-4d0d-aeb4-39a6492487ea"
+                    },
+                    {
+                      "CommandList": [],
+                      "ID": "1213573a-4c6e-44af-9b99-7a1a9632079a"
+                    }
+                  ]
+                }
+              ],
+              "ParamProperties": {
+                "IsOK": "IsOK"
+              }
+            },
+            "PageName": "编辑类别"
+          }
+        ],
+        "Text": "编辑加载项",
+        "ClickMode": 1
+      }
+    },
+    "5,6": {
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "DecimalPlacesNumber": 3,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "5,15": {
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "DecimalPlacesNumber": 3,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "10,16": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true,
+            "ClosePopupReturnValues": [
+              {
+                "Name": "类别",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=高级查询页面_forChart!G2"
+                }
+              },
+              {
+                "Name": "订单金额_min",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=高级查询页面_forChart!G6"
+                }
+              },
+              {
+                "Name": "订单金额_max",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=高级查询页面_forChart!P6"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "查询",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "10,23": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ClosePopupResult": 1
+          }
+        ],
+        "Text": "cancel",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Foreground": 0,
+        "Underline": true
+      },
+      {
+        "HorizontalAlignment": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Blue",
+        "Center",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "1,16": 0,
+      "5,13": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "1,2,2,4",
+    "1,16,2,4",
+    "5,2,2,4",
+    "5,6,2,7",
+    "5,13,2,2",
+    "5,15,2,7",
+    "10,16,2,6",
+    "1,6,2,9",
+    "10,23,2,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//8FBINzCpEOIqmSBVvDCKYAlHAc5ioz8z6HQRDbc412UxsQxQo0ouWO154J08wxA3XZoP8GePUaq/XeX2Hn2IsB3ukYSN9BJSOmusUAAjBDqhgDpzSf6OOMoSw+oopTc+2o+OO6VlcnJacH316StMljCCWV3TjBRwffjR7AZWKh0T2Y+YBPhd2ALzVeE0Cp/AcAJDtlcMuv3l5vTBERxwecb/Fl5ECq8rfSDQGvlEi02+qDwqU4V5Frd4EwcOK9YnDIitvx0ulOBgk2MrOo1IUXotWNeXd1Jg0AZLtggF0smGhQyWV/EAKmyNsKkQcJOTHeIrtmwuPY7NnxgsuZVO/o4EwHttHcQ9rroyPbFvXEN4+D6LKGU8qPKLw8RweKENE9AvdXxfnpPqBwB5moYdoo6W1TLaH5QChtbUfNaMq0x/DCWF9FIzFfNm7jsFX+FcZ3IrsoWCf87ioLFID2l4i+vfzhG5iichTClBG8D0ssq0QGqRcCgpmYOl3zD+CSKcaRb7vstw4U+GL3seVufS/gPAp4q2XBecvZTDJSdeCW+pE6t46u8/PUM4/+WIyn+NiaF4GjGLnTp4FMvIB9+zbbwAKV2Qo/QU1DAM2ak/qXTizqZLQ2WmchiV7qTgY3MrHYofG7rU9/MR1zDz1Q9U8aGqhe+ATiwXEQyLLCpyK0qMOSnmHCvxFPXx/7blwjiP/Pa/lO0dU2WFk3lJcWNHE+KghnF7QMjtqI4vSzK+qsSUTWZlEr0k550N5GAA4v6Aep6ImHzeqSHw05kvCUOTHF5N8l+QbjQOxLiJvrFi65hkp61KFy2gGlZVYlUfsDoRiqJKv3MyVxq6OfwN3OuyeoBbSr/T/vM3DTVRTsHOMnq35QnLhWOZNhU3u2bK0gHImo2clDsisNvPffXrcdt+zw==|920

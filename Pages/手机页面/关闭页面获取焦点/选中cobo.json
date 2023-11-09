@@ -1,0 +1,78 @@
+{
+  "Rows": {
+    "Count": 9
+  },
+  "Cols": {
+    "Count": 18
+  },
+  "AttachInfos": {
+    "2,2": {
+      "CellType": {
+        "$type": "Forguncy.DropDownListCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsBounding": true,
+        "DataSource": "汽车企业信息",
+        "ValueColumnBindingInfo": {
+          "TableName": "汽车企业信息",
+          "ColumnName": "企业",
+          "GUID": "cd98e61e-a2ff-4a41-9571-283dca0de6c2"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "汽车企业信息",
+          "ColumnName": "企业",
+          "GUID": "715a0830-824c-4c91-bc0d-9c722d94e699"
+        }
+      }
+    },
+    "6,8": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Types": {
+      "Strs": [
+        "Body"
+      ]
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "2,2,2,14",
+    "6,8,2,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//6w9N+TUXBMgLXMBVkImsvAPRt+cjVX+yZCA9CxsWWy8bAtaTkTu7UoZtwCtAxFogkXvLq9p7hJhcXg50vlmp7emvWaGYMRF6/sWhE0P/7Vm0obE3jkISgyavLUUsTLnMWHG3EsbpIdc0tRluZ4v1C0tzUEzas4g3e1P8CR8BdN03vbZFCj43TDkaeEd0uUR7Gg4GM2TChB7bNSOMMP38W56dbqxy0d+72Hv6rczl4R52glzqZ11/y+YOxebmKD0S8fTI10LY0wSjQel9vVjIm/zXX+mKNKf47PSf8+M1q4jtI+/bG8MNpEP28PTJ3HBWSNsJe1+dx5lcZpmASKK++h9zfczmPyWmkCAKgpH9d3rIJBVbrPpjtb20b+NxhpIupa+ooSWd9b5HKHxx0T4NMpbzet9xMbEAa6PuwGQHArH7ocYTmfDYERQIgwOQZ97AbFL5l6eOEk03I6JMZCk8Dz/pBqNkCOIT+UJamjsne4MpT+wE9LkJ7MMZluBEueiqTBZKDE1TeNoUYaiCBMwIcKlnoWeOUFq66LAIVAkBXqrrQN0C2ROuq2usV4TGLWdkgf9uG2ZJsApRyXlNr5q346oa8zDj3VPBdoahf1+ZikQ9L+LSgobJ5TmDOLqH0TwIQg5GRhUX7ZzwQ0qBRHbOn8KnYSKY/EMZAK3HI2JxVoZ1JrtVTp1/WIwOkqS2DXg+qyNdlj2oKTcXPgjAvmSkVAkuHSREzrAY3mBmDPb7XMFVr4dPPIU7XjFWb+8hbcK/aevNelQz8DY6Hx4vc6sGBu1RkqrlANYK/kvS9xobWDu96FwcaninRJQ/aEH9eIkIzcDg1Yfs/0/mP8U0EV5ySb0QHMm48jGTt3+DpblmJGNxOevsrJwJR/gZcWkUGodHZAuO/rt0RRW25REcsZsdIw==|920

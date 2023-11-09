@@ -1,0 +1,342 @@
+{
+  "Rows": {
+    "Count": 16
+  },
+  "Cols": {
+    "Count": 18
+  },
+  "Values": {
+    "3,1": "ID",
+    "5,1": "文本",
+    "7,1": "日期",
+    "9,1": "数字",
+    "12,11": "值回传"
+  },
+  "AttachInfos": {
+    "3,4": {
+      "BindingInfo": {
+        "TableName": "测试关闭弹出获取focus",
+        "ColumnName": "ID",
+        "GUID": "28061583-2376-4c49-8df8-af2d1b42b001"
+      }
+    },
+    "5,4": {
+      "BindingInfo": {
+        "TableName": "测试关闭弹出获取focus",
+        "ColumnName": "Text",
+        "GUID": "361ee60a-7d92-4ed9-8c29-bac5eb12f8bb"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "7,4": {
+      "BindingInfo": {
+        "TableName": "测试关闭弹出获取focus",
+        "ColumnName": "Date_and_Time",
+        "GUID": "f0e09890-c560-45f6-bfd2-29054934c480"
+      },
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "9,4": {
+      "BindingInfo": {
+        "TableName": "测试关闭弹出获取focus",
+        "ColumnName": "Integer",
+        "GUID": "bff1d485-ec81-4107-bad6-70cb34f5f1e3"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "12,11": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true,
+            "ClosePopupReturnValues": [
+              {
+                "Name": "ID",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=弹出绑定p!E4"
+                }
+              },
+              {
+                "Name": "文本",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=弹出绑定p!E6"
+                }
+              },
+              {
+                "Name": "日期",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=弹出绑定p!E8"
+                }
+              },
+              {
+                "Name": "数字",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=弹出绑定p!E10"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "值回传",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "@"
+      ]
+    },
+    "CellStyles": {
+      "3,1": 0,
+      "3,2": 0,
+      "3,3": 0,
+      "3,4": 0,
+      "3,5": 0,
+      "3,6": 0,
+      "3,7": 0,
+      "3,8": 0,
+      "3,9": 0,
+      "3,10": 0,
+      "3,11": 0,
+      "3,12": 0,
+      "3,13": 0,
+      "3,14": 0,
+      "3,15": 0,
+      "4,1": 0,
+      "4,2": 0,
+      "4,3": 0,
+      "4,4": 0,
+      "4,5": 0,
+      "4,6": 0,
+      "4,7": 0,
+      "4,8": 0,
+      "4,9": 0,
+      "4,10": 0,
+      "4,11": 0,
+      "4,12": 0,
+      "4,13": 0,
+      "4,14": 0,
+      "4,15": 0,
+      "5,1": 0,
+      "5,2": 0,
+      "5,3": 0,
+      "5,4": 1,
+      "5,5": 0,
+      "5,6": 0,
+      "5,7": 0,
+      "5,8": 0,
+      "5,9": 0,
+      "5,10": 0,
+      "5,11": 0,
+      "5,12": 0,
+      "5,13": 0,
+      "5,14": 0,
+      "5,15": 0,
+      "6,1": 0,
+      "6,2": 0,
+      "6,3": 0,
+      "6,4": 0,
+      "6,5": 0,
+      "6,6": 0,
+      "6,7": 0,
+      "6,8": 0,
+      "6,9": 0,
+      "6,10": 0,
+      "6,11": 0,
+      "6,12": 0,
+      "6,13": 0,
+      "6,14": 0,
+      "6,15": 0,
+      "7,1": 0,
+      "7,2": 0,
+      "7,3": 0,
+      "7,4": 0,
+      "7,5": 0,
+      "7,6": 0,
+      "7,7": 0,
+      "7,8": 0,
+      "7,9": 0,
+      "7,10": 0,
+      "7,11": 0,
+      "7,12": 0,
+      "7,13": 0,
+      "7,14": 0,
+      "7,15": 0,
+      "8,1": 0,
+      "8,2": 0,
+      "8,3": 0,
+      "8,4": 0,
+      "8,5": 0,
+      "8,6": 0,
+      "8,7": 0,
+      "8,8": 0,
+      "8,9": 0,
+      "8,10": 0,
+      "8,11": 0,
+      "8,12": 0,
+      "8,13": 0,
+      "8,14": 0,
+      "8,15": 0,
+      "9,1": 0,
+      "9,2": 0,
+      "9,3": 0,
+      "9,4": 0,
+      "9,5": 0,
+      "9,6": 0,
+      "9,7": 0,
+      "9,8": 0,
+      "9,9": 0,
+      "9,10": 0,
+      "9,11": 0,
+      "9,12": 0,
+      "9,13": 0,
+      "9,14": 0,
+      "9,15": 0,
+      "10,1": 0,
+      "10,2": 0,
+      "10,3": 0,
+      "10,4": 0,
+      "10,5": 0,
+      "10,6": 0,
+      "10,7": 0,
+      "10,8": 0,
+      "10,9": 0,
+      "10,10": 0,
+      "10,11": 0,
+      "10,12": 0,
+      "10,13": 0,
+      "10,14": 0,
+      "10,15": 0,
+      "11,1": 0,
+      "11,2": 0,
+      "11,3": 0,
+      "11,4": 0,
+      "11,5": 0,
+      "11,6": 0,
+      "11,7": 0,
+      "11,8": 0,
+      "11,9": 0,
+      "11,10": 0,
+      "11,11": 0,
+      "11,12": 0,
+      "11,13": 0,
+      "11,14": 0,
+      "11,15": 0,
+      "12,1": 0,
+      "12,2": 0,
+      "12,3": 0,
+      "12,4": 0,
+      "12,5": 0,
+      "12,6": 0,
+      "12,7": 0,
+      "12,8": 0,
+      "12,9": 0,
+      "12,10": 0,
+      "12,11": 0,
+      "12,12": 0,
+      "12,13": 0,
+      "12,14": 0,
+      "12,15": 0,
+      "13,1": 0,
+      "13,2": 0,
+      "13,3": 0,
+      "13,4": 0,
+      "13,5": 0,
+      "13,6": 0,
+      "13,7": 0,
+      "13,8": 0,
+      "13,9": 0,
+      "13,10": 0,
+      "13,11": 0,
+      "13,12": 0,
+      "13,13": 0,
+      "13,14": 0,
+      "13,15": 0,
+      "14,1": 0,
+      "14,2": 0,
+      "14,3": 0,
+      "14,4": 0,
+      "14,5": 0,
+      "14,6": 0,
+      "14,7": 0,
+      "14,8": 0,
+      "14,9": 0,
+      "14,10": 0,
+      "14,11": 0,
+      "14,12": 0,
+      "14,13": 0,
+      "14,14": 0,
+      "14,15": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "5,1,1,3",
+    "7,1,1,3",
+    "9,1,1,3",
+    "12,11,2,5",
+    "5,4,1,12",
+    "7,4,1,12",
+    "9,4,1,12",
+    "3,1,1,3",
+    "3,4,1,12"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//g2L+Ar39NRmQSoqDmIEwEnuz9Ax1d+WLFVsfmRUPuk77MA05VOLcfW5TqTDdQ4/VZrHB+d/c4LbXnza7RyeNHgPYWCmsf1pCQUzDDbwBWJ5twY+GZE1ZelcBW73m/x+21H7/pW+h38xeeRzN0nXdEVS2l6qgCszhHHQr1+yw2JJX/VD99nXrF1WBMwCmvYm7UhWL2qHqtoCN1WyaFUXadRn2a5ypbWVT7OwyUYsrZipumldk7LxvQ1LTe4nS/7D0o5M8M/vhiLYCTghdSdamdr1ktZoGmhzD0IAKnrErAbUvmDQ8rQIgb9pxzLr8+AZNI1IzEjfcDMAYpEWqGMxu0kMqF2uneZUWl7nziMPgC7kTGCTpUsWRqNhIagfgvFy2XDIhCVAZZI94XCNnl98lH8BsTVT9/tpSZ/w37Rxjbn5bR133TbqRNoFDknxK7nfW7yU94ajjA6zsvs1WY8XUAwnwR+3K7n8GDjaXqWx4O1liv8zUL8/DRxoUZi01kBCGgYgWHRoNjakeibaOYWv3f1cTqPord6sIYId9miHt+n291SltC13uJezDso9DwB8Tuke9fa4GTUIbwDPXAda+C8IXMXBufbrZ/Zd9wS1n93BBIneLIgKKGLu5oz/x9xX2eZ+eIjmUT1Nt9M22EN+zC2NnxsH0zbD0DgRqT7EZ+/1WhD5bJzFx3LoKeWTKs+jZ4+cVJuaqiydYEaEgDwWoqycFcyMopwxJDwBWq4NuqDvA+FI8d7K15HfjAl6dWJivZR4Ctxi/Uftv/I1TIUCbDWA/J228mn2maKlrlZshE+sd6UaQMespWXYoZTk+0ksA0OyBtvQ0cGPkyiPutgLUrvEjBXVMZULrCq4WemVW37FrKvMtkVf3vdLapNTSnCqvjN4Mzi/43J+YqVWyxcNJMA==|920

@@ -1,0 +1,14 @@
+{
+  "IntegrateWithOtherApplication": {
+    "Password": "0I)D02Cu0b%9"
+  },
+  "ShareCommandContainers": [],
+  "ListviewLoadingIndicatorSettings": {},
+  "GlobalProperties": [],
+  "WebSitePort": 29723,
+  "UserServicePort": 25098,
+  "StartDateFiscalYear": 4,
+  "BaseOnStartingMonth": true,
+  "CellTypeSpinInfos": [],
+  "AuditingList": {}
+}

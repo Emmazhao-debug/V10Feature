@@ -1,0 +1,131 @@
+{
+  "Rows": {
+    "Count": 10
+  },
+  "Cols": {
+    "Count": 10
+  },
+  "Values": {
+    "2,1": "支付方式",
+    "7,1": "取消",
+    "7,6": "保存"
+  },
+  "AttachInfos": {
+    "3,1": {
+      "BindingInfo": {
+        "TableName": "支付方式",
+        "ColumnName": "Text",
+        "GUID": "8911533a-f623-493a-b395-75c686564ab2"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon",
+            "Enabled": true
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "7,1": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ClosePopupResult": 1
+          }
+        ],
+        "Text": "取消",
+        "ClickMode": 1
+      }
+    },
+    "7,6": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "支付方式",
+            "UpdateType": "add",
+            "ShowConfirm": false
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ReloadData": true
+          }
+        ],
+        "Text": "保存",
+        "ClickMode": 1
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Formatter": 0
+      },
+      {
+        "Foreground": 1,
+        "Underline": true
+      },
+      {
+        "FontFamily": 2,
+        "Foreground": 1,
+        "Underline": true
+      },
+      {
+        "FontFamily": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "@",
+        "Blue",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "3,1": 0,
+      "7,1": 1,
+      "7,6": 2,
+      "7,7": 3,
+      "7,8": 3,
+      "8,6": 3,
+      "8,7": 3,
+      "8,8": 3
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "7,1,2,3",
+    "7,6,2,3",
+    "3,1,2,8"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//V2fPOGUbXPd/R2aEMiPeUVIBkKOcBCSysBUiFHHPuG4TapiuNoezFvbBi8emSYHoOjTsBYj1m35ahzUFbXabTlTnPeXLeSXyB02uY8IbiJDBGHrs2nhfHNFmpEB08UV2qKXiA0p0jeAvEyQyhWkS1+wPYipvJAn0TEMV8zKd13KRcIobop4UZ374dpqhh5iMDezs8rrD5IyNBY+xzKEZLy/nukTajpRgJ1Ro6FA7x8Gylf4erPcz154IiWIzxhu+vZYYJI0MASIKQbKqHyinukVTK24u5C3HXPp6eU4zpQhMzGKsQW4SWZHePhOO8hgBheMgwtbRbjjRL29UBlu1Jg4TxMkcSk6Pbsgis/Dtsw8RjlR4M/yURQ8Mexodi1qNc/vJ7LvgLl6dAUP44RrKaJXELenlm316aZyVGuhLeXQE2QszPJyo/0brf3LRyqE8lYNuC9Xvouzyn4+DMzaUj0ItLktsITZ8ii5GJWo24XXM/kYCMKUnDlh4dnu/hJf/aeQUCT2CIYuTzW6EyqiWODQNpP7RBbmVMU+Uy0uEAIwWHhbtMVFJUiDvK4N0waMFq0nDIOfbbLCQ5jCFEwUkx6TzY91FNMVAHwD1axEt+CCS4iXrm8KPrYuWhLI6dcMJV2t29wQK9ztzMxqbDaRF+2w50gLODROXTa/6I/7ZyJXHRYIanExMDqmqNRdjybkh9huXe9IdYojheM8aj8lJg9dM6GCuakRnZpf6BIWflbKj7nmyxi+sjx9slY0MBhS5bC0VJ9W3vOZO/s2HBKLcBiY0W1GcX2Utt4M0TUj4irnSKILiHsQpG0laljVd2BH3OdYy8bGIQHDUwNmbuHshdP+9ls5pV6pvv6M3qEAMGbECzTWIyRLSbnBJAp3wvaI9LR7NJhVGdgJ20oknIISXlA==|920

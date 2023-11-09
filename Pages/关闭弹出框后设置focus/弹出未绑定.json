@@ -1,0 +1,217 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 31.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 30.0
+        }
+      }
+    },
+    "Count": 14
+  },
+  "Cols": {
+    "Count": 22
+  },
+  "Values": {
+    "1,3": "ID",
+    "3,3": "文本",
+    "5,3": "日期",
+    "7,3": "数字",
+    "10,13": "值回传"
+  },
+  "AttachInfos": {
+    "1,6": {
+      "BindingInfo": {
+        "TableName": "测试关闭弹出获取focus",
+        "ColumnName": "ID",
+        "GUID": "8cb93fe7-f0f7-4c0e-853d-fe0f1378b0e4"
+      }
+    },
+    "3,6": {
+      "BindingInfo": {
+        "TableName": "测试关闭弹出获取focus",
+        "ColumnName": "Text",
+        "GUID": "52ef7c6d-8373-49c7-a810-a3a39860b37e"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "5,6": {
+      "BindingInfo": {
+        "TableName": "测试关闭弹出获取focus",
+        "ColumnName": "Date_and_Time",
+        "GUID": "76c35622-34aa-49f1-a52d-74a55a947a79"
+      },
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "7,6": {
+      "BindingInfo": {
+        "TableName": "测试关闭弹出获取focus",
+        "ColumnName": "Integer",
+        "GUID": "489006c6-5d0b-4738-802e-721eadb05e9d"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "10,13": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true,
+            "ClosePopupReturnValues": [
+              {
+                "Name": "ID",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=弹出未绑定!G2"
+                }
+              },
+              {
+                "Name": "文本",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=弹出未绑定!G4"
+                }
+              },
+              {
+                "Name": "日期",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=弹出未绑定!G6"
+                }
+              },
+              {
+                "Name": "数字",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=弹出未绑定!G8"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "值回传",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "Formatter": 1
+      },
+      {
+        "FontFamily": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "@"
+      ]
+    },
+    "CellStyles": {
+      "3,6": 0,
+      "4,6": 1,
+      "4,7": 1,
+      "4,8": 1,
+      "4,9": 1,
+      "4,10": 1,
+      "4,11": 1,
+      "4,12": 1,
+      "4,13": 1,
+      "4,14": 1,
+      "4,15": 1,
+      "4,16": 1,
+      "4,17": 1,
+      "5,3": 1,
+      "5,4": 1,
+      "5,5": 1,
+      "5,6": 1,
+      "6,6": 1,
+      "6,7": 1,
+      "6,8": 1,
+      "6,9": 1,
+      "6,10": 1,
+      "6,11": 1,
+      "6,12": 1,
+      "6,13": 1,
+      "6,14": 1,
+      "6,15": 1,
+      "6,16": 1,
+      "6,17": 1,
+      "7,3": 1,
+      "7,4": 1,
+      "7,5": 1,
+      "7,6": 1,
+      "10,13": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "3,3,1,3",
+    "5,3,1,3",
+    "7,3,1,3",
+    "10,13,2,5",
+    "3,6,1,12",
+    "5,6,1,12",
+    "7,6,1,12",
+    "1,3,1,3",
+    "1,6,1,12"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//SZWi7e3t/mItHWxn5HbZBYxWZGOYFoGC4c6u0hvraofW6f/f9N/b01ihSgCYT4cKg4wsh0D4TNXLlJOE4ZT2iC105VsxjVjsW0CB/Gvvqx5zf8UCvvH9PAIDt+eL7KCXGRpMxoNFwVNgzwXulSjOnjHQCV1JfqFzVH6qiNMMb0SPvGPjAZFHo32lZzWFxBTU5RE5dF5TlXPr9A+k1fpR3hHdJOJfHNQYB0wRUcD3Sv2PnZz/Phrv6In/t8nXRgf1DaamTokzzBo/Rrah7JTfp+/JbkdTzk+ALzRqM0pLJ7MhjLGxkHZuk75V6W746IYvYsDJL8D5GBHemYDfSdb6+VGa3X1EZLva36sGXC8cF1uzHnb0xJ2fSQA8E4muxMIrk/cI2YlOUQjjZ1bZjbpN3bluqMATleDj4oxeUH1VR+fuqxJKGbWw6MGpFCGMBuGKsYUOnVTJXWwk5qneoK9CuietdqMfTEzTiFkd/7SMxOfUGrc9jkE4S/8JwSAbTiNv/yLyel/YPR/MSZJMbWrAc2cnb3GhnpR6EEYMP3p3ZzVdzO9O5RgsjnyqNlc/uFEzrVeoriB4P14JyFH+N4fogKNn39I0uIZOU3KSEEdWOJElpiAm5AqDH0TdlPjjzNpK2p81eAz8Ae4/sz96g33w7K+pmfI8W4AGcWJwDuy4hEjDJ/LLCNnoVqYAGQ/vx2cuQtLFX7ypHD5l2GODVpWJOkxWS9+vCG6DheQOufSVHLEGNvBRsBXhGOusuBgE0AoILM3EArJFAI4hwqkAp2Av53P94iSJwoiH/cMx5DMZibf4r0JMRJOPdAEwZkiX3lRUHppmJCTAGbW6m7TWQ3LTQQdTfduNayDRNv0ZKTagsTUgLsXZkrbQ146dm3kOj0igwmkY6FpcBhWwddgBHQMCLw==|920

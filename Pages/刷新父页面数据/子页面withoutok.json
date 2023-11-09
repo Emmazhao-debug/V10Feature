@@ -1,0 +1,766 @@
+{
+  "Rows": {
+    "Count": 20
+  },
+  "Cols": {
+    "InLogicalVisibleIndexes": [
+      32,
+      33,
+      34
+    ],
+    "Count": 35
+  },
+  "Values": {
+    "17,18": "query",
+    "17,25": "sort",
+    "18,3": "close"
+  },
+  "AttachInfos": {
+    "2,3": {
+      "ListViewInfo": {
+        "Name": "Listview2",
+        "TableName": "basictesttable",
+        "RowIndex": 2,
+        "ColumnIndex": 3,
+        "RowCount": 14,
+        "ColumnCount": 28,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_ListStyle2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "3,3": {
+      "BindingInfo": {
+        "TableName": "basictesttable",
+        "ColumnName": "ID",
+        "GUID": "6c2d89ee-1df7-4a25-84b1-a87aedbc5f17"
+      }
+    },
+    "3,9": {
+      "BindingInfo": {
+        "TableName": "basictesttable",
+        "ColumnName": "Name",
+        "GUID": "a855c6f8-74a7-40fb-8e80-16ef99d3772a"
+      }
+    },
+    "3,14": {
+      "BindingInfo": {
+        "TableName": "basictesttable",
+        "ColumnName": "Birthday",
+        "GUID": "c02f1c60-bfe9-4321-a192-8e0ad594a352"
+      }
+    },
+    "3,20": {
+      "BindingInfo": {
+        "TableName": "basictesttable",
+        "ColumnName": "Address",
+        "GUID": "ea1d2439-ee05-4714-a12a-661b470f5f30"
+      }
+    },
+    "3,25": {
+      "BindingInfo": {
+        "TableName": "basictesttable",
+        "ColumnName": "Phone_Number",
+        "GUID": "8e5da2d2-112a-4249-a86d-a4936b02dc07"
+      }
+    },
+    "16,32": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "returnresult",
+            "TableValue": {
+              "TableName": "basictesttable",
+              "BindingInfos": [
+                {
+                  "BindingInfo": {
+                    "TableName": "basictesttable",
+                    "ColumnName": "ID",
+                    "GUID": "6b6f08ff-0668-4622-b39d-776c3ef14c84"
+                  },
+                  "ColumnName": "ID"
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "basictesttable",
+                    "ColumnName": "Name",
+                    "GUID": "d7a598ee-4ef3-4846-b020-beca39799b65"
+                  },
+                  "ColumnName": "Name"
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "basictesttable",
+                    "ColumnName": "Birthday",
+                    "GUID": "faa7f700-2b61-4731-b866-5bf73e8385d8"
+                  },
+                  "ColumnName": "Birthday"
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "basictesttable",
+                    "ColumnName": "Address",
+                    "GUID": "6141b0b9-0180-4165-ae5d-3d74496dacfd"
+                  },
+                  "ColumnName": "Address"
+                },
+                {
+                  "BindingInfo": {
+                    "TableName": "basictesttable",
+                    "ColumnName": "Phone_Number",
+                    "GUID": "9d718f84-c756-47a6-9b2d-16d884b91a6b"
+                  },
+                  "ColumnName": "Phone_Number"
+                }
+              ],
+              "SqlCondition": {
+                "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                "CompareType": 1,
+                "ColumnBindingInfo": {
+                  "TableName": "basictesttable",
+                  "ColumnName": "ID",
+                  "GUID": "00d2c941-999a-4ffb-be34-a6bbc6b93460"
+                },
+                "Value": "1"
+              }
+            },
+            "ID": "5bd92553c9fc4b2c8c693792cae14b8b"
+          },
+          {
+            "$type": "JsonUtilityCommand.JsonSerializeCommand, JsonUtilityCommand",
+            "SourceObject": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=子页面withoutok!returnresult"
+            },
+            "ToParameter": "returnresult"
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ClosePopupResult": 1,
+            "ClosePopupReturnValues": [
+              {
+                "Name": "dddddd",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=子页面withoutok!returnresult"
+                }
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "17,18": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "basictesttable",
+            "ID": "883fc638db95401fa57f39a38b517b89"
+          }
+        ],
+        "Text": "query",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "17,25": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.SortCommand, ServerDesignerCommon",
+            "ListViewName": "Listview2",
+            "OrderByCondition": {
+              "OrderByColumns": [
+                {
+                  "ColumnBindingInfo": {
+                    "TableName": "basictesttable",
+                    "ColumnName": "ID",
+                    "GUID": "65d67451-763d-432b-b5ce-f7ed81a2e68b"
+                  }
+                }
+              ]
+            },
+            "ID": "36ea6730bee9407d846c30c1802630d3"
+          }
+        ],
+        "Text": "sort",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "18,3": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ClosePopupReturnValues": [
+              {
+                "Name": "返回值1"
+              },
+              {
+                "Name": "返回值2",
+                "Value": "2400"
+              }
+            ]
+          }
+        ],
+        "Text": "close",
+        "TemplateKey": "_RS_Normal_Style6"
+      }
+    },
+    "18,9": {
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "19,28": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ClosePopupResult": 1,
+            "ClosePopupReturnValues": [
+              {
+                "Name": "aaaa",
+                "Value": "1200"
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "19,32": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ClosePopupResult": 1,
+            "ClosePopupReturnValues": [
+              {
+                "Name": "bbbb",
+                "Value": "1200"
+              }
+            ]
+          }
+        ],
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "[AUTO]General"
+      ]
+    },
+    "CellStyles": {
+      "2,3": 0,
+      "2,4": 0,
+      "2,5": 0,
+      "2,6": 0,
+      "2,7": 0,
+      "2,8": 0,
+      "2,9": 0,
+      "2,10": 0,
+      "2,11": 0,
+      "2,12": 0,
+      "2,13": 0,
+      "2,14": 0,
+      "2,15": 0,
+      "2,16": 0,
+      "2,17": 0,
+      "2,18": 0,
+      "2,19": 0,
+      "2,20": 0,
+      "2,21": 0,
+      "2,22": 0,
+      "2,23": 0,
+      "2,24": 0,
+      "2,25": 0,
+      "2,26": 0,
+      "2,27": 0,
+      "2,28": 0,
+      "2,29": 0,
+      "2,30": 1,
+      "3,3": 2,
+      "3,4": 2,
+      "3,5": 2,
+      "3,6": 2,
+      "3,7": 2,
+      "3,8": 2,
+      "3,9": 2,
+      "3,10": 2,
+      "3,11": 2,
+      "3,12": 2,
+      "3,13": 2,
+      "3,14": 2,
+      "3,15": 2,
+      "3,16": 2,
+      "3,17": 2,
+      "3,18": 2,
+      "3,19": 2,
+      "3,20": 2,
+      "3,21": 2,
+      "3,22": 2,
+      "3,23": 2,
+      "3,24": 2,
+      "3,25": 2,
+      "3,26": 2,
+      "3,27": 2,
+      "3,28": 2,
+      "3,29": 2,
+      "3,30": 2,
+      "4,3": 2,
+      "4,4": 2,
+      "4,5": 2,
+      "4,6": 2,
+      "4,7": 2,
+      "4,8": 2,
+      "4,9": 2,
+      "4,10": 2,
+      "4,11": 2,
+      "4,12": 2,
+      "4,13": 2,
+      "4,14": 2,
+      "4,15": 2,
+      "4,16": 2,
+      "4,17": 2,
+      "4,18": 2,
+      "4,19": 2,
+      "4,20": 2,
+      "4,21": 2,
+      "4,22": 2,
+      "4,23": 2,
+      "4,24": 2,
+      "4,25": 2,
+      "4,26": 2,
+      "4,27": 2,
+      "4,28": 2,
+      "4,29": 2,
+      "4,30": 2,
+      "4,33": 2,
+      "4,34": 2,
+      "5,3": 2,
+      "5,4": 2,
+      "5,5": 2,
+      "5,6": 2,
+      "5,7": 2,
+      "5,8": 2,
+      "5,9": 2,
+      "5,10": 2,
+      "5,11": 2,
+      "5,12": 2,
+      "5,13": 2,
+      "5,14": 2,
+      "5,15": 2,
+      "5,16": 2,
+      "5,17": 2,
+      "5,18": 2,
+      "5,19": 2,
+      "5,20": 2,
+      "5,21": 2,
+      "5,22": 2,
+      "5,23": 2,
+      "5,24": 2,
+      "5,25": 2,
+      "5,26": 2,
+      "5,27": 2,
+      "5,28": 2,
+      "5,29": 2,
+      "5,30": 2,
+      "5,33": 2,
+      "5,34": 2,
+      "6,3": 2,
+      "6,4": 2,
+      "6,5": 2,
+      "6,6": 2,
+      "6,7": 2,
+      "6,8": 2,
+      "6,9": 2,
+      "6,10": 2,
+      "6,11": 2,
+      "6,12": 2,
+      "6,13": 2,
+      "6,14": 2,
+      "6,15": 2,
+      "6,16": 2,
+      "6,17": 2,
+      "6,18": 2,
+      "6,19": 2,
+      "6,20": 2,
+      "6,21": 2,
+      "6,22": 2,
+      "6,23": 2,
+      "6,24": 2,
+      "6,25": 2,
+      "6,26": 2,
+      "6,27": 2,
+      "6,28": 2,
+      "6,29": 2,
+      "6,30": 2,
+      "6,33": 2,
+      "6,34": 2,
+      "7,3": 2,
+      "7,4": 2,
+      "7,5": 2,
+      "7,6": 2,
+      "7,7": 2,
+      "7,8": 2,
+      "7,9": 2,
+      "7,10": 2,
+      "7,11": 2,
+      "7,12": 2,
+      "7,13": 2,
+      "7,14": 2,
+      "7,15": 2,
+      "7,16": 2,
+      "7,17": 2,
+      "7,18": 2,
+      "7,19": 2,
+      "7,20": 2,
+      "7,21": 2,
+      "7,22": 2,
+      "7,23": 2,
+      "7,24": 2,
+      "7,25": 2,
+      "7,26": 2,
+      "7,27": 2,
+      "7,28": 2,
+      "7,29": 2,
+      "7,30": 2,
+      "7,33": 2,
+      "7,34": 2,
+      "8,3": 2,
+      "8,4": 2,
+      "8,5": 2,
+      "8,6": 2,
+      "8,7": 2,
+      "8,8": 2,
+      "8,9": 2,
+      "8,10": 2,
+      "8,11": 2,
+      "8,12": 2,
+      "8,13": 2,
+      "8,14": 2,
+      "8,15": 2,
+      "8,16": 2,
+      "8,17": 2,
+      "8,18": 2,
+      "8,19": 2,
+      "8,20": 2,
+      "8,21": 2,
+      "8,22": 2,
+      "8,23": 2,
+      "8,24": 2,
+      "8,25": 2,
+      "8,26": 2,
+      "8,27": 2,
+      "8,28": 2,
+      "8,29": 2,
+      "8,30": 2,
+      "8,33": 2,
+      "8,34": 2,
+      "9,3": 2,
+      "9,4": 2,
+      "9,5": 2,
+      "9,6": 2,
+      "9,7": 2,
+      "9,8": 2,
+      "9,9": 2,
+      "9,10": 2,
+      "9,11": 2,
+      "9,12": 2,
+      "9,13": 2,
+      "9,14": 2,
+      "9,15": 2,
+      "9,16": 2,
+      "9,17": 2,
+      "9,18": 2,
+      "9,19": 2,
+      "9,20": 2,
+      "9,21": 2,
+      "9,22": 2,
+      "9,23": 2,
+      "9,24": 2,
+      "9,25": 2,
+      "9,26": 2,
+      "9,27": 2,
+      "9,28": 2,
+      "9,29": 2,
+      "9,30": 2,
+      "9,33": 2,
+      "9,34": 2,
+      "10,3": 2,
+      "10,4": 2,
+      "10,5": 2,
+      "10,6": 2,
+      "10,7": 2,
+      "10,8": 2,
+      "10,9": 2,
+      "10,10": 2,
+      "10,11": 2,
+      "10,12": 2,
+      "10,13": 2,
+      "10,14": 2,
+      "10,15": 2,
+      "10,16": 2,
+      "10,17": 2,
+      "10,18": 2,
+      "10,19": 2,
+      "10,20": 2,
+      "10,21": 2,
+      "10,22": 2,
+      "10,23": 2,
+      "10,24": 2,
+      "10,25": 2,
+      "10,26": 2,
+      "10,27": 2,
+      "10,28": 2,
+      "10,29": 2,
+      "10,30": 2,
+      "10,33": 2,
+      "10,34": 2,
+      "11,3": 2,
+      "11,4": 2,
+      "11,5": 2,
+      "11,6": 2,
+      "11,7": 2,
+      "11,8": 2,
+      "11,9": 2,
+      "11,10": 2,
+      "11,11": 2,
+      "11,12": 2,
+      "11,13": 2,
+      "11,14": 2,
+      "11,15": 2,
+      "11,16": 2,
+      "11,17": 2,
+      "11,18": 2,
+      "11,19": 2,
+      "11,20": 2,
+      "11,21": 2,
+      "11,22": 2,
+      "11,23": 2,
+      "11,24": 2,
+      "11,25": 2,
+      "11,26": 2,
+      "11,27": 2,
+      "11,28": 2,
+      "11,29": 2,
+      "11,30": 2,
+      "11,33": 2,
+      "11,34": 2,
+      "12,3": 2,
+      "12,4": 2,
+      "12,5": 2,
+      "12,6": 2,
+      "12,7": 2,
+      "12,8": 2,
+      "12,9": 2,
+      "12,10": 2,
+      "12,11": 2,
+      "12,12": 2,
+      "12,13": 2,
+      "12,14": 2,
+      "12,15": 2,
+      "12,16": 2,
+      "12,17": 2,
+      "12,18": 2,
+      "12,19": 2,
+      "12,20": 2,
+      "12,21": 2,
+      "12,22": 2,
+      "12,23": 2,
+      "12,24": 2,
+      "12,25": 2,
+      "12,26": 2,
+      "12,27": 2,
+      "12,28": 2,
+      "12,29": 2,
+      "12,30": 2,
+      "12,33": 2,
+      "12,34": 2,
+      "13,3": 2,
+      "13,4": 2,
+      "13,5": 2,
+      "13,6": 2,
+      "13,7": 2,
+      "13,8": 2,
+      "13,9": 2,
+      "13,10": 2,
+      "13,11": 2,
+      "13,12": 2,
+      "13,13": 2,
+      "13,14": 2,
+      "13,15": 2,
+      "13,16": 2,
+      "13,17": 2,
+      "13,18": 2,
+      "13,19": 2,
+      "13,20": 2,
+      "13,21": 2,
+      "13,22": 2,
+      "13,23": 2,
+      "13,24": 2,
+      "13,25": 2,
+      "13,26": 2,
+      "13,27": 2,
+      "13,28": 2,
+      "13,29": 2,
+      "13,30": 2,
+      "13,33": 2,
+      "13,34": 2,
+      "14,3": 2,
+      "14,4": 2,
+      "14,5": 2,
+      "14,6": 2,
+      "14,7": 2,
+      "14,8": 2,
+      "14,9": 2,
+      "14,10": 2,
+      "14,11": 2,
+      "14,12": 2,
+      "14,13": 2,
+      "14,14": 2,
+      "14,15": 2,
+      "14,16": 2,
+      "14,17": 2,
+      "14,18": 2,
+      "14,19": 2,
+      "14,20": 2,
+      "14,21": 2,
+      "14,22": 2,
+      "14,23": 2,
+      "14,24": 2,
+      "14,25": 2,
+      "14,26": 2,
+      "14,27": 2,
+      "14,28": 2,
+      "14,29": 2,
+      "14,30": 2,
+      "14,33": 2,
+      "14,34": 2,
+      "15,3": 2,
+      "15,4": 2,
+      "15,5": 2,
+      "15,6": 2,
+      "15,7": 2,
+      "15,8": 2,
+      "15,9": 2,
+      "15,10": 2,
+      "15,11": 2,
+      "15,12": 2,
+      "15,13": 2,
+      "15,14": 2,
+      "15,15": 2,
+      "15,16": 2,
+      "15,17": 2,
+      "15,18": 2,
+      "15,19": 2,
+      "15,20": 2,
+      "15,21": 2,
+      "15,22": 2,
+      "15,23": 2,
+      "15,24": 2,
+      "15,25": 2,
+      "15,26": 2,
+      "15,27": 2,
+      "15,28": 2,
+      "15,29": 2,
+      "15,30": 2,
+      "15,33": 2,
+      "15,34": 2,
+      "16,32": 2,
+      "16,33": 2,
+      "16,34": 2,
+      "17,18": 3,
+      "17,19": 2,
+      "17,20": 2,
+      "17,21": 2,
+      "17,22": 2,
+      "17,23": 2,
+      "19,32": 2,
+      "19,33": 2,
+      "19,34": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "3,3,1,6",
+    "3,9,1,5",
+    "3,14,1,6",
+    "3,20,1,5",
+    "3,25,1,6",
+    "4,3,12,28",
+    "17,25,1,6",
+    "17,18,1,6",
+    "18,3,1,5",
+    "18,9,2,9",
+    "19,28,1,3",
+    "19,32,1,3",
+    "16,32,1,3",
+    "2,3,1,6",
+    "2,9,1,5",
+    "2,14,1,6",
+    "2,20,1,5",
+    "2,25,1,6"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//6+YnHrkB2kup9y1IvWyI7tRAdbY3uMSMhdq4Vx3yi5jgiX5pb5+++ggy9K3Rh/P9ZDJf86TXYQoP1SZ2PV6B+/G/jNiliD8k484aVyZTaaovR9euGNyN549LXp+F4zEloMRN5s+GZix0HgIH1mXDVwTcirAfM4WhmVHP1nl8lfNc4L4Z9Ycc6pMeFKUa9io6rigiz0EVgApou56ImIe6RE/wU85gz38APB0HHfKOkXXwNG3cZybT5Ul+3P+U/tCJiBJbZ8Eu1eZWAnuWCvZjSw6Rw/1ZHqOemGCHofAuftdCTEBZDj62210ORED72lIcE1T/DbT8jQsV3c6oT7KSjfeSIzx+GIdBpeVuqfbw7wGccYE2Dol63RodqRUkT9QmhUDjui2ONLQUOyrXvi2WHrYI1tZd1hdr0mhE5QgeMczJSEMD460GT7wPXymCVopu4FAxFLikZVLMphQihinBdxuYRPFfqCwIelcqb78GeyaeYh8n92or0WfW05pbryk8KRmaXVsPf73tcmCad78AzPPd8/5/rj9PLdyFl7af8ko0I+z03fWv3ncx6OeRM4oIPfHZqxo91Z9JlxKY/DqV4XIsMVTN1hJMseg2zjfpAViemBs5u5+2K9rNEsQ21lEMwmUkX0fHNb2wm0ZsQXI6zj5viPiB6r11f6n8nt4Ok/q/YLGig8mBjXoSUTdQoNhIe6CH7TZiEDhutwRud0fYxoNLzFE28uUROUqGj7UAuXxQMLJ86FWBqvNBcawlibPXEOqnOaWW93/pqZ7pA8l0cHtHHhU+DWgv29DaNq1AiIwtZYy+M+j7TIkL+jVlgnLbu2O0MjOKBf7pzfdq3hRDElGHkQesi+VOG7BkmNPhD+RhW/bHQ6RE0zJd1vmAltBdJtZlDwy7h0ELCbGkv/WLUQ==|920

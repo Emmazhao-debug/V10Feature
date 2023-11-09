@@ -1,0 +1,197 @@
+{
+  "Rows": {
+    "Count": 14
+  },
+  "Cols": {
+    "Count": 17
+  },
+  "Values": {
+    "2,1": "产品名称",
+    "5,1": "状态",
+    "9,11": "查询"
+  },
+  "AttachInfos": {
+    "2,5": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "5,5": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_NewLittleRoundCorner"
+      }
+    },
+    "9,11": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+            "TargetTableName": "FGC_产品表",
+            "SqlCondition": {
+              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+              "SubConditions": [
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "FGC_产品表",
+                    "ColumnName": "产品名称",
+                    "GUID": "94177716-bef4-4afb-82fb-f6024d5a64d6"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=子页面上执行查询命令!F3"
+                  }
+                },
+                {
+                  "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+                  "CompareType": 6,
+                  "ColumnBindingInfo": {
+                    "TableName": "FGC_产品表",
+                    "ColumnName": "预约状态",
+                    "GUID": "aecdf364-77b7-4de1-8ae3-8b84bded546d"
+                  },
+                  "Value": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=子页面上执行查询命令!F6"
+                  }
+                }
+              ]
+            },
+            "ID": "aa25bcb0ce6f44a7a6209645cb6da329"
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassQueryCondition": true
+          }
+        ],
+        "Text": "查询",
+        "TemplateKey": "_RS_Main1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Formatter": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "@",
+        "Body",
+        "[AUTO]General"
+      ]
+    },
+    "CellStyles": {
+      "2,5": 0,
+      "5,1": 1,
+      "5,2": 2,
+      "5,3": 2,
+      "5,4": 2,
+      "5,5": 3,
+      "5,6": 2,
+      "5,7": 2,
+      "5,8": 2,
+      "5,9": 2,
+      "5,10": 2,
+      "5,11": 2,
+      "5,12": 2,
+      "5,13": 2,
+      "5,14": 2,
+      "5,15": 2,
+      "6,1": 2,
+      "6,2": 2,
+      "6,3": 2,
+      "6,4": 2,
+      "6,5": 2,
+      "6,6": 2,
+      "6,7": 2,
+      "6,8": 2,
+      "6,9": 2,
+      "6,10": 2,
+      "6,11": 2,
+      "6,12": 2,
+      "6,13": 2,
+      "6,14": 2,
+      "6,15": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 1,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "2,1,2,4",
+    "2,5,2,11",
+    "5,1,2,4",
+    "5,5,2,11",
+    "9,11,3,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//Srdx24OPxLLIpenAJnHICv4MwzLxvMkP/8MwmoQV8IhsJxjh6DnkOiSFP2ysguYeo8+X5VNOtpjMTQ6Eongh6JHVwEm8jzwKWytS5Cudapfobfz0csNWag/cxPA0TYckotR7yDUaXkiQIQMVtNpZCMCSt/bpIOYV8eymF4lG/tp9CbV4PxQgwi19EmyLRR9QC8BNCO8hu7/B8gHO5tAl3fmP4xfmKMduIpmaOq8XmSGx6popm7qGUM18mc8BE01NKOC80AqXDf2dtkKMdzjM8DETLpnI42QBiab2xM9Qkbw6OLGDOUjIoji6aVE9REbDRMa++a530ZYHkguPv4ZXIEBSOIop4rjkdRS/CR7VNoxTNsSbIicJq2tK7W1AiARz2ynVRA6cl6TywtSiF82JvAqQXSUe4b5Nkgb5qtTGiKhD+8sAs++4/8fQAyxv96VvgCbXzgwdav9tgBHF9AE+2e6AzruhyUebzKmWO4v/r/pF4/en2bFNVhNDsbRp+fLW90he1vOjwjJWwb5QigKX9cHfHtLGFbd56R+NXqi2LoeTTAJb4jgds2NkbAAtelZY/hBzSVI1qV96YF33SJNy8WgZpoTuGARMK7jQEZkK3nQ7lGEJLyhZ6B2gEvx613DMwcbDhQgyIeyRR4mgx0TR37uzRhMkH0gfHbpvabz2jrCBU0tdVQzJJbCYQQN3X+ptUTLTQ7oYQXerDmAlRc8GOwMBSyeRWAntIT924e7vldAzKSWwqIVH0HjvFwmdW604hpEi5tLcoOm6lKXWHckwPJXy5mr3jM34SiQSNypx/AEzKYNSHW8qm4xhYiEg9Vs/uvsU9blN8UE7m1MlVsOwUM5OWPXLs4oGU+be4lLjfsP1t4V75doreBJmPlBYtBBEmKAoPqmPhjHskqFA04yVyg==|920

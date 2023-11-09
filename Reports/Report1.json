@@ -1,0 +1,112 @@
+{
+  "Name": "Report1",
+  "DataSources": [
+    {
+      "Name": "DataSource1",
+      "GUID": "77053147-4829-414b-ba2b-f6d3c4e780cc",
+      "DataSourceSetting": {
+        "TableName": "汽车企业信息",
+        "BindingInfos": [
+          {
+            "BindingInfo": {
+              "TableName": "汽车企业信息",
+              "ColumnName": "ID",
+              "GUID": "537b8b1c-b3be-48e0-90a6-147aebb01a06"
+            },
+            "ColumnName": "ID"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "汽车企业信息",
+              "ColumnName": "企业",
+              "GUID": "c3c26bfb-06c0-42cc-9709-31a658c0fee4"
+            },
+            "ColumnName": "企业"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "汽车企业信息",
+              "ColumnName": "联系人",
+              "GUID": "1df5b2bb-026f-49b4-8602-81f7cd6644c3"
+            },
+            "ColumnName": "联系人"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "汽车企业信息",
+              "ColumnName": "电话",
+              "GUID": "8ffecfed-c3cc-4bc9-b2f5-de7de796022f"
+            },
+            "ColumnName": "电话"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "汽车企业信息",
+              "ColumnName": "地址",
+              "GUID": "1862236f-eba4-4574-aa22-63338634053c"
+            },
+            "ColumnName": "地址"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "汽车企业信息",
+              "ColumnName": "备注",
+              "GUID": "7ffa5978-990b-4f1d-98c1-2d2d1f023475"
+            },
+            "ColumnName": "备注"
+          }
+        ],
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+          "CompareType": 8,
+          "ColumnBindingInfo": {
+            "TableName": "汽车企业信息",
+            "ColumnName": "企业",
+            "GUID": "71890e44-c9b1-4557-9dd8-c8561aefdaf0"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=过滤参数"
+          }
+        }
+      },
+      "ReportDataSourceParams": [
+        {
+          "Name": "过滤参数"
+        }
+      ],
+      "ColumnsType": [
+        "integer",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string"
+      ],
+      "JsonColumns": []
+    }
+  ],
+  "AllowAccessRoleList": [],
+  "PermissionData": {
+    "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionData, Forguncy.RbacPermission.Core",
+    "permissionResource": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionResource, Forguncy.RbacPermission.Core"
+    },
+    "permissionBindings": [
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionBinding, Forguncy.RbacPermission.Core",
+        "activeReportPermissionType": 1,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      },
+      {
+        "$type": "Forguncy.RbacPermission.Core.Impl.ActiveReport.ActiveReportPermissionBinding, Forguncy.RbacPermission.Core",
+        "activeReportPermissionType": 2,
+        "roleNames": [
+          "FGC_LoginUser"
+        ]
+      }
+    ]
+  }
+}

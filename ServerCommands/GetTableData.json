@@ -1,0 +1,108 @@
+{
+  "Name": "GetTableData",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": []
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+      "ParameterName": "tabledata",
+      "TableValue": {
+        "TableName": "汽车企业信息",
+        "BindingInfos": [
+          {
+            "BindingInfo": {
+              "TableName": "汽车企业信息",
+              "ColumnName": "ID",
+              "GUID": "788b4352-272c-435b-b59b-5b3c68d0f1a1"
+            },
+            "ColumnName": "ID"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "汽车企业信息",
+              "ColumnName": "企业",
+              "GUID": "66daef8c-980e-44a3-90f4-4b6695639775"
+            },
+            "ColumnName": "企业"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "汽车企业信息",
+              "ColumnName": "联系人",
+              "GUID": "4f3058d8-55a0-48d5-a3bf-db9c5d5d5a78"
+            },
+            "ColumnName": "联系人"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "汽车企业信息",
+              "ColumnName": "电话",
+              "GUID": "6a9429bf-b7f7-4a8b-9d33-c0d081fef682"
+            },
+            "ColumnName": "电话"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "汽车企业信息",
+              "ColumnName": "地址",
+              "GUID": "da4e789f-20f6-4bc5-92c9-53524cb8d014"
+            },
+            "ColumnName": "地址"
+          },
+          {
+            "BindingInfo": {
+              "TableName": "汽车企业信息",
+              "ColumnName": "备注",
+              "GUID": "a9a1be51-cd97-4514-959e-f474efb4acaa"
+            },
+            "ColumnName": "备注"
+          }
+        ],
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.TextCESqlCondition, ForguncyDataAccess",
+          "CompareType": 6,
+          "ColumnBindingInfo": {
+            "TableName": "汽车企业信息",
+            "ColumnName": "企业",
+            "GUID": "f75c06fa-c205-49c2-a847-aad1388adb32"
+          },
+          "Value": "汽车"
+        }
+      },
+      "ID": "3c5cac2cfa7c434ca12bcf0c8eb0574d"
+    },
+    {
+      "$type": "Forguncy.Model.ReturnCommand, ServerDesignerCommon",
+      "ErrorCode": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=tabledata.Count"
+      },
+      "Message": {
+        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+        "SerializeProperty": "=tabledata"
+      }
+    }
+  ],
+  "ReturnProperties": []
+}

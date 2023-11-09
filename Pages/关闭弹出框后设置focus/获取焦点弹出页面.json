@@ -1,0 +1,1479 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 24.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      }
+    },
+    "Count": 42
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "57": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 117.0
+        }
+      }
+    },
+    "Count": 58
+  },
+  "Values": {
+    "1,3": "简单测试",
+    "2,3": "关闭弹出框获取焦点(simple)",
+    "2,11": "aaa",
+    "2,25": "button",
+    "5,33": "first validation",
+    "7,25": "弹出页面获取焦点",
+    "8,33": "Third Validation",
+    "11,33": "Second validation",
+    "15,33": "设置多个focus",
+    "22,3": "未实现组件中的单元格获取焦点",
+    "24,25": "弹出页面获取焦点"
+  },
+  "AttachInfos": {
+    "2,3": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "ClosePopupCallbackCommand": {
+              "Commands": [
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionContextPropertyParam, ServerDesignerCommon",
+                          "contextProperty": {
+                            "Display": "IsOK",
+                            "ContextInfoType": 2
+                          }
+                        },
+                        "value": 1
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "SetFocusCommand.SetFocusCommand, SetFocusCommand",
+                          "TargetCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=获取焦点弹出页面!L3"
+                          }
+                        }
+                      ],
+                      "ID": "c0566ca6-caa8-4237-9203-97d6aa84ba86"
+                    },
+                    {
+                      "CommandList": [
+                        {
+                          "$type": "SetFocusCommand.SetFocusCommand, SetFocusCommand",
+                          "TargetCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=获取焦点弹出页面!Z3"
+                          }
+                        }
+                      ],
+                      "ID": "80f479dd-4293-4109-bd42-487f5de487bf"
+                    }
+                  ]
+                }
+              ],
+              "ParamProperties": {
+                "IsOK": "IsOK",
+                "ReturnValue1": "ReturnValue1"
+              }
+            },
+            "PageName": "单焦点弹出页面",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=获取焦点弹出页面!L3"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=单焦点弹出页面!C4"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "关闭弹出框获取焦点(simple)",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "2,11": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "IsSelectAllOnFocus": true,
+        "CellDefaultValue": "aaa"
+      },
+      "DataValidationInfo": {
+        "NumberType": 6,
+        "FirstParamValue": "5",
+        "SecondParamValue": "10",
+        "IgnoreBlank": false
+      }
+    },
+    "2,25": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "Text": "button",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "5,57": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "6,3": {
+      "ListViewInfo": {
+        "Name": "Listview1",
+        "TableName": "测试关闭弹出获取focus",
+        "RowIndex": 6,
+        "ColumnIndex": 3,
+        "RowCount": 14,
+        "ColumnCount": 28,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "6,33": {
+      "BindingInfo": {
+        "TableName": "测试关闭弹出获取focus",
+        "ColumnName": "Text",
+        "GUID": "e81ebe4a-7a33-4ff2-a00f-18093ce75eb8"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "7,3": {
+      "NameUsedInJavaScript": "Text",
+      "BindingInfo": {
+        "TableName": "测试关闭弹出获取focus",
+        "ColumnName": "Text",
+        "GUID": "3e0e0845-6730-4364-8116-2bef91b419f4"
+      }
+    },
+    "7,9": {
+      "NameUsedInJavaScript": "Integer",
+      "BindingInfo": {
+        "TableName": "测试关闭弹出获取focus",
+        "ColumnName": "Integer",
+        "GUID": "7fde55e2-f776-4949-8358-b88784fc692f"
+      }
+    },
+    "7,15": {
+      "NameUsedInJavaScript": "Date_and_Time",
+      "BindingInfo": {
+        "TableName": "测试关闭弹出获取focus",
+        "ColumnName": "Date_and_Time",
+        "GUID": "6de66f16-453f-4641-8f7f-6bd4e45c0d7b"
+      }
+    },
+    "7,25": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "ClosePopupCallbackCommand": {
+              "Commands": [
+                {
+                  "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                  "PropertyItemsList": [
+                    {
+                      "TargetCells": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=获取焦点弹出页面!AH7"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=获取焦点弹出页面!文本"
+                      }
+                    },
+                    {
+                      "TargetCells": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=获取焦点弹出页面!AH10"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=获取焦点弹出页面!日期"
+                      }
+                    },
+                    {
+                      "TargetCells": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=获取焦点弹出页面!AH13"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=获取焦点弹出页面!数字"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionContextPropertyParam, ServerDesignerCommon",
+                          "contextProperty": {
+                            "Display": "IsOK",
+                            "ContextInfoType": 2
+                          }
+                        },
+                        "value": 1
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                          "ParameterName": "tabledata",
+                          "TableValue": {
+                            "TableName": "测试关闭弹出获取focus",
+                            "TableValueType": 1,
+                            "BindingInfos": [
+                              {
+                                "BindingInfo": {
+                                  "TableName": "测试关闭弹出获取focus",
+                                  "ColumnName": "ID",
+                                  "GUID": "e46a0265-5201-4e67-b464-526c264f7a54"
+                                },
+                                "ColumnName": "ID"
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "测试关闭弹出获取focus",
+                                  "ColumnName": "Text",
+                                  "GUID": "30b94de8-85c0-492a-9e9d-098f6132fb74"
+                                },
+                                "ColumnName": "Text"
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "测试关闭弹出获取focus",
+                                  "ColumnName": "Integer",
+                                  "GUID": "0a6f4997-8501-4243-88f6-0f750aeef39e"
+                                },
+                                "ColumnName": "Integer"
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "测试关闭弹出获取focus",
+                                  "ColumnName": "Date_and_Time",
+                                  "GUID": "1d80d062-40d2-4629-a923-f90d52a5c093"
+                                },
+                                "ColumnName": "Date_and_Time"
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "测试关闭弹出获取focus",
+                                  "ColumnName": "fieldlength",
+                                  "GUID": "7d68a47d-10ad-4596-9819-030e9379442f"
+                                },
+                                "ColumnName": "fieldlength"
+                              }
+                            ],
+                            "SqlCondition": {
+                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                              "ColumnBindingInfo": {
+                                "TableName": "测试关闭弹出获取focus",
+                                "ColumnName": "ID",
+                                "GUID": "2c0ab372-e845-48c7-adcd-85534737f6d7"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=获取焦点弹出页面!ID"
+                              }
+                            }
+                          },
+                          "ID": "7c0f5cb8850140f7811b15daa9283dd7"
+                        },
+                        {
+                          "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                          "ParameterName": "length",
+                          "ParameterValue": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=LEN(获取焦点弹出页面!文本)"
+                          },
+                          "ID": "34646972e4264e12a94e037475f0545d"
+                        },
+                        {
+                          "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                          "ConditionAndCommandPairList": [
+                            {
+                              "Condition": {
+                                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                "param": {
+                                  "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                  "cellLocations": [
+                                    {
+                                      "SerializeProperty": "=获取焦点弹出页面!length"
+                                    }
+                                  ]
+                                },
+                                "value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=获取焦点弹出页面!tabledata.fieldlength"
+                                },
+                                "compareType": 4
+                              },
+                              "CommandList": [
+                                {
+                                  "$type": "SetFocusCommand.SetFocusCommand, SetFocusCommand",
+                                  "TargetCell": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=获取焦点弹出页面!AH7"
+                                  }
+                                }
+                              ],
+                              "ID": "d14bd0e4-1964-411b-a7a0-0a1b0f483b8b"
+                            },
+                            {
+                              "Condition": {
+                                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                "param": {
+                                  "$type": "Forguncy.Model.IfConditionContextPropertyParam, ServerDesignerCommon",
+                                  "contextProperty": {
+                                    "Display": "数字",
+                                    "ContextInfoType": 2
+                                  }
+                                },
+                                "value": "100",
+                                "compareType": 4
+                              },
+                              "CommandList": [
+                                {
+                                  "$type": "SetFocusCommand.SetFocusCommand, SetFocusCommand",
+                                  "TargetCell": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=获取焦点弹出页面!AH13"
+                                  }
+                                }
+                              ],
+                              "ID": "7f0e54e2-677c-4d8d-bb9b-cad32b9955f3"
+                            },
+                            {
+                              "Condition": {
+                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                "SubConditions": [
+                                  {
+                                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                    "param": {
+                                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                      "cellLocations": [
+                                        {
+                                          "SerializeProperty": "=获取焦点弹出页面!日期"
+                                        }
+                                      ]
+                                    },
+                                    "value": "2023/1/1",
+                                    "compareType": 5
+                                  },
+                                  {
+                                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                    "param": {
+                                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                      "cellLocations": [
+                                        {
+                                          "SerializeProperty": "=获取焦点弹出页面!日期"
+                                        }
+                                      ]
+                                    },
+                                    "value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=TODAY()"
+                                    },
+                                    "compareType": 3
+                                  }
+                                ],
+                                "RelationType": 1
+                              },
+                              "CommandList": [
+                                {
+                                  "$type": "SetFocusCommand.SetFocusCommand, SetFocusCommand",
+                                  "TargetCell": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=获取焦点弹出页面!AH10"
+                                  }
+                                }
+                              ],
+                              "ID": "461ee0a5-ff7e-4d6c-898a-3255df70d751"
+                            },
+                            {
+                              "CommandList": [
+                                {
+                                  "$type": "SetFocusCommand.SetFocusCommand, SetFocusCommand",
+                                  "TargetCell": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=获取焦点弹出页面!BF6"
+                                  }
+                                }
+                              ],
+                              "ID": "f4aa6919-180d-4531-a33d-c5dafbf80ad1"
+                            }
+                          ]
+                        }
+                      ],
+                      "ID": "5a999969-c046-4f36-a48f-754a3a1461fe"
+                    },
+                    {
+                      "CommandList": [],
+                      "ID": "da506421-3ab6-45fa-acbe-146a45f6ab8e"
+                    }
+                  ]
+                }
+              ],
+              "ParamProperties": {
+                "IsOK": "IsOK",
+                "ID": "ID",
+                "文本": "文本",
+                "日期": "日期",
+                "数字": "数字"
+              }
+            },
+            "PageName": "弹出绑定",
+            "PassValues": [
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=获取焦点弹出页面!AH7"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=弹出绑定!G4"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=获取焦点弹出页面!AH10"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=弹出绑定!G6"
+                }
+              },
+              {
+                "Source": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=获取焦点弹出页面!AH13"
+                },
+                "TargetCell": {
+                  "SerializeProperty": "=弹出绑定!G8"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 1
+          }
+        ],
+        "Text": "弹出页面获取焦点",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "9,33": {
+      "BindingInfo": {
+        "TableName": "测试关闭弹出获取focus",
+        "ColumnName": "Date_and_Time",
+        "GUID": "bec91c2d-1c46-457f-b78d-e36135c7add2"
+      },
+      "CellType": {
+        "$type": "Forguncy.DateCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "12,33": {
+      "BindingInfo": {
+        "TableName": "测试关闭弹出获取focus",
+        "ColumnName": "Integer",
+        "GUID": "bdbdf9ba-0260-4a82-b250-352b79815b72"
+      },
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "15,33": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "SetFocusCommand.SetFocusCommand, SetFocusCommand",
+            "TargetCell": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=获取焦点弹出页面!AH7"
+            }
+          },
+          {
+            "$type": "SetFocusCommand.SetFocusCommand, SetFocusCommand",
+            "TargetCell": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=获取焦点弹出页面!AH10"
+            }
+          },
+          {
+            "$type": "SetFocusCommand.SetFocusCommand, SetFocusCommand",
+            "TargetCell": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=获取焦点弹出页面!AH13"
+            }
+          }
+        ],
+        "Text": "设置多个focus",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "21,33": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=获取焦点弹出页面!AG24"
+            },
+            "TargetType": "Forguncy.UserControlPageCellType, ServerDesignerCommon, Version=10.0.0.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "SetUserControlPage",
+            "ParameterValues": {
+              "userControlPageName": null,
+              "propertyValues": {
+                "$type": "System.Collections.Generic.List`1[[Forguncy.UserControlPagePropertyValue, ServerDesignerCommon]], System.Private.CoreLib",
+                "$values": []
+              },
+              "commandHandlers": {
+                "$type": "System.Collections.Generic.List`1[[Forguncy.UserControlPageCommandHandler, ServerDesignerCommon]], System.Private.CoreLib",
+                "$values": []
+              }
+            }
+          }
+        ],
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "23,3": {
+      "ListViewInfo": {
+        "Name": "Listview2",
+        "TableName": "测试关闭弹出获取focus",
+        "RowIndex": 23,
+        "ColumnIndex": 3,
+        "RowCount": 14,
+        "ColumnCount": 28,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Light13",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "23,32": {
+      "CellType": {
+        "$type": "Forguncy.UserControlPageCellType, ServerDesignerCommon",
+        "UserControlPageName": "获取焦点检验框"
+      }
+    },
+    "24,3": {
+      "BindingInfo": {
+        "TableName": "测试关闭弹出获取focus",
+        "ColumnName": "Text",
+        "GUID": "ca635ff8-c2c0-4874-acef-03f8ebb2df90"
+      }
+    },
+    "24,9": {
+      "BindingInfo": {
+        "TableName": "测试关闭弹出获取focus",
+        "ColumnName": "Integer",
+        "GUID": "91580320-6b44-4907-9f03-b4dc5d04bfe5"
+      }
+    },
+    "24,15": {
+      "BindingInfo": {
+        "TableName": "测试关闭弹出获取focus",
+        "ColumnName": "Date_and_Time",
+        "GUID": "fde0a20a-cef7-45cd-b78a-1506c29bfd95"
+      }
+    },
+    "24,25": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "ClosePopupCallbackCommand": {
+              "Commands": [
+                {
+                  "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                  "PropertyItemsList": [
+                    {
+                      "TargetCells": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=获取焦点弹出页面!AH24"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=获取焦点弹出页面!文本"
+                      }
+                    },
+                    {
+                      "TargetCells": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=获取焦点弹出页面!AH27"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=获取焦点弹出页面!日期"
+                      }
+                    },
+                    {
+                      "TargetCells": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=获取焦点弹出页面!AH30"
+                      },
+                      "Value": {
+                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                        "SerializeProperty": "=获取焦点弹出页面!数字"
+                      }
+                    }
+                  ],
+                  "Disabled": true
+                },
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionContextPropertyParam, ServerDesignerCommon",
+                          "contextProperty": {
+                            "Display": "IsOK",
+                            "ContextInfoType": 2
+                          }
+                        },
+                        "value": 1
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                          "ParameterName": "tabledata",
+                          "TableValue": {
+                            "TableName": "测试关闭弹出获取focus",
+                            "TableValueType": 1,
+                            "BindingInfos": [
+                              {
+                                "BindingInfo": {
+                                  "TableName": "测试关闭弹出获取focus",
+                                  "ColumnName": "ID",
+                                  "GUID": "5b1de295-a504-4e5a-972f-ecffd963d32d"
+                                },
+                                "ColumnName": "ID"
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "测试关闭弹出获取focus",
+                                  "ColumnName": "Text",
+                                  "GUID": "436f5423-0500-4217-af27-54dd0f120125"
+                                },
+                                "ColumnName": "Text"
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "测试关闭弹出获取focus",
+                                  "ColumnName": "Integer",
+                                  "GUID": "042da49f-989f-466c-bbb3-b4ecca464f81"
+                                },
+                                "ColumnName": "Integer"
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "测试关闭弹出获取focus",
+                                  "ColumnName": "Date_and_Time",
+                                  "GUID": "62febb3a-e578-4791-822e-b1f335356b3c"
+                                },
+                                "ColumnName": "Date_and_Time"
+                              },
+                              {
+                                "BindingInfo": {
+                                  "TableName": "测试关闭弹出获取focus",
+                                  "ColumnName": "fieldlength",
+                                  "GUID": "599f3b0c-15b9-45be-9c32-68867218adad"
+                                },
+                                "ColumnName": "fieldlength"
+                              }
+                            ],
+                            "SqlCondition": {
+                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                              "ColumnBindingInfo": {
+                                "TableName": "测试关闭弹出获取focus",
+                                "ColumnName": "ID",
+                                "GUID": "570ee1a0-00b0-4f1c-98b7-49affcf294f0"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=获取焦点弹出页面!ID"
+                              }
+                            }
+                          },
+                          "ID": "4e13b267ad1a4dd7a122ee21d3b9fef2"
+                        },
+                        {
+                          "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                          "ParameterName": "length",
+                          "ParameterValue": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=LEN(获取焦点弹出页面!文本)"
+                          },
+                          "ID": "ed7d0b58dabd4e0b9926e358ee83c91b"
+                        },
+                        {
+                          "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                          "ConditionAndCommandPairList": [
+                            {
+                              "Condition": {
+                                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                "param": {
+                                  "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                  "cellLocations": [
+                                    {
+                                      "SerializeProperty": "=获取焦点弹出页面!length"
+                                    }
+                                  ]
+                                },
+                                "value": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=获取焦点弹出页面!tabledata.fieldlength"
+                                },
+                                "compareType": 4
+                              },
+                              "CommandList": [
+                                {
+                                  "$type": "SetFocusCommand.SetFocusCommand, SetFocusCommand",
+                                  "TargetCell": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=获取焦点弹出页面!AH24"
+                                  }
+                                }
+                              ],
+                              "ID": "20c2d7e9-e6d3-4cc8-a6c1-1ea8f1a23f27"
+                            },
+                            {
+                              "Condition": {
+                                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                "param": {
+                                  "$type": "Forguncy.Model.IfConditionContextPropertyParam, ServerDesignerCommon",
+                                  "contextProperty": {
+                                    "Display": "数字",
+                                    "ContextInfoType": 2
+                                  }
+                                },
+                                "value": "100",
+                                "compareType": 4
+                              },
+                              "CommandList": [
+                                {
+                                  "$type": "SetFocusCommand.SetFocusCommand, SetFocusCommand",
+                                  "TargetCell": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=获取焦点弹出页面!AH30"
+                                  }
+                                }
+                              ],
+                              "ID": "91c24c24-aa9c-43f6-8c35-b31f3d831e65"
+                            },
+                            {
+                              "Condition": {
+                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                "SubConditions": [
+                                  {
+                                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                    "param": {
+                                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                      "cellLocations": [
+                                        {
+                                          "SerializeProperty": "=获取焦点弹出页面!日期"
+                                        }
+                                      ]
+                                    },
+                                    "value": "2023/1/1",
+                                    "compareType": 5
+                                  },
+                                  {
+                                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                    "param": {
+                                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                      "cellLocations": [
+                                        {
+                                          "SerializeProperty": "=获取焦点弹出页面!日期"
+                                        }
+                                      ]
+                                    },
+                                    "value": {
+                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                      "SerializeProperty": "=TODAY()"
+                                    },
+                                    "compareType": 3
+                                  }
+                                ],
+                                "RelationType": 1
+                              },
+                              "CommandList": [
+                                {
+                                  "$type": "SetFocusCommand.SetFocusCommand, SetFocusCommand",
+                                  "TargetCell": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=获取焦点弹出页面!AH27"
+                                  }
+                                }
+                              ],
+                              "ID": "0ee4b684-a321-4642-a1e1-eedc7456a3a0"
+                            },
+                            {
+                              "CommandList": [
+                                {
+                                  "$type": "SetFocusCommand.SetFocusCommand, SetFocusCommand",
+                                  "TargetCell": {
+                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                    "SerializeProperty": "=获取焦点弹出页面!BF23"
+                                  }
+                                }
+                              ],
+                              "ID": "2ecf1b26-b4d5-45e0-abd8-df2841c71910"
+                            }
+                          ]
+                        }
+                      ],
+                      "ID": "68766835-352d-4f8d-89cd-873cc2e1ed2e"
+                    },
+                    {
+                      "CommandList": [],
+                      "ID": "65800fb8-ae8a-456f-b7a7-a16acde83cc9"
+                    }
+                  ],
+                  "Disabled": true
+                }
+              ],
+              "ParamProperties": {
+                "IsOK": "IsOK",
+                "ID": "ID",
+                "文本": "文本",
+                "日期": "日期",
+                "数字": "数字"
+              }
+            },
+            "PageName": "弹出绑定",
+            "LoadBindingDataOption": 1
+          }
+        ],
+        "Text": "弹出页面获取焦点",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "WordWrap": true
+      },
+      {
+        "Formatter": 0
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "FontWeight": 2
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 13.333333333333332
+      },
+      {
+        "FontFamily": 1,
+        "FontSize": 13.333333333333332
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "@",
+        "Body",
+        "Bold"
+      ]
+    },
+    "CellStyles": {
+      "2,3": 0,
+      "2,11": 1,
+      "5,3": 2,
+      "5,4": 2,
+      "5,5": 2,
+      "5,6": 2,
+      "5,7": 2,
+      "5,11": 2,
+      "5,12": 2,
+      "5,13": 2,
+      "5,14": 2,
+      "5,15": 2,
+      "5,33": 3,
+      "5,57": 1,
+      "6,3": 4,
+      "6,4": 4,
+      "6,5": 4,
+      "6,6": 4,
+      "6,7": 4,
+      "6,8": 4,
+      "6,9": 5,
+      "6,10": 4,
+      "6,11": 4,
+      "6,12": 4,
+      "6,13": 4,
+      "6,14": 4,
+      "6,15": 5,
+      "6,16": 4,
+      "6,17": 4,
+      "6,18": 4,
+      "6,19": 4,
+      "6,20": 4,
+      "6,21": 4,
+      "6,22": 4,
+      "6,23": 4,
+      "6,24": 4,
+      "6,33": 1,
+      "7,9": 2,
+      "7,15": 2,
+      "7,25": 6,
+      "8,11": 2,
+      "8,33": 3,
+      "9,11": 2,
+      "9,12": 2,
+      "9,13": 2,
+      "9,14": 2,
+      "9,15": 2,
+      "10,11": 2,
+      "11,33": 3,
+      "15,33": 2,
+      "15,34": 2,
+      "15,35": 2,
+      "15,36": 2,
+      "15,37": 2,
+      "16,33": 2,
+      "16,34": 2,
+      "16,35": 2,
+      "16,36": 2,
+      "16,37": 2,
+      "20,39": 2,
+      "23,3": 5,
+      "23,4": 5,
+      "23,5": 5,
+      "23,6": 5,
+      "23,7": 5,
+      "23,8": 5,
+      "23,9": 5,
+      "23,10": 5,
+      "23,11": 5,
+      "23,12": 5,
+      "23,13": 5,
+      "23,14": 5,
+      "23,15": 5,
+      "23,16": 5,
+      "23,17": 5,
+      "23,18": 5,
+      "23,19": 5,
+      "23,20": 5,
+      "23,21": 5,
+      "23,22": 5,
+      "23,23": 5,
+      "23,24": 5,
+      "23,25": 2,
+      "23,26": 2,
+      "23,27": 2,
+      "23,28": 2,
+      "23,29": 2,
+      "23,30": 2,
+      "24,3": 2,
+      "24,4": 2,
+      "24,5": 2,
+      "24,6": 2,
+      "24,7": 2,
+      "24,8": 2,
+      "24,9": 2,
+      "24,10": 2,
+      "24,11": 2,
+      "24,12": 2,
+      "24,13": 2,
+      "24,14": 2,
+      "24,15": 2,
+      "24,16": 2,
+      "24,17": 2,
+      "24,18": 2,
+      "24,19": 2,
+      "24,20": 2,
+      "24,21": 2,
+      "24,22": 2,
+      "24,23": 2,
+      "24,24": 2,
+      "24,25": 7,
+      "24,26": 2,
+      "24,27": 2,
+      "24,28": 2,
+      "24,29": 2,
+      "24,30": 2,
+      "25,3": 2,
+      "25,4": 2,
+      "25,5": 2,
+      "25,6": 2,
+      "25,7": 2,
+      "25,8": 2,
+      "25,9": 2,
+      "25,10": 2,
+      "25,11": 2,
+      "25,12": 2,
+      "25,13": 2,
+      "25,14": 2,
+      "25,15": 2,
+      "25,16": 2,
+      "25,17": 2,
+      "25,18": 2,
+      "25,19": 2,
+      "25,20": 2,
+      "25,21": 2,
+      "25,22": 2,
+      "25,23": 2,
+      "25,24": 2,
+      "25,25": 2,
+      "25,26": 2,
+      "25,27": 2,
+      "25,28": 2,
+      "25,29": 2,
+      "25,30": 2,
+      "26,3": 2,
+      "26,4": 2,
+      "26,5": 2,
+      "26,6": 2,
+      "26,7": 2,
+      "26,8": 2,
+      "26,9": 2,
+      "26,10": 2,
+      "26,11": 2,
+      "26,12": 2,
+      "26,13": 2,
+      "26,14": 2,
+      "26,15": 2,
+      "26,16": 2,
+      "26,17": 2,
+      "26,18": 2,
+      "26,19": 2,
+      "26,20": 2,
+      "26,21": 2,
+      "26,22": 2,
+      "26,23": 2,
+      "26,24": 2,
+      "26,25": 2,
+      "26,26": 2,
+      "26,27": 2,
+      "26,28": 2,
+      "26,29": 2,
+      "26,30": 2,
+      "27,3": 2,
+      "27,4": 2,
+      "27,5": 2,
+      "27,6": 2,
+      "27,7": 2,
+      "27,8": 2,
+      "27,9": 2,
+      "27,10": 2,
+      "27,11": 2,
+      "27,12": 2,
+      "27,13": 2,
+      "27,14": 2,
+      "27,15": 2,
+      "27,16": 2,
+      "27,17": 2,
+      "27,18": 2,
+      "27,19": 2,
+      "27,20": 2,
+      "27,21": 2,
+      "27,22": 2,
+      "27,23": 2,
+      "27,24": 2,
+      "27,25": 2,
+      "27,26": 2,
+      "27,27": 2,
+      "27,28": 2,
+      "27,29": 2,
+      "27,30": 2,
+      "28,3": 2,
+      "28,4": 2,
+      "28,5": 2,
+      "28,6": 2,
+      "28,7": 2,
+      "28,8": 2,
+      "28,9": 2,
+      "28,10": 2,
+      "28,11": 2,
+      "28,12": 2,
+      "28,13": 2,
+      "28,14": 2,
+      "28,15": 2,
+      "28,16": 2,
+      "28,17": 2,
+      "28,18": 2,
+      "28,19": 2,
+      "28,20": 2,
+      "28,21": 2,
+      "28,22": 2,
+      "28,23": 2,
+      "28,24": 2,
+      "28,25": 2,
+      "28,26": 2,
+      "28,27": 2,
+      "28,28": 2,
+      "28,29": 2,
+      "28,30": 2,
+      "29,3": 2,
+      "29,4": 2,
+      "29,5": 2,
+      "29,6": 2,
+      "29,7": 2,
+      "29,8": 2,
+      "29,9": 2,
+      "29,10": 2,
+      "29,11": 2,
+      "29,12": 2,
+      "29,13": 2,
+      "29,14": 2,
+      "29,15": 2,
+      "29,16": 2,
+      "29,17": 2,
+      "29,18": 2,
+      "29,19": 2,
+      "29,20": 2,
+      "29,21": 2,
+      "29,22": 2,
+      "29,23": 2,
+      "29,24": 2,
+      "29,25": 2,
+      "29,26": 2,
+      "29,27": 2,
+      "29,28": 2,
+      "29,29": 2,
+      "29,30": 2,
+      "30,3": 2,
+      "30,4": 2,
+      "30,5": 2,
+      "30,6": 2,
+      "30,7": 2,
+      "30,8": 2,
+      "30,9": 2,
+      "30,10": 2,
+      "30,11": 2,
+      "30,12": 2,
+      "30,13": 2,
+      "30,14": 2,
+      "30,15": 2,
+      "30,16": 2,
+      "30,17": 2,
+      "30,18": 2,
+      "30,19": 2,
+      "30,20": 2,
+      "30,21": 2,
+      "30,22": 2,
+      "30,23": 2,
+      "30,24": 2,
+      "30,25": 2,
+      "30,26": 2,
+      "30,27": 2,
+      "30,28": 2,
+      "30,29": 2,
+      "30,30": 2,
+      "31,3": 2,
+      "31,4": 2,
+      "31,5": 2,
+      "31,6": 2,
+      "31,7": 2,
+      "31,8": 2,
+      "31,9": 2,
+      "31,10": 2,
+      "31,11": 2,
+      "31,12": 2,
+      "31,13": 2,
+      "31,14": 2,
+      "31,15": 2,
+      "31,16": 2,
+      "31,17": 2,
+      "31,18": 2,
+      "31,19": 2,
+      "31,20": 2,
+      "31,21": 2,
+      "31,22": 2,
+      "31,23": 2,
+      "31,24": 2,
+      "31,25": 2,
+      "31,26": 2,
+      "31,27": 2,
+      "31,28": 2,
+      "31,29": 2,
+      "31,30": 2,
+      "32,3": 2,
+      "32,4": 2,
+      "32,5": 2,
+      "32,6": 2,
+      "32,7": 2,
+      "32,8": 2,
+      "32,9": 2,
+      "32,10": 2,
+      "32,11": 2,
+      "32,12": 2,
+      "32,13": 2,
+      "32,14": 2,
+      "32,15": 2,
+      "32,16": 2,
+      "32,17": 2,
+      "32,18": 2,
+      "32,19": 2,
+      "32,20": 2,
+      "32,21": 2,
+      "32,22": 2,
+      "32,23": 2,
+      "32,24": 2,
+      "32,25": 2,
+      "32,26": 2,
+      "32,27": 2,
+      "32,28": 2,
+      "32,29": 2,
+      "32,30": 2,
+      "33,3": 2,
+      "33,4": 2,
+      "33,5": 2,
+      "33,6": 2,
+      "33,7": 2,
+      "33,8": 2,
+      "33,9": 2,
+      "33,10": 2,
+      "33,11": 2,
+      "33,12": 2,
+      "33,13": 2,
+      "33,14": 2,
+      "33,15": 2,
+      "33,16": 2,
+      "33,17": 2,
+      "33,18": 2,
+      "33,19": 2,
+      "33,20": 2,
+      "33,21": 2,
+      "33,22": 2,
+      "33,23": 2,
+      "33,24": 2,
+      "33,25": 2,
+      "33,26": 2,
+      "33,27": 2,
+      "33,28": 2,
+      "33,29": 2,
+      "33,30": 2,
+      "34,3": 2,
+      "34,4": 2,
+      "34,5": 2,
+      "34,6": 2,
+      "34,7": 2,
+      "34,8": 2,
+      "34,9": 2,
+      "34,10": 2,
+      "34,11": 2,
+      "34,12": 2,
+      "34,13": 2,
+      "34,14": 2,
+      "34,15": 2,
+      "34,16": 2,
+      "34,17": 2,
+      "34,18": 2,
+      "34,19": 2,
+      "34,20": 2,
+      "34,21": 2,
+      "34,22": 2,
+      "34,23": 2,
+      "34,24": 2,
+      "34,25": 2,
+      "34,26": 2,
+      "34,27": 2,
+      "34,28": 2,
+      "34,29": 2,
+      "34,30": 2,
+      "35,3": 2,
+      "35,4": 2,
+      "35,5": 2,
+      "35,6": 2,
+      "35,7": 2,
+      "35,8": 2,
+      "35,9": 2,
+      "35,10": 2,
+      "35,11": 2,
+      "35,12": 2,
+      "35,13": 2,
+      "35,14": 2,
+      "35,15": 2,
+      "35,16": 2,
+      "35,17": 2,
+      "35,18": 2,
+      "35,19": 2,
+      "35,20": 2,
+      "35,21": 2,
+      "35,22": 2,
+      "35,23": 2,
+      "35,24": 2,
+      "35,25": 2,
+      "35,26": 2,
+      "35,27": 2,
+      "35,28": 2,
+      "35,29": 2,
+      "35,30": 2,
+      "36,3": 2,
+      "36,4": 2,
+      "36,5": 2,
+      "36,6": 2,
+      "36,7": 2,
+      "36,8": 2,
+      "36,9": 2,
+      "36,10": 2,
+      "36,11": 2,
+      "36,12": 2,
+      "36,13": 2,
+      "36,14": 2,
+      "36,15": 2,
+      "36,16": 2,
+      "36,17": 2,
+      "36,18": 2,
+      "36,19": 2,
+      "36,20": 2,
+      "36,21": 2,
+      "36,22": 2,
+      "36,23": 2,
+      "36,24": 2,
+      "36,25": 2,
+      "36,26": 2,
+      "36,27": 2,
+      "36,28": 2,
+      "36,29": 2,
+      "36,30": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "2,3,2,5",
+    "2,11,2,12",
+    "1,3,1,20",
+    "2,25,2,6",
+    "6,33,2,7",
+    "9,33,2,7",
+    "12,33,2,7",
+    "15,33,2,5",
+    "8,3,12,28",
+    "25,3,12,28",
+    "24,3,1,6",
+    "24,9,1,6",
+    "24,15,1,10",
+    "24,25,1,6",
+    "23,32,16,21",
+    "21,33,2,3",
+    "7,3,1,6",
+    "7,9,1,6",
+    "7,15,1,10",
+    "7,25,1,6",
+    "6,3,1,6",
+    "6,9,1,6",
+    "6,15,1,10",
+    "6,25,1,6",
+    "23,3,1,6",
+    "23,9,1,6",
+    "23,15,1,10",
+    "23,25,1,6"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "RelatedDataTableName": "测试关闭弹出获取focus"
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//hQx8M4IBpHdO8HmCP/3uh0pFUFTxdERhF7TTBgRN/VoEhp8VRlJ/O15EC+fZqDlSkhB6klJ3Wlr4hMuYE6WX/srVDVmqrHpxkvfdv7vBgTk+GsegIx9PQ3XqW4kCT6ZQUZtuL78dMadURIk5KZxLdFuJ7y21Oi5bHxtgz/BTLlTExhvkU5jI4RY6A92fjg3MuY5uuz8D/VA3fEjtHZb0So1HSmLBrQfiiXZXtB6ohLx0MItvyjf+pWqu3phpODiz+uB18wnZ92TIsNKcpmbNI0xINIE7RkIbklcGtzIJSAU6XPNVU0B9TkML6vWvkgj/z28nStT3Xeg8cfcuWusxvzUOGT/JpaKYF0xRsiCu9+PASzhZ/OaoRdLDhoOJH9PFbZ4DjCf0akbjyEkZqkT2Z1K+TpLs70Ta7g/r6kgZDKljcY8/X9ff1t/SP0VHVfoe5zBJrMYnWvmuzAXaGPTbWMM+qER7hy8tRZXPE2EFR83ubn4ZUS1sqBUByhRYVQCyR52DSLwiUqmMU9ztAdtEm7sZ5JiYpmjwFwbXtMPgRudb9viv92C664Vz6TUgn59NAw08aGJMHEJmQb3WJdhFFm+N5oNRRvsqicXX0on2THlWo1wVtLJ/GstDVuQxQlW0/61hGYufeVwIZdi2jaGdTD7kKr4dZIB5Mq10Osk/+yZNJj1hNdVkIXLrVaD/CDzrDuClbyLzo5OlTY3oBLjghMO+xqS75rfRytaC3fefut7qZqbCMdUt5ES/FvHyukSLjjm0SmLcfUbo/ulDZs+5Tb+9nSyk0fM0Z7Um+nfyPeX++d8pkjfVsK+yP7eckbhHq3irH3HEYDMw6NynZ4PtWlkRB8Z7Dp/UEpXEAvRXWp2wJY/YEF4fxhXrH55UKCMMyVsaaGNP+7XJJSACm0Y+zQ==|920

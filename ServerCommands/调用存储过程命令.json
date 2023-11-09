@@ -1,0 +1,74 @@
+{
+  "Name": "调用存储过程命令",
+  "Enabled": true,
+  "Triggers": [
+    {
+      "$type": "Forguncy.SaveLoad.PostRequestTriggerSaveData, ServerDesignerCommon",
+      "Permission": {
+        "PermissionData": {
+          "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionData, Forguncy.RbacPermission.Core",
+          "permissionResource": {
+            "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionResource, Forguncy.RbacPermission.Core"
+          },
+          "permissionBindings": [
+            {
+              "$type": "Forguncy.RbacPermission.Core.Impl.ServerCommand.ServerCommandPermissionBinding, Forguncy.RbacPermission.Core",
+              "roleNames": [
+                "FGC_LoginUser"
+              ]
+            }
+          ]
+        }
+      },
+      "Parameters": [
+        {
+          "ArrayItems": [],
+          "Name": "parameter",
+          "DataValidationInfo": {},
+          "TestData": "1"
+        }
+      ],
+      "InvokeTriggerTestData": {
+        "UserName": "Administrator"
+      }
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.CallStoredProcedureCommand, ServerDesignerCommon",
+      "ConnectionStringID": "SqlServer1",
+      "Name": "InsertIntoMyTable",
+      "DisplayNameInDesigner": "[dbo].[InsertIntoMyTable]",
+      "Parmeters": [
+        {
+          "Name": "Column1",
+          "Value": "Text1",
+          "DataType": "nvarchar"
+        },
+        {
+          "Name": "Column2",
+          "Value": "Text2",
+          "DataType": "nvarchar"
+        },
+        {
+          "Name": "Column3",
+          "Value": "17",
+          "DataType": "int"
+        }
+      ],
+      "ReturningValue": "result",
+      "AllowAcessRoleList": [
+        "FGC_LoginUser"
+      ],
+      "ID": "c3a6fc50393641339a773b16d432b45d"
+    }
+  ],
+  "ReturnProperties": [
+    {
+      "Name": "ReturnValue1"
+    },
+    {
+      "Name": "ReturnValue2"
+    }
+  ]
+}

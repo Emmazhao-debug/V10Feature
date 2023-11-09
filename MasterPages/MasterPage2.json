@@ -1,0 +1,113 @@
+{
+  "Rows": {
+    "Count": 24
+  },
+  "Cols": {
+    "Count": 44
+  },
+  "Values": {
+    "21,26": "打印",
+    "21,33": "取消"
+  },
+  "AttachInfos": {
+    "2,2": {
+      "IsPlaceHolderCell": true
+    },
+    "21,26": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ClosePopupReturnValues": [
+              {
+                "Name": "ok返回值",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=MasterPage2!currentrow"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "打印",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "21,33": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+            "ParameterName": "testdarta",
+            "ParameterValue": "cancel 返回值",
+            "ID": "a17a87a9a9da41378b5d75b06e6e3108"
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ClosePopupResult": 1,
+            "ClosePopupReturnValues": [
+              {
+                "Name": "cancel返回值",
+                "Value": "testdarta"
+              }
+            ]
+          }
+        ],
+        "Text": "取消",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "21,26": 0,
+      "21,27": 0,
+      "21,28": 0,
+      "21,29": 0,
+      "21,30": 0,
+      "21,31": 0,
+      "21,32": 0,
+      "21,33": 0,
+      "21,34": 0,
+      "21,35": 0,
+      "22,26": 0,
+      "22,27": 0,
+      "22,28": 0,
+      "22,29": 0,
+      "22,30": 0,
+      "22,31": 0,
+      "22,32": 0,
+      "22,33": 0,
+      "22,34": 0,
+      "22,35": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "2,2,17,40",
+    "21,26,2,3",
+    "21,33,2,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.MasterPage, ServerDesignerCommon",
+    "PageLoadedCommandList": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//gpSlIn49q9qoYGcJqG7mM/KXcvsIqkANtaBJWCphn0GJHUW3cWlfPt/l2UHEY3kQ2ojPDuKegjMWf7pWOlvg3fuDRRJIgLp2C+7QyAI/t96m56OxeCtLmGuYoWphHn2uXoXi34gi6lFyBwogNzCpYMRnLH9VgM0Z7WPlDooI0Y0c9uWKa4MKNQMdITojGSk4t9/7/pi9SdZ+74gBJxJEnVVgsunR1RwJb0fiZMbqwz6TbInzxPGGKZJozvOUT3HBYiXQy3zEckt6C+BHeho9aDnJnOR8kB6HO8Da7g1E/BAe1NWYlFK3A5hVgtIhqLQAvcQ10iLW1eNhxjUPwI8KKexA+SbqqoyBdJy6gYgXweK2ipdvu3O4Iw/ImF3YVWj9JN5C+14hDVGQK7UWolSPPF32zdEPW7sskij7Glls9/bT6Cb+g71w53pSTlq/5Z3UO5Z9kbfEvIDNo7Ka7YQDTrClOMOMJk/LWnkLu1Cl+X1awqzbQCCmkjJpJfd5/zhR3tkGjSgdCTEMNvsmWyBhvobwLpbvQxSoJ6wJlnxk5gJEdfssWBvA8+KeL2dAt08gqo5cjTG6JKEkap2AVwhK8Esk71pf6RAmz5a0Bje2dnXLX4YeRzA2R4kEw853IixX6ujs08sFgJCQti1F9hkQPuQ2u7z0PTR9dB5Xd0KlmcMQpj0bwZjjCZNLMKCZ/ph6fJe+uI9Cbyzn/E0OryrMqVgOIfzyrrxFdpmZbQQEcJa8i9YtfJ1I1wJFaSj0nPl/81Mmy6st6ypkN9/r6IWZ4P+K080zuUvWIQKQbYqe/wz1TJQMwOIaYhUBOy3XG2/1INHuY29xNcTjCE4f6RaVQdDOqo2tsCcUbRCkE02+LQdKdUFifT9c9jn8RY0cqUkLQzACVsgKCGv1DHDrGDzCVg==|920

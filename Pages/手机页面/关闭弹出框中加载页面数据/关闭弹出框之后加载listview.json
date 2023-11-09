@@ -1,0 +1,214 @@
+{
+  "Rows": {
+    "Count": 24
+  },
+  "Cols": {
+    "Count": 18
+  },
+  "Values": {
+    "1,12": "show popup"
+  },
+  "AttachInfos": {
+    "1,12": {
+      "CellComment": {
+        "Comments": "ok---> reload listview\r\ncancel--> reload page"
+      },
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "ClosePopupCallbackCommand": {
+              "Commands": [
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                        "SubConditions": [
+                          {
+                            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                            "param": {
+                              "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                              "cellLocations": [
+                                {
+                                  "SerializeProperty": "=关闭弹出框之后加载listview!IsOK"
+                                }
+                              ]
+                            },
+                            "value": "1"
+                          },
+                          {
+                            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                            "param": {
+                              "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                              "cellLocations": [
+                                {
+                                  "SerializeProperty": "=关闭弹出框之后加载listview!ReturnValue1"
+                                }
+                              ]
+                            },
+                            "value": "50",
+                            "compareType": 2
+                          }
+                        ]
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                          "ListviewName": "Listview1",
+                          "UpdateType": 6,
+                          "UpdateListviewCommandRunTimeMethodSetting": {
+                            "MethodName": "Reload",
+                            "ParameterValues": {
+                              "clearFilter": true,
+                              "clearSort": true
+                            }
+                          }
+                        }
+                      ],
+                      "ID": "4c1ff64c-612b-4eb5-b244-1a303f2dcd4b"
+                    },
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                          "cellLocations": [
+                            {
+                              "SerializeProperty": "=关闭弹出框之后加载listview!IsOK"
+                            }
+                          ]
+                        },
+                        "value": "0"
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+                          "LoadingTextColor": "Background 1 0"
+                        },
+                        {
+                          "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
+                          "JavaScript": "location.reload();",
+                          "ID": "6ec925fc75fc480bbdb0bfc0d10757c0"
+                        },
+                        {
+                          "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
+                        }
+                      ],
+                      "ID": "d7e43cfd-95f1-4418-94a2-7e21f6325341"
+                    }
+                  ]
+                }
+              ],
+              "ParamProperties": {
+                "IsOK": "IsOK",
+                "ReturnValue1": "ReturnValue1",
+                "cancelvalue": "cancelvalue"
+              }
+            },
+            "PageName": "目标页面",
+            "DeleteCachedQuery": true
+          }
+        ],
+        "Text": "show popup",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "4,1": {
+      "ListViewInfo": {
+        "Name": "Listview1",
+        "TableName": "汽车企业信息",
+        "RowIndex": 4,
+        "ColumnIndex": 1,
+        "RowCount": 17,
+        "ColumnCount": 16,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "5,1": {
+      "NameUsedInJavaScript": "企业",
+      "BindingInfo": {
+        "TableName": "汽车企业信息",
+        "ColumnName": "企业",
+        "GUID": "a08e7b59-34eb-4b66-b0d9-3cd3591e3d04"
+      }
+    },
+    "5,5": {
+      "NameUsedInJavaScript": "联系人",
+      "BindingInfo": {
+        "TableName": "汽车企业信息",
+        "ColumnName": "联系人",
+        "GUID": "5f62ba4d-eca8-4ebf-a0b6-a39c0f5c1e09"
+      }
+    },
+    "5,9": {
+      "NameUsedInJavaScript": "电话",
+      "BindingInfo": {
+        "TableName": "汽车企业信息",
+        "ColumnName": "电话",
+        "GUID": "6c2d975c-4d54-4c5a-8646-80f984cc6267"
+      }
+    },
+    "5,13": {
+      "NameUsedInJavaScript": "地址",
+      "BindingInfo": {
+        "TableName": "汽车企业信息",
+        "ColumnName": "地址",
+        "GUID": "16aa5648-f01a-4ea2-82d3-01189738b674"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Types": {
+      "Strs": [
+        "Body"
+      ]
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "5,1,1,4",
+    "5,5,1,4",
+    "5,9,1,4",
+    "5,13,1,4",
+    "6,1,15,16",
+    "1,12,2,5",
+    "4,1,1,4",
+    "4,5,1,4",
+    "4,9,1,4",
+    "4,13,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": [],
+    "IsMobilePage": true
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//F2ILKpqX3W44moL+uBVcrtahwCHjq5Ns90eNbLM74eIWfiGiuyW64hCPu42fgzzjwIr+n11LVbRNMih5ZQlwK67nUghGe2vZAAkoyGUF+zPaZlmj5akP+lskcDVr05SyAwhIk6ro0s8+0+Z/ntRICpITrwNICd+LptCVPsSFCGgX1gOWYkX5GbCBM1NBThv9oih+hHv7m/65RsZ4FXndg0PRySdGqMZo/dOGNyJr6yz/6Eggghj3sQg+php3QimHslTrwEjdSOGNcQVzHQiXiBeNFtKZWTUpNmp1tqBnVD8mKedWuuPuJ75Xd5JlHScSVfKCqGPIQhSv9CkGd/7S4Z4ZURtDXVPUmALPedQoGE/byjOG0K7qQmw87K6Fk1PoeeHisQM4vfwRW70YgkAD389srj/fv/qufE/icm7i1xHUuX+nyXKgCHEvyiSb/SUvNr6QpDVyGH5eW8STAiytoPYcBTz4xuTziV8CRUzebQFxnl1V9rNwV+8YN3Q+x9qsFPYGYRTAU53sREihuXDN4Z+OLQUjhpAXIR3NYIl0Sf9zagJs5EwvxQPCF6iQNz73MUG4K/4+4WwiO/WuG7CY9HxI3yc1hfayeghlZVKBWqN0JbHEaY/3ZLDxKAh8VhdCWCgXhpKGDSGyASbPFJdshjHZvDMRr79RBM27HoFTdj1fStm8d3W0ZqFJ2umXPti6xj2wqA3BXvwb95jDScfTwMgyAf4kkeMNTzuSSGbzNFHknqQBTyR9d61mi0goTaHn/ZY49ptk0zGA0zJNGhkX/M38xRPrZmOnufzYeFOpf4vq0mXPGc+AEkgj81Mvx3PwTif6xsBUhpoh7dzE7WLYS7oXUP23OeSyNz0X6nHtS+eAh0NrKKXlZ1E+WZSpdsBR/K2P2a1fDR7VwmsLpJq9zA==|920

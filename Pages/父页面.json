@@ -1,0 +1,213 @@
+{
+  "Rows": {
+    "Count": 25
+  },
+  "Cols": {
+    "Count": 26
+  },
+  "Values": {
+    "3,2": "level1"
+  },
+  "AttachInfos": {
+    "3,2": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "ClosePopupCallbackCommand": {
+              "Commands": [
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionContextPropertyParam, ServerDesignerCommon",
+                          "contextProperty": {
+                            "Display": "IsOK",
+                            "ContextInfoType": 2
+                          }
+                        },
+                        "value": "1"
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                          "TableName": "Table1",
+                          "UpdateType": "add",
+                          "ShowConfirm": false,
+                          "UpdateBindingValues": [
+                            {
+                              "BindingInfo": {
+                                "TableName": "Table1",
+                                "ColumnName": "Text",
+                                "GUID": "b7cee80e-7724-40a2-8105-5f62ddc5c387"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=父页面!IsOK"
+                              }
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "Table1",
+                                "ColumnName": "Text1",
+                                "GUID": "3c8f6613-b509-4252-8ebd-799b26f931b1"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=父页面!ok_001"
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      "ID": "2526c308-4bec-4bad-939b-c4151f070388"
+                    },
+                    {
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                          "TableName": "Table1",
+                          "UpdateType": "add",
+                          "ShowConfirm": false,
+                          "UpdateBindingValues": [
+                            {
+                              "BindingInfo": {
+                                "TableName": "Table1",
+                                "ColumnName": "Text",
+                                "GUID": "743d314b-1e2c-455c-8075-384e4149df85"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=父页面!IsOK"
+                              }
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "Table1",
+                                "ColumnName": "Text1",
+                                "GUID": "b30771fc-c93b-4223-bfac-143f095a75c7"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=父页面!cancel_001"
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      "ID": "2b412ae4-1d2a-404e-84a2-5a9394a9ef5b"
+                    }
+                  ]
+                }
+              ],
+              "ParamProperties": {
+                "IsOK": "IsOK",
+                "ok_001": "ok_001",
+                "cancel_001": "cancel_001"
+              }
+            },
+            "PageName": "level1"
+          }
+        ],
+        "Text": "level1",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "7,2": {
+      "ListViewInfo": {
+        "Name": "Listview1",
+        "TableName": "Table1",
+        "RowIndex": 7,
+        "ColumnIndex": 2,
+        "RowCount": 14,
+        "ColumnCount": 21,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "8,2": {
+      "NameUsedInJavaScript": "ID",
+      "BindingInfo": {
+        "TableName": "Table1",
+        "ColumnName": "ID",
+        "GUID": "3c55b3d6-e769-4784-a496-cf941724ef2d"
+      }
+    },
+    "8,6": {
+      "NameUsedInJavaScript": "Text",
+      "BindingInfo": {
+        "TableName": "Table1",
+        "ColumnName": "Text",
+        "GUID": "491d080a-80a4-4dd0-99a3-95e5b5a3aa64"
+      }
+    },
+    "8,10": {
+      "NameUsedInJavaScript": "Text1",
+      "BindingInfo": {
+        "TableName": "Table1",
+        "ColumnName": "Text1",
+        "GUID": "fe4c8920-fdba-4065-a87c-1cd4f900f380"
+      }
+    },
+    "8,14": {
+      "BindingInfo": {
+        "TableName": "Table1",
+        "ColumnName": "FGC_CreateDate",
+        "GUID": "3623a9fe-b062-4e24-a961-00174f973e01"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Types": {
+      "Strs": [
+        "Body"
+      ]
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "3,2,2,5",
+    "9,2,12,21",
+    "8,2,1,4",
+    "8,6,1,4",
+    "8,10,1,4",
+    "8,14,1,9",
+    "7,2,1,4",
+    "7,6,1,4",
+    "7,10,1,4",
+    "7,14,1,9"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//4VjvzG8+qnQbQpE++a0SPiETZ0MxZp4hs1aVeS8F9tlMzfU8vq5LgSUXed58aDzvk44RuPe3u7HB6n9UkAdd4YF/vUAI/FYWuZBLy4LxZQYkkrdXPl7kUoqxxdy8eAxc+sEyU0jECqig6XhmOGFsUFmNcG7BH/VJhapI7RILoKlexykQrOYnk8qF+IoHFotADuH0tnR1oZf73SC/TIwlSnTRf5enAw8UL2FdLNXnUJukIyukCjDNIEJNYZwhwYmqo0vEvRvn5XYkuDU0J946hKHqwigXRKNsRfjFJqrVJNXBYs9v+gxZVqsZPo8vONtu8885Jg2v5YXx/r3mv6UuM1/Ryq5XOfKvwqDFsKS/jLFUEL3XrjxFhqG/e/2ZlvRDm/8XeweXH5v8RMdQSmNPeCD2nHwFq7B1n9/uEe9yYD4DQNlxyB0C5zBHv6UJILjzukgiqzUsLrc35nMdQaZmq+clsEPkf+utx0I2v2QKKj/US4mDSrDkWplOSNGuATd2L2SQyVxvqQEqbLahgRqkYzqPskHuTVNEQnridDA3h7dUbd9YPbRJbvGwn5R0mwQ5Ai3KsdhS+LTCjccmZxXf7rn2Io39nA78tJQBP+kTgHJwJ6/EBfQ9vhKnuZyOYRU3Z2m0XBq8Fqlys59SxAkfS+/usj/Cn7eJWvqXpoZ7hqGeOP3oyakDItpkR02Kdq4CP3Tk2pPHhEHvhBMEqc4RBSj23ftpDaivpH6kcDQA+EwiIF9Dc0OBYLclGZXGju/Ht2uls9vLRqAlLejkD9urtLDzb33q2FsPtsAA11ZeXDmkBbfAoT1WbtLXYg8bPvaCz1lRGsdWq6B6dTRAztiQtSEdPxsL7rKKGStQJLyGIhXOx7iStBcK1LcLyfaH2Y3SynwFlv6N9JqYJulqDjwINA==|920

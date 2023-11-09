@@ -1,0 +1,683 @@
+[
+  {
+    "ModuleName": "Tables/测试查询数据表",
+    "ModuleType": 22
+  },
+  {
+    "ModuleName": "Table/FGC_产品表",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/basictesttable",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/销售明细",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/类别名称",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/支付方式",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/测试关闭弹出获取focus",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/原始题库",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/题目答案",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/汽车企业信息",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/loopcommand",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/MyTable",
+    "ModuleType": 7
+  },
+  {
+    "ModuleName": "Table/originaltable",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/targetTable",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Table/Table1",
+    "ModuleType": 7,
+    "ExclusiveType": 0
+  },
+  {
+    "ModuleName": "Pages/Built-in Pages",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/Disconnected",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/Built-in Pages (Mobile)",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "MobilePage/Disconnected (Mobile)",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "PCPage/基础功能测试",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/masterPage",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/detailspage",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/刷新父页面数据",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/父页面未判断弹出框的返回值",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/父页面判断弹出框的返回值",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/子页面",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/子页面01",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/子页面withoutok",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/弹出查询",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/查询页",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/绑定数据源-Repeater",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/弹出查询/弹出页面上的查询结果返回给父页面",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/绑定表格",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/子页面上执行查询命令",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/弹出查询/值回传",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/查询页_值回传",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/绑定数据源_隐藏格子",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/弹出多个popup",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/弹出查询组合框",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/高级查询页面",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/编辑类别",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/编辑支付方式",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/图表绑定数据源",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/测试绑定对象为datasource",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/高级查询页面_forChart",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/关闭弹出框后设置focus",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/获取焦点弹出页面",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "MobilePage/单焦点弹出页面",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "PCPage/弹出页面是组件-带实现",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/Page1",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/弹出绑定",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/弹出未绑定",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/连续弹出多个弹出框",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "Pages/连续弹出多个弹出框/basictest",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/Page2",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/Page3",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/Page4",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/连续弹出多个弹出框/性格测试问题",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/起始页面",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/Page6",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/firstversion",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/测试case",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/basictestcase",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/basictestcase1",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/basictestcase2",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/弹出页面",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/编辑详情页面",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/父页面传递查询结果",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/测试case/页面上只有ok",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/页面上只有ok按钮",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/页面上只有cancel按钮",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/包含ok和cancle 按钮",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/验证不同的命令",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/页面弹出命令",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/页面弹出命令 (2)",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/页面容器",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/在页面容器中弹出页面",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/弹出页面上包含页面容器",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/页面弹出命令 (3)",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/Page5",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/弹出页面有TabControl",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/弹出页面有UserControl",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/弹出页和MasterPage",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/父页面",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/level1",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/level2",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/level3",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/手机页面",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "Pages/手机页面/连续弹出多个页面",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "MobilePage/父页面p",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/level1p",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/level2p",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/level3p",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "Pages/手机页面/关闭弹出框中加载页面数据",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "MobilePage/关闭弹出框之后加载listview",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/目标页面",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "Pages/手机页面/关闭页面获取焦点",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "MobilePage/关闭弹出框之后加载listview (2)",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/选中cobo",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/数据校验",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/弹出绑定p",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "Pages/手机页面/高级查询",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "MobilePage/高级弹出框",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/Page8",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/居中对齐",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/Drawer",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/conver",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "Pages/ビルトイン ページ",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "PCPage/FGC_パスワードの変更",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_パスワードを忘れた場合",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_プロファイルの編集",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_ログイン",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_パスワードのリセット用リンクの送信",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_パスワードのリセット",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_401ページ",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_ただいまメンテナンス中です",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_メールサブスクリプション",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_認証アプリの構成",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "PCPage/FGC_コードの入力",
+    "ModuleType": 1
+  },
+  {
+    "ModuleName": "Pages/ビルトイン モバイルページ",
+    "ModuleType": 6
+  },
+  {
+    "ModuleName": "MobilePage/FGC_パスワードの変更_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_パスワードを忘れた場合_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_プロファイルの編集_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_ログイン_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_パスワードのリセット用リンクの送信_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_パスワードのリセット_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_401ページ_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_ただいまメンテナンス中です_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_メールサブスクリプション_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_認証アプリの構成_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MobilePage/FGC_コードの入力_モバイル",
+    "ModuleType": 2
+  },
+  {
+    "ModuleName": "MasterPCPage/Default Master",
+    "ModuleType": 3
+  },
+  {
+    "ModuleName": "MasterPCPage/MasterPage1",
+    "ModuleType": 3
+  },
+  {
+    "ModuleName": "MasterPCPage/MasterPage2",
+    "ModuleType": 3
+  },
+  {
+    "ModuleName": "MasterPCPage/FGC_ユーザーマスターページ",
+    "ModuleType": 3
+  },
+  {
+    "ModuleName": "UserControlPage/组件弹出框",
+    "ModuleType": 31
+  },
+  {
+    "ModuleName": "UserControlPage/弹出组件设置框",
+    "ModuleType": 31
+  },
+  {
+    "ModuleName": "UserControlPage/获取焦点检验框",
+    "ModuleType": 31
+  },
+  {
+    "ModuleName": "UserControlPage/性格跳转题数",
+    "ModuleType": 31
+  },
+  {
+    "ModuleName": "ServerCommand/调用存储过程命令",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/是否订阅成功",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/waitcommand",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ServerCommand/GetTableData",
+    "ModuleType": 15
+  },
+  {
+    "ModuleName": "ShareCommandContainer/resetcell",
+    "ModuleType": 36
+  },
+  {
+    "ModuleName": "ShareCommandContainer/关闭弹出框调用命令",
+    "ModuleType": 36
+  },
+  {
+    "ModuleName": "ShareCommandContainer/关闭弹出框调用命令1",
+    "ModuleType": 36
+  },
+  {
+    "ModuleName": "PageReport/Report1",
+    "ModuleType": 17
+  },
+  {
+    "ModuleName": "Notification/修改数据表提示",
+    "ModuleType": 34
+  },
+  {
+    "ModuleName": "ApplicationSetting",
+    "ModuleType": 8
+  },
+  {
+    "ModuleName": "Theme",
+    "ModuleType": 9
+  },
+  {
+    "ModuleName": "image/Built-in Images",
+    "ModuleType": 37
+  },
+  {
+    "ModuleName": "Image/fgc_built-in-page-401.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/fgc_built-in-page-logo.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/fgc_built-in-page-maintained.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/fgc_built_in_page_disconnected.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/fgc_loading.gif",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/fgc_logo_dark.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/fgc_logo_light.png",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "Image/camera.jpg",
+    "ModuleType": 38
+  },
+  {
+    "ModuleName": "UserService",
+    "ModuleType": 11
+  },
+  {
+    "ModuleName": "CustomLibrary",
+    "ModuleType": 12
+  },
+  {
+    "ModuleName": "MapJsonFile",
+    "ModuleType": 14
+  },
+  {
+    "ModuleName": "DataContectionSet",
+    "ModuleType": 25
+  },
+  {
+    "ModuleName": "Upload",
+    "ModuleType": 26
+  },
+  {
+    "ModuleName": "PublishConfiguration",
+    "ModuleType": 39
+  },
+  {
+    "ModuleName": "Plugin",
+    "ModuleType": 40
+  },
+  {
+    "ModuleName": "PublishSetting",
+    "ModuleType": 41
+  }
+]

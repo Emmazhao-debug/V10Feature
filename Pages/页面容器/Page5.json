@@ -1,0 +1,474 @@
+{
+  "Rows": {
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "1,26": "ReturnValue1",
+    "2,2": "弹出页面上包含页面容器",
+    "2,10": "弹出页面上包含页面容器",
+    "2,18": "弹出页面有UserControl",
+    "4,26": "ReturnValue2",
+    "5,2": "弹出页和MasterPage",
+    "7,26": "ReturnValue3",
+    "8,2": "ok返回值",
+    "10,2": "cancel返回值",
+    "10,26": "ReturnValue4"
+  },
+  "AttachInfos": {
+    "2,2": {
+      "CellComment": {
+        "Comments": "页面容器中的关闭弹出框命令包含返回值，调用的时候无法获取到返回值；但是用户可以通过写返回值名称调用该参数"
+      },
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "ClosePopupCallbackCommand": {
+              "Commands": [
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                          "cellLocations": [
+                            {
+                              "SerializeProperty": "=Page5!IsOK"
+                            }
+                          ]
+                        },
+                        "value": "1"
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                          "MessageFormula": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=Page5!IsOK&Page5!当前行信息"
+                          }
+                        }
+                      ],
+                      "ID": "c6f56124-7e33-4d58-84dc-8f4d45c95594"
+                    }
+                  ]
+                }
+              ],
+              "ParamProperties": {
+                "IsOK": "IsOK"
+              }
+            },
+            "PageName": "弹出页面上包含页面容器"
+          }
+        ],
+        "Text": "弹出页面上包含页面容器",
+        "TemplateKey": "_RS_Normal_Style6"
+      }
+    },
+    "2,10": {
+      "CellComment": {
+        "Comments": "页面容器中的关闭弹出框命令包含返回值，调用的时候无法获取到返回值；但是用户可以通过写返回值名称调用该参数"
+      },
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "ClosePopupCallbackCommand": {
+              "Commands": [
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                          "cellLocations": [
+                            {
+                              "SerializeProperty": "=Page5!IsOK"
+                            }
+                          ]
+                        },
+                        "value": "1"
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                          "MessageFormula": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=Page5!IsOK&Page5!当前行信息"
+                          }
+                        }
+                      ],
+                      "ID": "a5f974c5-a8ec-467d-9d18-cec98c314bc4"
+                    }
+                  ]
+                }
+              ],
+              "ParamProperties": {
+                "IsOK": "IsOK"
+              }
+            },
+            "PageName": "弹出页面有TabControl"
+          }
+        ],
+        "Text": "弹出页面上包含页面容器",
+        "TemplateKey": "_RS_Normal_Style6"
+      }
+    },
+    "2,18": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "ClosePopupCallbackCommand": {
+              "Commands": [
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                          "cellLocations": [
+                            {
+                              "SerializeProperty": "=Page5!IsOK"
+                            }
+                          ]
+                        },
+                        "value": "1"
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                          "PropertyItemsList": [
+                            {
+                              "TargetCells": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=Page5!AA3"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=Page5!ReturnValue1"
+                              }
+                            },
+                            {
+                              "TargetCells": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=Page5!AA6"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=Page5!ReturnValue2"
+                              }
+                            },
+                            {
+                              "TargetCells": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=Page5!AA9"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=Page5!ReturnValue3"
+                              }
+                            },
+                            {
+                              "TargetCells": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=Page5!AA12"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=Page5!ReturnValue4"
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      "ID": "13ea7842-8782-4d70-9da3-721e6658fd59"
+                    }
+                  ]
+                }
+              ],
+              "ParamProperties": {
+                "IsOK": "IsOK"
+              }
+            },
+            "PageName": "弹出页面有UserControl"
+          }
+        ],
+        "Text": "弹出页面有UserControl",
+        "TemplateKey": "_RS_Normal_Style6"
+      }
+    },
+    "5,2": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "ClosePopupCallbackCommand": {
+              "Commands": [
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionContextPropertyParam, ServerDesignerCommon",
+                          "contextProperty": {
+                            "Display": "IsOK",
+                            "ContextInfoType": 2
+                          }
+                        },
+                        "value": 1
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                          "PropertyItemsList": [
+                            {
+                              "TargetCells": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=Page5!C10"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=Page5!ok返回值"
+                              }
+                            },
+                            {
+                              "TargetCells": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=Page5!C10"
+                              },
+                              "PropertyType": 2,
+                              "Value": "Accent 6 80"
+                            }
+                          ]
+                        }
+                      ],
+                      "ID": "19739620-ee6f-4d4c-9d93-71d1917ce8b1"
+                    },
+                    {
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                          "PropertyItemsList": [
+                            {
+                              "TargetCells": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=Page5!C12"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=Page5!cancel返回值"
+                              }
+                            },
+                            {
+                              "TargetCells": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=Page5!C12"
+                              },
+                              "PropertyType": 3,
+                              "Value": "Accent 6 0"
+                            }
+                          ]
+                        }
+                      ],
+                      "ID": "0d4b3c1e-a58c-43ab-9476-7a5de02577d9"
+                    }
+                  ]
+                }
+              ],
+              "ParamProperties": {
+                "IsOK": "IsOK"
+              }
+            },
+            "PageName": "弹出页和MasterPage"
+          }
+        ],
+        "Text": "弹出页和MasterPage",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "9,2": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "11,2": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 0,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "Formatter": 1
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "@"
+      ]
+    },
+    "CellStyles": {
+      "2,2": 0,
+      "2,10": 1,
+      "2,11": 2,
+      "2,12": 2,
+      "2,13": 2,
+      "2,14": 2,
+      "2,15": 2,
+      "3,10": 2,
+      "3,11": 2,
+      "3,12": 2,
+      "3,13": 2,
+      "3,14": 2,
+      "3,15": 2,
+      "5,2": 0,
+      "5,26": 2,
+      "5,27": 2,
+      "5,28": 2,
+      "5,29": 2,
+      "5,30": 2,
+      "5,31": 2,
+      "5,32": 2,
+      "5,33": 2,
+      "6,26": 2,
+      "6,27": 2,
+      "6,28": 2,
+      "6,29": 2,
+      "6,30": 2,
+      "6,31": 2,
+      "6,32": 2,
+      "6,33": 2,
+      "8,26": 2,
+      "8,27": 2,
+      "8,28": 2,
+      "8,29": 2,
+      "8,30": 2,
+      "8,31": 2,
+      "8,32": 2,
+      "8,33": 2,
+      "9,2": 3,
+      "9,26": 2,
+      "9,27": 2,
+      "9,28": 2,
+      "9,29": 2,
+      "9,30": 2,
+      "9,31": 2,
+      "9,32": 2,
+      "9,33": 2,
+      "11,2": 4,
+      "11,3": 2,
+      "11,4": 2,
+      "11,5": 2,
+      "11,6": 2,
+      "11,7": 2,
+      "11,8": 2,
+      "11,9": 2,
+      "11,10": 2,
+      "11,11": 2,
+      "11,12": 2,
+      "11,13": 2,
+      "11,14": 2,
+      "11,15": 2,
+      "11,26": 2,
+      "11,27": 2,
+      "11,28": 2,
+      "11,29": 2,
+      "11,30": 2,
+      "11,31": 2,
+      "11,32": 2,
+      "11,33": 2,
+      "12,26": 2,
+      "12,27": 2,
+      "12,28": 2,
+      "12,29": 2,
+      "12,30": 2,
+      "12,31": 2,
+      "12,32": 2,
+      "12,33": 2,
+      "16,20": 2,
+      "16,21": 2,
+      "16,22": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "2,2,2,6",
+    "2,10,2,6",
+    "2,18,2,6",
+    "2,26,2,8",
+    "5,26,2,8",
+    "8,26,2,8",
+    "11,26,2,8",
+    "5,2,2,6",
+    "9,2,1,14",
+    "11,2,1,14"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//AdWspb7vuUgLfF8al8nPKwuUImvjIqwPN4g6mZIYsYHGT79/HmRVUKkioKqikr4zf271x8vaD6paCDaYi+bc4bMJfDfXPbJeNnEd1mE69BNX/g5Nug0Y5SdoCL+9xY0H/cxXEZvqiM3bGc2kPV8HEMup9vuXSXUuR1EblsBwkWik8o/5VRNmc/a3stMA0dIlCY/QiBtWezjfkir9Xo3CqsORNqhqs4nCFUY3yK12GW/CrDVjpV4VXLbVPfzzPjveYmGtJYunBsI94fUND1r4zl1clMuE9/EROEllaRj3U+9HrtxHIccCTlOUTghygChh5Wjb59XZa9vvHr8h7C5+LDXcc+mj+gEsJrF8C6HCnv5ZufvGmcJfup8bHCcpfbeGZ8miHG7846eAgLUmt/S5nVlFfDostW12LGIQBfsCBXoxy/Pbs1/1g4GwHs/MeNovVKCkXdoes/AbXdOq1NkkAEXQJC6pJzJufCp1e1EEvS7y8wLhh0bmUFFQlFOfr20Mv35qo7P1NMnb8K+vLYtGBH6g5WxoMey+vwV0djHLPwrKS3hTiqvmpK55sOPNWHc3DXOUZBvANBC4mdv4y6iLZJMOSnZkeSkIliyIwPR7ewXTyctbl0vrhCjvpCGIUdvZs5maRPbFaGMvP4o3l7zZA1IKNkUWiYXqDMhj265O7ghP4n3E/OFNpqC8QMqyj7Q0ghRuLsjha+gLhOS1n4i4yXzRMjZFG7vkjYsccmVLTkDK8qU5HnJL97qGbhb83LqXJrWss24lIwcyLKDli7QTU8pkSY3x7bjk8jvkCieyncU12IrDYozSjMMJc82yBYCHt3zxb6WgCFNk9xlROh9C6+1TcjcosBuz55E8POzBbxvhMGtEC1HbLTTh9qDXe4Eg0f09M94lQQe8nAHQ7FkWNw==|920

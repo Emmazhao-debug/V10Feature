@@ -1,0 +1,191 @@
+{
+  "Rows": {
+    "Count": 20
+  },
+  "Cols": {
+    "Count": 21
+  },
+  "Values": {
+    "1,3": "return value",
+    "2,17": "值回传",
+    "5,3": "定义返回值",
+    "6,3": "return value",
+    "17,4": "ok1",
+    "17,8": "ok1",
+    "17,12": "ok1"
+  },
+  "AttachInfos": {
+    "2,3": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "2,17": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true
+          }
+        ],
+        "Text": "值回传",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "6,3": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "CellDefaultValue": "return value"
+      }
+    },
+    "17,4": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ClosePopupReturnValues": [
+              {
+                "Name": "ok返回值01",
+                "Value": "2400-01"
+              }
+            ]
+          }
+        ],
+        "Text": "ok1",
+        "TemplateKey": "_RS_Normal_Style3"
+      }
+    },
+    "17,8": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ClosePopupReturnValues": [
+              {
+                "Name": "ok返回值03",
+                "Value": "2400-02"
+              },
+              {
+                "Name": "ok返回值02",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=页面上只有ok按钮!D7"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "ok1",
+        "TemplateKey": "_RS_Normal_Style4"
+      }
+    },
+    "17,12": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ClosePopupReturnValues": [
+              {
+                "Name": "返回值001",
+                "Value": "2400-03"
+              },
+              {
+                "Name": "返回值003",
+                "Value": "2023/11/3-03"
+              }
+            ]
+          }
+        ],
+        "Text": "ok1",
+        "TemplateKey": "_RS_Normal_Style7"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Formatter": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "@",
+        "Body",
+        "[AUTO]General"
+      ]
+    },
+    "CellStyles": {
+      "2,3": 0,
+      "6,3": 0,
+      "17,8": 1,
+      "17,9": 2,
+      "17,10": 2,
+      "17,12": 1,
+      "17,13": 2,
+      "17,14": 2,
+      "18,8": 2,
+      "18,9": 2,
+      "18,10": 2,
+      "18,12": 2,
+      "18,13": 2,
+      "18,14": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "17,4,2,3",
+    "2,3,2,12",
+    "2,17,2,3",
+    "6,3,2,12",
+    "17,8,2,3",
+    "17,12,2,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//kOmMKH/xmJK545ClMyxshHHEju2LsBiUWTs36/MrTrnrfOV8YHVZ6rQXvFPSG89mG5oqRWuY5dmk58WnRrRQkiL0AHj7UCP7rYOY160a2t+00KeSFe+h0qHQmNSs5tBSBISGMN3Hq+41cruXFrBu6BreXw3WeKHWolA9RoJEA3qgl5dfS1XlXmqFDhcyOK0nLSXYcAF+qaAh/NxST4JLv8GQs05VCf+9bA0gAN5Lx1GvFeB+UI7FFZdggtA2m9PS5MWj7EY2U62ifZm9mbjCnOjAkk8Z+7E9nYpGw5hEQLiRg6JJaMssznE1hcgL0Fnet8rS12nyIpRbv62s9MXJ0t+xlnfHGgtZkuKt3cK7WCUl4nolwQZsUEGcUHsYlxOtx+DdWgDghWo8gjqHbnlod7YC56sLnpkw+odlp/slA0kku2uAqzmN2N9HgwutmXG1N1FYA9IVHWnr+5QxMb+XuwurfEyhh9hWK1GEOkpVaOSyt174tl43JARB2Pcl3Lao2rQ5iLyW6k7hFajHJqaBdzeamfdvC135idD8CSJxf8d1FgEsMkRUkEnghbAZn+j+F373EsGXuk9OHNl3HLv0kD6Q0yn9qC7CaBP1bgo+eSXi8+vSxBVvdunnyccx6Avu5+rUMTIoKzkkMSIsqu6e66w47cf1QBi+lVDIpgclBKX2RAMrct0JhkMCFBNyjFJ3zI3lMatXkzCjbd1msT1j71st98+UBSQbq6/LEenjWJ/4xXwH9pcSPlUymC4rzu/FLN7GHPKf5iCFqwNtg5aFCaFamxKfXFLBXcWkZhGc0I1KL/U+zX9Z9j8fxmO7hFuWtDSoxaKGrYDR7hJAUVyEpLtevhhOfyPXRlhEikl7Om/uq3lqLV0xFRpP6vzO1F/RjWxdqigGbVH9UNfdIU/Akw==|920

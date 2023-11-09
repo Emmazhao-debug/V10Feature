@@ -1,0 +1,308 @@
+{
+  "Rows": {
+    "Count": 15
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "14": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 385.0
+        }
+      }
+    },
+    "Count": 27
+  },
+  "Values": {
+    "1,2": "类别名称",
+    "1,16": "编辑加载项",
+    "4,2": "支付方式",
+    "4,16": "编辑加载项",
+    "7,2": "订单金额",
+    "7,13": "~",
+    "12,16": "查询"
+  },
+  "AttachInfos": {
+    "1,6": {
+      "CellType": {
+        "$type": "Forguncy.RadioGroupCellType, ServerDesignerCommon",
+        "Style": 1,
+        "IsBounding": true,
+        "DataSource": "类别名称",
+        "ValueColumnBindingInfo": {
+          "TableName": "类别名称",
+          "ColumnName": "Text",
+          "GUID": "a341b474-cc71-46fb-a332-aceb97d83231"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "类别名称",
+          "ColumnName": "Text",
+          "GUID": "d4cf7943-1998-47ac-818c-cd9d43d216b8"
+        },
+        "AddNullItemWhenBinding": true,
+        "NoneItemText": "<None>"
+      }
+    },
+    "1,16": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "ClosePopupCallbackCommand": {
+              "Commands": [
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionContextPropertyParam, ServerDesignerCommon",
+                          "contextProperty": {
+                            "Display": "IsOK",
+                            "ContextInfoType": 2
+                          }
+                        },
+                        "value": 1
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+                          "TargetPageElement": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=高级查询页面!G2"
+                          },
+                          "TargetType": "Forguncy.RadioGroupCellType, ServerDesignerCommon, Version=10.0.0.0, Culture=neutral, PublicKeyToken=967100671921c115",
+                          "MethodName": "ReloadForCommand"
+                        }
+                      ],
+                      "ID": "443450b5-dd62-4488-b462-eb5c0885c5e5"
+                    },
+                    {
+                      "CommandList": [],
+                      "ID": "9552ec83-bbbb-40e5-9436-5bc0d40fe147"
+                    }
+                  ]
+                }
+              ],
+              "ParamProperties": {
+                "IsOK": "IsOK"
+              }
+            },
+            "PageName": "编辑类别"
+          }
+        ],
+        "Text": "编辑加载项",
+        "ClickMode": 1
+      }
+    },
+    "4,6": {
+      "CellType": {
+        "$type": "Forguncy.CheckBoxGroupCellType, ServerDesignerCommon",
+        "Style": 1,
+        "IsBounding": true,
+        "DataSource": "支付方式",
+        "ValueColumnBindingInfo": {
+          "TableName": "支付方式",
+          "ColumnName": "Text",
+          "GUID": "35dd9825-80ac-4656-bb21-c700f5cfdee3"
+        },
+        "DisplayColumnBindingInfo": {
+          "TableName": "支付方式",
+          "ColumnName": "Text",
+          "GUID": "adc4943a-3135-4099-ba0e-850ff9c9c3c2"
+        }
+      }
+    },
+    "4,16": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "ClosePopupCallbackCommand": {
+              "Commands": [
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionContextPropertyParam, ServerDesignerCommon",
+                          "contextProperty": {
+                            "Display": "IsOK",
+                            "ContextInfoType": 2
+                          }
+                        },
+                        "value": 1
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+                          "TargetPageElement": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=高级查询页面!G5"
+                          },
+                          "TargetType": "Forguncy.CheckBoxGroupCellType, ServerDesignerCommon, Version=10.0.0.0, Culture=neutral, PublicKeyToken=967100671921c115",
+                          "MethodName": "ReloadForCommand"
+                        }
+                      ],
+                      "ID": "c28fe215-7b4d-43df-8338-698c0613df4b"
+                    },
+                    {
+                      "CommandList": [],
+                      "ID": "c7b6dc13-54c8-4842-b473-301863ac177b"
+                    }
+                  ]
+                }
+              ],
+              "ParamProperties": {
+                "IsOK": "IsOK"
+              }
+            },
+            "PageName": "编辑支付方式"
+          }
+        ],
+        "Text": "编辑加载项",
+        "ClickMode": 1
+      }
+    },
+    "7,6": {
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "DecimalPlacesNumber": 3,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "7,15": {
+      "CellType": {
+        "$type": "Forguncy.NumberCellType, ServerDesignerCommon",
+        "DecimalPlacesNumber": 3,
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "12,16": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "PassValueBack": true,
+            "ClosePopupReturnValues": [
+              {
+                "Name": "类别",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=高级查询页面!G2"
+                }
+              },
+              {
+                "Name": "支付方式",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=高级查询页面!G5"
+                }
+              },
+              {
+                "Name": "订单金额_min",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=高级查询页面!G8"
+                }
+              },
+              {
+                "Name": "订单金额_max",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=高级查询页面!P8"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "查询",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Foreground": 0,
+        "Underline": true
+      },
+      {
+        "FontFamily": 1,
+        "Foreground": 0,
+        "Formatter": 2,
+        "Underline": true
+      },
+      {
+        "FontFamily": 1
+      },
+      {
+        "HorizontalAlignment": 3
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Blue",
+        "Body",
+        "[AUTO]General",
+        "Center"
+      ]
+    },
+    "CellStyles": {
+      "1,16": 0,
+      "4,16": 1,
+      "4,17": 2,
+      "4,18": 2,
+      "4,19": 2,
+      "5,16": 2,
+      "5,17": 2,
+      "5,18": 2,
+      "5,19": 2,
+      "7,13": 3
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "1,2,2,4",
+    "1,16,2,4",
+    "4,2,2,4",
+    "4,16,2,4",
+    "7,2,2,4",
+    "7,6,2,7",
+    "7,13,2,2",
+    "7,15,2,7",
+    "12,16,2,6",
+    "1,6,2,9",
+    "4,6,2,9"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//+uNtZIALiYvfrZ4Z+WOais9kBNSEendhEx9GymWARkU31pUOIqL25chGmUaKtnlTSzrBeLnWgY96iSpuoQJPEa/fgB4NqZld0p4mJvNct84ptzxEBt4lZDYXl+xUI+WhHPxbCdk1+5FRW4qFhMjoL8GFi7NnWIlwCpwfWJ+QA2xTyZIO4hcFxyc6+HSLYGTA4wE8YFs3FOO1IvFXbdZqZmZ7Y9V/bFRTm1+8ftdymPrIsH4ubKLeEO3aVzWMmUUm0mopSRnXD/5zbA0iYrFxSK7xqxYXqJfZg8D2+V+p7Oi4QHpnbMWZbYXJfJB4eJjV3g77ZiCBdJxUL9pHaDT9XS52A9nPPy1wbXiajBW09EuDqZ/Vz/fwZ1rkJ1ScF/lqNpx9icot+AMiLwHUByKG/2ouUojAXsLLwh4Myn07KHL2pN3cIMxoe3jYg7bIxKUZ6Ke8POWFgevZ9/AeU5666IniRCjg60en2ak/igTpoJCZWs9BWrlSMUe5a7lfu0+9pGoE7HDO2yHCsaINq5X70VViymfISLSyTkVeAPrkhHlCgSlekMzew5O37X/hb2gq3NOf1Le1Df2/fnXVOAV1Bs7/CKwzGwb9ovIa1Nq4taMVwRg52HRwFNj/LqN314lx3oa1QqQTQcj5hPh7H9sPduFE08TdazXny/zeR7Ys3OIg1W42UWWc49NQt+0t20ssafzm7ZlyB+o9wlsiHSJDJXTTE3ORPC+smgHjSOvdwmSlW5O1f01hwkzMxanodlUscMzyRLdxDSwDgJot2E1CUJogHauYvjUcpOi9F1gvnQFlA7YUAq4sa9n6izuu4kat/CJaT9okV9jSwse2U22R7A8gdIyPi9FBz3bSOAyxv7bLX/VKgeCbPJ+BL5bW9r/H1WJI9McPitzD4bL9wjVW0Q==|920

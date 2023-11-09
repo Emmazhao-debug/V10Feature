@@ -1,0 +1,1071 @@
+{
+  "Rows": {
+    "Count": 30
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 82.0
+        }
+      }
+    },
+    "Count": 20
+  },
+  "Values": {
+    "7,4": "开始性格测试",
+    "11,18": 1,
+    "12,18": 2,
+    "13,18": 3,
+    "14,18": 4,
+    "15,18": 5,
+    "16,18": 6
+  },
+  "AttachInfos": {
+    "7,4": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+            "ConditionAndCommandPairList": [
+              {
+                "Condition": {
+                  "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                  "SubConditions": [
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=firstversion!T12"
+                          }
+                        ]
+                      },
+                      "compareType": 1
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=firstversion!T13"
+                          }
+                        ]
+                      },
+                      "compareType": 1
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=firstversion!T14"
+                          }
+                        ]
+                      },
+                      "compareType": 1
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=firstversion!T15"
+                          }
+                        ]
+                      },
+                      "compareType": 1
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=firstversion!T16"
+                          }
+                        ]
+                      },
+                      "compareType": 1
+                    },
+                    {
+                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                      "param": {
+                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                        "cellLocations": [
+                          {
+                            "SerializeProperty": "=firstversion!T17"
+                          }
+                        ]
+                      },
+                      "compareType": 1
+                    }
+                  ]
+                },
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "PageName": "Page6",
+                    "DeleteCachedQuery": true
+                  }
+                ],
+                "ID": "df7e73bc-f5e8-4d90-be1d-de9b04464c4c"
+              },
+              {
+                "CommandList": [
+                  {
+                    "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                    "ClosePopupCallbackCommand": {
+                      "Commands": [
+                        {
+                          "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                          "TargetTableName": "题目答案",
+                          "SqlCondition": {
+                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                            "ColumnBindingInfo": {
+                              "TableName": "题目答案",
+                              "ColumnName": "问题ID",
+                              "GUID": "64d0415f-4a28-4ca8-8a66-95154d65a676"
+                            },
+                            "Value": {
+                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                              "SerializeProperty": "=firstversion!idvalue"
+                            }
+                          },
+                          "ID": "aa43e45423c3482fad9d14bf2ac02116"
+                        },
+                        {
+                          "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                          "PropertyItemsList": [
+                            {
+                              "TargetCells": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=firstversion!T12"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=firstversion!result"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                          "ConditionAndCommandPairList": [
+                            {
+                              "Condition": {
+                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                "SubConditions": [
+                                  {
+                                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                    "param": {
+                                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                      "cellLocations": [
+                                        {
+                                          "SerializeProperty": "=firstversion!IsOK"
+                                        }
+                                      ]
+                                    },
+                                    "value": "1"
+                                  },
+                                  {
+                                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                    "param": {
+                                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                      "cellLocations": [
+                                        {
+                                          "SerializeProperty": "=firstversion!idvalue"
+                                        }
+                                      ]
+                                    },
+                                    "value": "6",
+                                    "compareType": 5
+                                  }
+                                ]
+                              },
+                              "CommandList": [
+                                {
+                                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                                  "ConditionAndCommandPairList": [
+                                    {
+                                      "Condition": {
+                                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                        "param": {
+                                          "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                          "cellLocations": [
+                                            {
+                                              "SerializeProperty": "=firstversion!result"
+                                            }
+                                          ]
+                                        },
+                                        "compareType": 1
+                                      },
+                                      "CommandList": [
+                                        {
+                                          "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                                          "ParameterName": "跳转id",
+                                          "TableValue": {
+                                            "TableName": "题目答案",
+                                            "OnlyGetValue": true,
+                                            "TableValueType": 0,
+                                            "BindingInfos": [
+                                              {
+                                                "BindingInfo": {
+                                                  "TableName": "题目答案",
+                                                  "ColumnName": "跳转题数",
+                                                  "GUID": "9d2b3e8f-28ae-4ed2-b228-19585f037b3c"
+                                                },
+                                                "ColumnName": "跳转题数"
+                                              }
+                                            ],
+                                            "SqlCondition": {
+                                              "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                              "SubConditions": [
+                                                {
+                                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                                  "ColumnBindingInfo": {
+                                                    "TableName": "题目答案",
+                                                    "ColumnName": "ID",
+                                                    "GUID": "3593d938-7842-4ced-86b2-38ca9978def0"
+                                                  },
+                                                  "Value": {
+                                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                    "SerializeProperty": "=firstversion!result"
+                                                  }
+                                                },
+                                                {
+                                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                                  "ColumnBindingInfo": {
+                                                    "TableName": "题目答案",
+                                                    "ColumnName": "问题ID",
+                                                    "GUID": "6cdd4b7a-b7ae-47b5-a6f0-99e575cc9d59"
+                                                  },
+                                                  "Value": {
+                                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                    "SerializeProperty": "=firstversion!idvalue"
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "ID": "89522600cabf40ae9499aafa3fb10901"
+                                        },
+                                        {
+                                          "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                                          "TargetTableName": "原始题库",
+                                          "SqlCondition": {
+                                            "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                            "ColumnBindingInfo": {
+                                              "TableName": "原始题库",
+                                              "ColumnName": "ID",
+                                              "GUID": "bf6d494c-b0b7-4763-b252-a766c32aa264"
+                                            },
+                                            "Value": {
+                                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                              "SerializeProperty": "=firstversion!跳转id"
+                                            }
+                                          },
+                                          "ID": "3846c74277884a6db885734706acb56c"
+                                        },
+                                        {
+                                          "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                                          "ClosePopupCallbackCommand": {
+                                            "Commands": [
+                                              {
+                                                "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                                                "PropertyItemsList": [
+                                                  {
+                                                    "TargetCells": {
+                                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                      "SerializeProperty": "=firstversion!T13"
+                                                    },
+                                                    "Value": {
+                                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                      "SerializeProperty": "=firstversion!result"
+                                                    }
+                                                  }
+                                                ]
+                                              },
+                                              {
+                                                "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                                                "ConditionAndCommandPairList": [
+                                                  {
+                                                    "Condition": {
+                                                      "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                                      "param": {
+                                                        "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                                        "cellLocations": [
+                                                          {
+                                                            "SerializeProperty": "=firstversion!IsOK"
+                                                          }
+                                                        ]
+                                                      },
+                                                      "value": "1"
+                                                    },
+                                                    "CommandList": [
+                                                      {
+                                                        "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                                                        "ConditionAndCommandPairList": [
+                                                          {
+                                                            "Condition": {
+                                                              "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                                              "param": {
+                                                                "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                                                "cellLocations": [
+                                                                  {
+                                                                    "SerializeProperty": "=firstversion!result"
+                                                                  }
+                                                                ]
+                                                              },
+                                                              "compareType": 1
+                                                            },
+                                                            "CommandList": [
+                                                              {
+                                                                "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                                                                "ParameterName": "跳转id",
+                                                                "TableValue": {
+                                                                  "TableName": "题目答案",
+                                                                  "OnlyGetValue": true,
+                                                                  "TableValueType": 0,
+                                                                  "BindingInfos": [
+                                                                    {
+                                                                      "BindingInfo": {
+                                                                        "TableName": "题目答案",
+                                                                        "ColumnName": "跳转题数",
+                                                                        "GUID": "040c9376-672c-4c6c-a03d-b6d5ffa113a4"
+                                                                      },
+                                                                      "ColumnName": "跳转题数"
+                                                                    }
+                                                                  ],
+                                                                  "SqlCondition": {
+                                                                    "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                                    "SubConditions": [
+                                                                      {
+                                                                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                                                        "ColumnBindingInfo": {
+                                                                          "TableName": "题目答案",
+                                                                          "ColumnName": "ID",
+                                                                          "GUID": "2ce1b710-b255-4c75-9fee-f3be7377302b"
+                                                                        },
+                                                                        "Value": {
+                                                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                          "SerializeProperty": "=firstversion!result"
+                                                                        }
+                                                                      },
+                                                                      {
+                                                                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                                                        "ColumnBindingInfo": {
+                                                                          "TableName": "题目答案",
+                                                                          "ColumnName": "问题ID",
+                                                                          "GUID": "ea22af59-7538-441e-a9c0-ba37feead8f3"
+                                                                        },
+                                                                        "Value": {
+                                                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                          "SerializeProperty": "=firstversion!idvalue"
+                                                                        }
+                                                                      }
+                                                                    ]
+                                                                  }
+                                                                },
+                                                                "ID": "ae993c9d52c249c7827295e8cd72a944"
+                                                              },
+                                                              {
+                                                                "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                                                                "TargetTableName": "原始题库",
+                                                                "SqlCondition": {
+                                                                  "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                                                  "ColumnBindingInfo": {
+                                                                    "TableName": "原始题库",
+                                                                    "ColumnName": "ID",
+                                                                    "GUID": "e9fea02b-f08b-4e40-9b41-cd35f67398ce"
+                                                                  },
+                                                                  "Value": {
+                                                                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                    "SerializeProperty": "=firstversion!跳转id"
+                                                                  }
+                                                                },
+                                                                "ID": "ddb98f59e2e84e4e981c3486db9a0a5a"
+                                                              },
+                                                              {
+                                                                "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                                                                "ClosePopupCallbackCommand": {
+                                                                  "Commands": [
+                                                                    {
+                                                                      "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                                                                      "PropertyItemsList": [
+                                                                        {
+                                                                          "TargetCells": {
+                                                                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                            "SerializeProperty": "=firstversion!T14"
+                                                                          },
+                                                                          "Value": {
+                                                                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                            "SerializeProperty": "=firstversion!result"
+                                                                          }
+                                                                        }
+                                                                      ]
+                                                                    },
+                                                                    {
+                                                                      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                                                                      "ConditionAndCommandPairList": [
+                                                                        {
+                                                                          "Condition": {
+                                                                            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                                                            "param": {
+                                                                              "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                                                              "cellLocations": [
+                                                                                {
+                                                                                  "SerializeProperty": "=firstversion!IsOK"
+                                                                                }
+                                                                              ]
+                                                                            },
+                                                                            "value": "1"
+                                                                          },
+                                                                          "CommandList": [
+                                                                            {
+                                                                              "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                                                                              "ConditionAndCommandPairList": [
+                                                                                {
+                                                                                  "Condition": {
+                                                                                    "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                                                                    "param": {
+                                                                                      "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                                                                      "cellLocations": [
+                                                                                        {
+                                                                                          "SerializeProperty": "=firstversion!result"
+                                                                                        }
+                                                                                      ]
+                                                                                    },
+                                                                                    "compareType": 1
+                                                                                  },
+                                                                                  "CommandList": [
+                                                                                    {
+                                                                                      "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                                                                                      "ParameterName": "跳转id",
+                                                                                      "TableValue": {
+                                                                                        "TableName": "题目答案",
+                                                                                        "OnlyGetValue": true,
+                                                                                        "TableValueType": 0,
+                                                                                        "BindingInfos": [
+                                                                                          {
+                                                                                            "BindingInfo": {
+                                                                                              "TableName": "题目答案",
+                                                                                              "ColumnName": "跳转题数",
+                                                                                              "GUID": "75540142-d1d3-48f5-b4a7-826e5cba5528"
+                                                                                            },
+                                                                                            "ColumnName": "跳转题数"
+                                                                                          }
+                                                                                        ],
+                                                                                        "SqlCondition": {
+                                                                                          "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                                                          "SubConditions": [
+                                                                                            {
+                                                                                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                                                                              "ColumnBindingInfo": {
+                                                                                                "TableName": "题目答案",
+                                                                                                "ColumnName": "ID",
+                                                                                                "GUID": "0e737a1a-27ae-44ba-839c-485827ef867c"
+                                                                                              },
+                                                                                              "Value": {
+                                                                                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                                                "SerializeProperty": "=firstversion!result"
+                                                                                              }
+                                                                                            },
+                                                                                            {
+                                                                                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                                                                              "ColumnBindingInfo": {
+                                                                                                "TableName": "题目答案",
+                                                                                                "ColumnName": "问题ID",
+                                                                                                "GUID": "7ecc0d40-3ec4-491d-b344-8bb4fa173290"
+                                                                                              },
+                                                                                              "Value": {
+                                                                                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                                                "SerializeProperty": "=firstversion!idvalue"
+                                                                                              }
+                                                                                            }
+                                                                                          ]
+                                                                                        }
+                                                                                      },
+                                                                                      "ID": "89d7faffd3ca4d1893fac8703fa1e4be"
+                                                                                    },
+                                                                                    {
+                                                                                      "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                                                                                      "TargetTableName": "原始题库",
+                                                                                      "SqlCondition": {
+                                                                                        "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                                                                        "ColumnBindingInfo": {
+                                                                                          "TableName": "原始题库",
+                                                                                          "ColumnName": "ID",
+                                                                                          "GUID": "b9dca58e-21b7-4c97-b8cc-06a467c8ceac"
+                                                                                        },
+                                                                                        "Value": {
+                                                                                          "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                                          "SerializeProperty": "=firstversion!跳转id"
+                                                                                        }
+                                                                                      },
+                                                                                      "ID": "b31203de88b74d498d3bd953b7289db7"
+                                                                                    },
+                                                                                    {
+                                                                                      "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                                                                                      "ClosePopupCallbackCommand": {
+                                                                                        "Commands": [
+                                                                                          {
+                                                                                            "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                                                                                            "PropertyItemsList": [
+                                                                                              {
+                                                                                                "TargetCells": {
+                                                                                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                                                  "SerializeProperty": "=firstversion!T15"
+                                                                                                },
+                                                                                                "Value": {
+                                                                                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                                                  "SerializeProperty": "=firstversion!result"
+                                                                                                }
+                                                                                              }
+                                                                                            ]
+                                                                                          },
+                                                                                          {
+                                                                                            "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                                                                                            "ConditionAndCommandPairList": [
+                                                                                              {
+                                                                                                "Condition": {
+                                                                                                  "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                                                                                  "param": {
+                                                                                                    "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                                                                                    "cellLocations": [
+                                                                                                      {
+                                                                                                        "SerializeProperty": "=firstversion!IsOK"
+                                                                                                      }
+                                                                                                    ]
+                                                                                                  },
+                                                                                                  "value": "1"
+                                                                                                },
+                                                                                                "CommandList": [
+                                                                                                  {
+                                                                                                    "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                                                                                                    "ConditionAndCommandPairList": [
+                                                                                                      {
+                                                                                                        "Condition": {
+                                                                                                          "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                                                                                          "param": {
+                                                                                                            "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                                                                                            "cellLocations": [
+                                                                                                              {
+                                                                                                                "SerializeProperty": "=firstversion!result"
+                                                                                                              }
+                                                                                                            ]
+                                                                                                          },
+                                                                                                          "compareType": 1
+                                                                                                        },
+                                                                                                        "CommandList": [
+                                                                                                          {
+                                                                                                            "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                                                                                                            "ParameterName": "跳转id",
+                                                                                                            "TableValue": {
+                                                                                                              "TableName": "题目答案",
+                                                                                                              "OnlyGetValue": true,
+                                                                                                              "TableValueType": 0,
+                                                                                                              "BindingInfos": [
+                                                                                                                {
+                                                                                                                  "BindingInfo": {
+                                                                                                                    "TableName": "题目答案",
+                                                                                                                    "ColumnName": "跳转题数",
+                                                                                                                    "GUID": "1db48ebe-393e-4911-bd78-0ee9c75037ae"
+                                                                                                                  },
+                                                                                                                  "ColumnName": "跳转题数"
+                                                                                                                }
+                                                                                                              ],
+                                                                                                              "SqlCondition": {
+                                                                                                                "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                                                                                "SubConditions": [
+                                                                                                                  {
+                                                                                                                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                                                                                                    "ColumnBindingInfo": {
+                                                                                                                      "TableName": "题目答案",
+                                                                                                                      "ColumnName": "ID",
+                                                                                                                      "GUID": "e49768ba-8308-455c-b002-fbb6bde4c159"
+                                                                                                                    },
+                                                                                                                    "Value": {
+                                                                                                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                                                                      "SerializeProperty": "=firstversion!result"
+                                                                                                                    }
+                                                                                                                  },
+                                                                                                                  {
+                                                                                                                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                                                                                                    "ColumnBindingInfo": {
+                                                                                                                      "TableName": "题目答案",
+                                                                                                                      "ColumnName": "问题ID",
+                                                                                                                      "GUID": "77d3ff03-81cd-4972-99c7-970d6ccf6991"
+                                                                                                                    },
+                                                                                                                    "Value": {
+                                                                                                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                                                                      "SerializeProperty": "=firstversion!idvalue"
+                                                                                                                    }
+                                                                                                                  }
+                                                                                                                ]
+                                                                                                              }
+                                                                                                            },
+                                                                                                            "ID": "eee46b0b881545989507d2d7b9cfe622"
+                                                                                                          },
+                                                                                                          {
+                                                                                                            "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                                                                                                            "TargetTableName": "原始题库",
+                                                                                                            "SqlCondition": {
+                                                                                                              "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                                                                                              "ColumnBindingInfo": {
+                                                                                                                "TableName": "原始题库",
+                                                                                                                "ColumnName": "ID",
+                                                                                                                "GUID": "fdd4d5f9-3bb0-4a14-8c38-fb710f024aa9"
+                                                                                                              },
+                                                                                                              "Value": {
+                                                                                                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                                                                "SerializeProperty": "=firstversion!跳转id"
+                                                                                                              }
+                                                                                                            },
+                                                                                                            "ID": "556cf388ff824a07b3af45780f98b546"
+                                                                                                          },
+                                                                                                          {
+                                                                                                            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                                                                                                            "ClosePopupCallbackCommand": {
+                                                                                                              "Commands": [
+                                                                                                                {
+                                                                                                                  "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                                                                                                                  "PropertyItemsList": [
+                                                                                                                    {
+                                                                                                                      "TargetCells": {
+                                                                                                                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                                                                        "SerializeProperty": "=firstversion!T16"
+                                                                                                                      },
+                                                                                                                      "Value": {
+                                                                                                                        "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                                                                        "SerializeProperty": "=firstversion!result"
+                                                                                                                      }
+                                                                                                                    }
+                                                                                                                  ]
+                                                                                                                },
+                                                                                                                {
+                                                                                                                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                                                                                                                  "ConditionAndCommandPairList": [
+                                                                                                                    {
+                                                                                                                      "Condition": {
+                                                                                                                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                                                                                                        "param": {
+                                                                                                                          "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                                                                                                          "cellLocations": [
+                                                                                                                            {
+                                                                                                                              "SerializeProperty": "=firstversion!IsOK"
+                                                                                                                            }
+                                                                                                                          ]
+                                                                                                                        },
+                                                                                                                        "value": "1"
+                                                                                                                      },
+                                                                                                                      "CommandList": [
+                                                                                                                        {
+                                                                                                                          "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                                                                                                                          "ConditionAndCommandPairList": [
+                                                                                                                            {
+                                                                                                                              "Condition": {
+                                                                                                                                "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                                                                                                                                "param": {
+                                                                                                                                  "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                                                                                                                                  "cellLocations": [
+                                                                                                                                    {
+                                                                                                                                      "SerializeProperty": "=firstversion!result"
+                                                                                                                                    }
+                                                                                                                                  ]
+                                                                                                                                },
+                                                                                                                                "compareType": 1
+                                                                                                                              },
+                                                                                                                              "CommandList": [
+                                                                                                                                {
+                                                                                                                                  "$type": "Forguncy.Model.Commands.SetParameterCommand, ServerDesignerCommon",
+                                                                                                                                  "ParameterName": "跳转id",
+                                                                                                                                  "TableValue": {
+                                                                                                                                    "TableName": "题目答案",
+                                                                                                                                    "OnlyGetValue": true,
+                                                                                                                                    "TableValueType": 0,
+                                                                                                                                    "BindingInfos": [
+                                                                                                                                      {
+                                                                                                                                        "BindingInfo": {
+                                                                                                                                          "TableName": "题目答案",
+                                                                                                                                          "ColumnName": "跳转题数",
+                                                                                                                                          "GUID": "9c5d5a9b-06a7-43d5-b507-4279ed2a5a86"
+                                                                                                                                        },
+                                                                                                                                        "ColumnName": "跳转题数"
+                                                                                                                                      }
+                                                                                                                                    ],
+                                                                                                                                    "SqlCondition": {
+                                                                                                                                      "$type": "ForguncyDataAccess.RelationSqlCondition, ForguncyDataAccess",
+                                                                                                                                      "SubConditions": [
+                                                                                                                                        {
+                                                                                                                                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                                                                                                                          "ColumnBindingInfo": {
+                                                                                                                                            "TableName": "题目答案",
+                                                                                                                                            "ColumnName": "ID",
+                                                                                                                                            "GUID": "1e1412ff-cf1f-4371-8c12-1a86964ec031"
+                                                                                                                                          },
+                                                                                                                                          "Value": {
+                                                                                                                                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                                                                                            "SerializeProperty": "=firstversion!result"
+                                                                                                                                          }
+                                                                                                                                        },
+                                                                                                                                        {
+                                                                                                                                          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                                                                                                                          "ColumnBindingInfo": {
+                                                                                                                                            "TableName": "题目答案",
+                                                                                                                                            "ColumnName": "问题ID",
+                                                                                                                                            "GUID": "646f878f-c268-464a-8076-c66f1af5679c"
+                                                                                                                                          },
+                                                                                                                                          "Value": {
+                                                                                                                                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                                                                                            "SerializeProperty": "=firstversion!idvalue"
+                                                                                                                                          }
+                                                                                                                                        }
+                                                                                                                                      ]
+                                                                                                                                    }
+                                                                                                                                  },
+                                                                                                                                  "ID": "671d814cc7ce4b56be9c5a409fa804b7"
+                                                                                                                                },
+                                                                                                                                {
+                                                                                                                                  "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                                                                                                                                  "TargetTableName": "原始题库",
+                                                                                                                                  "SqlCondition": {
+                                                                                                                                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                                                                                                                    "ColumnBindingInfo": {
+                                                                                                                                      "TableName": "原始题库",
+                                                                                                                                      "ColumnName": "ID",
+                                                                                                                                      "GUID": "b938f261-2730-4b5b-adb9-b12aaa25a154"
+                                                                                                                                    },
+                                                                                                                                    "Value": {
+                                                                                                                                      "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                                                                                      "SerializeProperty": "=firstversion!跳转id"
+                                                                                                                                    }
+                                                                                                                                  },
+                                                                                                                                  "ID": "00deff0d87ed4d8aab92f9c586f9f98d"
+                                                                                                                                },
+                                                                                                                                {
+                                                                                                                                  "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+                                                                                                                                  "ClosePopupCallbackCommand": {
+                                                                                                                                    "Commands": [
+                                                                                                                                      {
+                                                                                                                                        "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                                                                                                                                        "PropertyItemsList": [
+                                                                                                                                          {
+                                                                                                                                            "TargetCells": {
+                                                                                                                                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                                                                                              "SerializeProperty": "=firstversion!T17"
+                                                                                                                                            },
+                                                                                                                                            "Value": {
+                                                                                                                                              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                                                                                                                              "SerializeProperty": "=firstversion!result"
+                                                                                                                                            }
+                                                                                                                                          }
+                                                                                                                                        ]
+                                                                                                                                      }
+                                                                                                                                    ],
+                                                                                                                                    "ParamProperties": {
+                                                                                                                                      "IsOK": "IsOK",
+                                                                                                                                      "result": "result",
+                                                                                                                                      "idvalue": "idvalue"
+                                                                                                                                    }
+                                                                                                                                  },
+                                                                                                                                  "PageName": "Page6"
+                                                                                                                                }
+                                                                                                                              ],
+                                                                                                                              "ID": "1cf90e92-a84e-43e5-8777-25a92741556b"
+                                                                                                                            }
+                                                                                                                          ]
+                                                                                                                        }
+                                                                                                                      ],
+                                                                                                                      "ID": "a6501158-251e-4222-9adb-2be1cbd3b673"
+                                                                                                                    },
+                                                                                                                    {
+                                                                                                                      "CommandList": [],
+                                                                                                                      "ID": "07acc7ff-dd1a-4fe2-a49f-9f6ce1521e29"
+                                                                                                                    }
+                                                                                                                  ]
+                                                                                                                }
+                                                                                                              ],
+                                                                                                              "ParamProperties": {
+                                                                                                                "IsOK": "IsOK",
+                                                                                                                "result": "result",
+                                                                                                                "idvalue": "idvalue"
+                                                                                                              }
+                                                                                                            },
+                                                                                                            "PageName": "Page6"
+                                                                                                          }
+                                                                                                        ],
+                                                                                                        "ID": "48f0ed20-bca3-435f-b196-c52e42e4d0c5"
+                                                                                                      }
+                                                                                                    ]
+                                                                                                  }
+                                                                                                ],
+                                                                                                "ID": "9f996259-db82-461b-a29f-68fa2d0f8575"
+                                                                                              },
+                                                                                              {
+                                                                                                "CommandList": [],
+                                                                                                "ID": "91cbe5a4-7750-44d8-90ae-e2233b0d536e"
+                                                                                              }
+                                                                                            ]
+                                                                                          }
+                                                                                        ],
+                                                                                        "ParamProperties": {
+                                                                                          "IsOK": "IsOK",
+                                                                                          "result": "result",
+                                                                                          "idvalue": "idvalue"
+                                                                                        }
+                                                                                      },
+                                                                                      "PageName": "Page6"
+                                                                                    }
+                                                                                  ],
+                                                                                  "ID": "b95cdd03-62bb-4b40-a140-f364f77f4cdf"
+                                                                                }
+                                                                              ]
+                                                                            }
+                                                                          ],
+                                                                          "ID": "4847a43f-2910-4b6e-a433-7cb53ebbcebd"
+                                                                        },
+                                                                        {
+                                                                          "CommandList": [],
+                                                                          "ID": "49db928f-e271-4164-b7cf-6b8880964881"
+                                                                        }
+                                                                      ]
+                                                                    }
+                                                                  ],
+                                                                  "ParamProperties": {
+                                                                    "IsOK": "IsOK",
+                                                                    "result": "result",
+                                                                    "idvalue": "idvalue"
+                                                                  }
+                                                                },
+                                                                "PageName": "Page6"
+                                                              }
+                                                            ],
+                                                            "ID": "71f95a56-08b9-44a3-bb61-fb4b2a467c59"
+                                                          }
+                                                        ]
+                                                      }
+                                                    ],
+                                                    "ID": "b8b0f0ee-6fc2-46b5-bedc-43ddf55fe356"
+                                                  },
+                                                  {
+                                                    "CommandList": [],
+                                                    "ID": "175397f5-788c-49d0-b127-32f40dc6a08d"
+                                                  }
+                                                ]
+                                              }
+                                            ],
+                                            "ParamProperties": {
+                                              "IsOK": "IsOK",
+                                              "result": "result",
+                                              "idvalue": "idvalue"
+                                            }
+                                          },
+                                          "PageName": "Page6"
+                                        }
+                                      ],
+                                      "ID": "d00fcd3b-c563-483e-b0ec-97868eb3856c"
+                                    }
+                                  ]
+                                }
+                              ],
+                              "ID": "2cd34ffa-4dc3-4b7d-8d09-e73e5dd2c8f7"
+                            },
+                            {
+                              "CommandList": [
+                                {
+                                  "$type": "Forguncy.Model.QueryCommand, ServerDesignerCommon",
+                                  "TargetTableName": "FGC_产品表",
+                                  "SqlCondition": {
+                                    "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+                                    "CompareType": 1,
+                                    "ColumnBindingInfo": {
+                                      "TableName": "FGC_产品表",
+                                      "ColumnName": "ID",
+                                      "GUID": "b77800a5-0593-4a5d-9fca-cba9b652c1c6"
+                                    },
+                                    "Value": "%Null%"
+                                  },
+                                  "ID": "82488fa748cb48648d99e0904e0d651c"
+                                }
+                              ],
+                              "ID": "185044ac-3303-4cc2-b36b-e8e598ec5115"
+                            },
+                            {
+                              "CommandList": [],
+                              "ID": "932229bf-3d68-48ae-aa81-c9b48cdb8eb8"
+                            }
+                          ]
+                        }
+                      ],
+                      "ParamProperties": {
+                        "IsOK": "IsOK",
+                        "result": "result",
+                        "idvalue": "idvalue"
+                      }
+                    },
+                    "PageName": "Page6"
+                  }
+                ],
+                "ID": "ecf8600e-c8f1-41e5-9b39-fbe9d0c99d01"
+              }
+            ]
+          }
+        ],
+        "Text": "开始性格测试",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "18,1": {
+      "ListViewInfo": {
+        "Name": "Listview1",
+        "TableName": "题目答案",
+        "RowIndex": 18,
+        "ColumnIndex": 1,
+        "RowCount": 11,
+        "ColumnCount": 19,
+        "SqlCondition": {
+          "$type": "ForguncyDataAccess.GeneralCESqlCondition, ForguncyDataAccess",
+          "ColumnBindingInfo": {
+            "TableName": "题目答案",
+            "ColumnName": "ID",
+            "GUID": "a318687c-347d-4a30-8ed1-90938d17799e"
+          },
+          "Value": {
+            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+            "SerializeProperty": "=firstversion!A1"
+          }
+        },
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "19,1": {
+      "NameUsedInJavaScript": "问题ID",
+      "BindingInfo": {
+        "TableName": "题目答案",
+        "ColumnName": "问题ID",
+        "GUID": "2c04ff72-17b6-4bea-b26e-1a9da0d2de23"
+      }
+    },
+    "19,5": {
+      "NameUsedInJavaScript": "问题名称",
+      "BindingInfo": {
+        "TableName": "题目答案",
+        "ColumnName": "问题ID",
+        "GUID": "6ad427a5-5bea-449f-8fdc-cd0c8076d667",
+        "RelationBinding": {
+          "RelatedTable": "原始题库",
+          "RelatedColumn": "ID",
+          "DisplayColumn": "问题名称"
+        }
+      }
+    },
+    "19,9": {
+      "NameUsedInJavaScript": "答案",
+      "BindingInfo": {
+        "TableName": "题目答案",
+        "ColumnName": "答案",
+        "GUID": "61b294b9-ea9c-4dc3-90c2-486b84448190"
+      }
+    },
+    "19,13": {
+      "NameUsedInJavaScript": "跳转题数",
+      "BindingInfo": {
+        "TableName": "题目答案",
+        "ColumnName": "跳转题数",
+        "GUID": "266a56b8-9bff-4e62-93a0-328ab9e993f6"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "HorizontalAlignment": 1,
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "black",
+        "Right",
+        "Body"
+      ],
+      "Borders": [
+        {
+          "Color": 0
+        }
+      ]
+    },
+    "CellStyles": {
+      "11,18": 0,
+      "11,19": 1,
+      "12,18": 0,
+      "12,19": 1,
+      "13,18": 0,
+      "13,19": 1,
+      "14,18": 0,
+      "14,19": 1,
+      "15,18": 0,
+      "15,19": 1,
+      "16,18": 0,
+      "16,19": 1
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "7,4,3,12",
+    "20,1,9,19",
+    "19,1,1,4",
+    "19,5,1,4",
+    "19,9,1,4",
+    "19,13,1,4",
+    "18,1,1,4",
+    "18,5,1,4",
+    "18,9,1,4",
+    "18,13,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//Z2+D/y18pJ/HWG7F3C6qP1n9L1zmNDHOdsSCBF5vi4QvOX4cqRWdrRAU1DyFWIgXSfbr0/yBaJ3B7qEusrpyJ4xhuk9+I3lAY0VE8+bF1gzyFJEvCNyveVFmsEw+ds3eIs32g/wC0gAELR3TVi1FrOFtT//KJfZsNCSPzRnVJVn42gMWef/vfWPY1EGYS4zpF59o8hmPY7M19nNxnthRTTJLEkr21Sq9eHeHyVu4eaQ7hP4Q675MUR1kWNa38/gmpiMR3h6HFBTYkIwWRyxEkIerpPU72hDkRB6mI0pYWkfTMNZ3SS5s0WH5vGJav+9YMcx5f5sPWMu+ykN8PTdUoKJfFhJDCdyx4QlMmJzTF5DcCYSJRYB/bEMad1uN5UX0gmq6MqV4SYFh1qfWID2da0m2ZGg4rdTlr/5laP2Jh5JwPXTQanvXUZWK6uW+c+RhN/HKoMxxaNJ5+zx8Bz2cBl27SD2JBMfFj9kfbv9Nyb0uXUQvJw6/JxA0TvnZH6dBdJtTxpdO2C3JVxnxs1+BZvrlYqTCTuCwVAEnrCYlqvnCM4LCbBUO+Bfg/6mNkrKJojdT74rp9Gsy04jijA85Ho/rAP6DwmCJbTFVw6XK8aEVWYlrYVbNfbq5mKBZzqWyAlt48P0sgpolpzzTlCncDNPtZPqp6Z9cT9W1Gvgnfuczt3FzqunXwlsqKeRUsIBmyUEsCtULY3zIpGrPL/RCK7cIXM61GTXVvhRpvJi0fMKfo37faFai0582aIM3/paS4f96C1CNpKEIlbZ6aXzOj7AeDdfiIVwlt8M7BvSppHpGHtVOwDOfJjn8ekzh/OIBsrlExRTxEpFeY6PYsiBxczbR5b0jjXVX6cuEcB2evxqWrz3/ilRJYNdL77rHNeptINPipkbOtJZPjcSNYCiQpg==|920

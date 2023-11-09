@@ -1,0 +1,306 @@
+{
+  "Rows": {
+    "Count": 20
+  },
+  "Cols": {
+    "Count": 21
+  },
+  "Values": {
+    "1,3": "return value",
+    "2,3": "return value 2023/11/6",
+    "5,3": "定义返回值",
+    "6,3": "return value",
+    "11,4": "ok1",
+    "14,4": "ok1",
+    "14,8": "ok1",
+    "14,12": "ok1",
+    "17,4": "cancel1",
+    "17,8": "cancel2",
+    "17,12": "cancel3"
+  },
+  "AttachInfos": {
+    "2,3": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "CellDefaultValue": "return value 2023/11/6"
+      }
+    },
+    "6,3": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "CellDefaultValue": "return value"
+      }
+    },
+    "11,4": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ClosePopupResult": 1,
+            "ClosePopupReturnValues": [
+              {
+                "Name": "cancel返回值001",
+                "Value": "2400-03"
+              },
+              {
+                "Name": "cancel返回值003",
+                "Value": "2023/11/3-03"
+              }
+            ]
+          }
+        ],
+        "Text": "ok1",
+        "TemplateKey": "_RS_Normal_Style7"
+      }
+    },
+    "14,4": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ClosePopupReturnValues": [
+              {
+                "Name": "ok返回值01",
+                "Value": "ok value"
+              }
+            ]
+          }
+        ],
+        "Text": "ok1",
+        "TemplateKey": "_RS_Normal_Style3"
+      }
+    },
+    "14,8": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ClosePopupReturnValues": [
+              {
+                "Name": "ok返回值03",
+                "Value": "ok value 02-02"
+              },
+              {
+                "Name": "ok返回值02",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='包含ok和cancle 按钮'!$D$3"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "ok1",
+        "TemplateKey": "_RS_Normal_Style4"
+      }
+    },
+    "14,12": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ClosePopupReturnValues": [
+              {
+                "Name": "返回值001",
+                "Value": "ok value 03 -03"
+              },
+              {
+                "Name": "返回值003",
+                "Value": "2023/11/3-03"
+              }
+            ]
+          }
+        ],
+        "Text": "ok1",
+        "TemplateKey": "_RS_Normal_Style7"
+      }
+    },
+    "17,4": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ClosePopupResult": 1,
+            "ClosePopupReturnValues": [
+              {
+                "Name": "cancel返回值01",
+                "Value": "2400-01"
+              }
+            ]
+          }
+        ],
+        "Text": "cancel1",
+        "TemplateKey": "_RS_Normal_Style3"
+      }
+    },
+    "17,8": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ClosePopupResult": 1,
+            "ClosePopupReturnValues": [
+              {
+                "Name": "cancel返回值03",
+                "Value": "2400-02"
+              },
+              {
+                "Name": "cancel返回值02",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "='包含ok和cancle 按钮'!$D$3"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "cancel2",
+        "TemplateKey": "_RS_Normal_Style4"
+      }
+    },
+    "17,12": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ClosePopupResult": 1,
+            "ClosePopupReturnValues": [
+              {
+                "Name": "cancel返回值001",
+                "Value": "2400-03"
+              },
+              {
+                "Name": "cancel返回值003",
+                "Value": "2023/11/3-03_cancel"
+              }
+            ]
+          }
+        ],
+        "Text": "cancel3",
+        "TemplateKey": "_RS_Normal_Style7"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Formatter": 0
+      },
+      {
+        "FontFamily": 1,
+        "Formatter": 2
+      },
+      {
+        "FontFamily": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "@",
+        "Body",
+        "[AUTO]General"
+      ]
+    },
+    "CellStyles": {
+      "2,3": 0,
+      "6,3": 0,
+      "11,4": 1,
+      "11,5": 2,
+      "11,6": 2,
+      "12,4": 2,
+      "12,5": 2,
+      "12,6": 2,
+      "14,4": 2,
+      "14,5": 2,
+      "14,6": 2,
+      "14,7": 2,
+      "14,8": 1,
+      "14,9": 2,
+      "14,10": 2,
+      "14,11": 2,
+      "14,12": 1,
+      "14,13": 2,
+      "14,14": 2,
+      "15,4": 2,
+      "15,5": 2,
+      "15,6": 2,
+      "15,7": 2,
+      "15,8": 2,
+      "15,9": 2,
+      "15,10": 2,
+      "15,11": 2,
+      "15,12": 2,
+      "15,13": 2,
+      "15,14": 2,
+      "17,8": 1,
+      "17,9": 2,
+      "17,10": 2,
+      "17,12": 1,
+      "17,13": 2,
+      "17,14": 2,
+      "18,8": 2,
+      "18,9": 2,
+      "18,10": 2,
+      "18,12": 2,
+      "18,13": 2,
+      "18,14": 2
+    },
+    "SheetStyle": {
+      "FontFamily": 1
+    }
+  },
+  "Spans": [
+    "17,4,2,3",
+    "2,3,2,12",
+    "2,17,2,3",
+    "6,3,2,12",
+    "17,8,2,3",
+    "17,12,2,3",
+    "11,4,2,3",
+    "14,4,2,3",
+    "14,8,2,3",
+    "14,12,2,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//Gd6nqAHNv2jZAr7bTy96+jT1LRw4sxFfcXxLIeLWdAgSzG9pXNc+Ee9fdv/X0BeWpeLiGqJ3fvKWr0bf8gFzMY7dNJQ8hemQp7DeiKPN/L1Fs59Yz05LiBrniGyzlkpau8MTYvkUnm+qZ2YxNRJeEKNSQf2vzgAQbHR257PyqhmpZtzy2Pj2G39OMr7/KwKJ3Ih4hCWR2E/3HSSOw45obhvgAzF1nqK2ruSQ98a37yanzTDFWz3K4CrQcufH8+OpAlHQlPVny5ECfBZ9K/wipg4TNlzMoX5NIJ98qmlRSi2/TSbaZnZ9LIAK1ybXrr1AEINPcAszSGggYWh65Cq5PxhmGDSjRhkwk0JZaT3FF3uEnjYl7BnyFzHC3OoBJONNnDj2mjBEJK9/Ip//9/PNTCPl3ZyNkA6kg8tQO3eEE6h521NHTlp42Qkg/b9ibeuK9wCk9kN0W3fPoIoDDlr2mx+iGkB3D2Vp08dqQ0M0PaFPBucNU6jFberJA6qacI9jXb784xo5uXrA8ZKyxExQRj9ffi9fuUgKoQzYtkawgPydugT3cHh4l+ofNw8JOaFCJbQ/xTCMLmU7h4X6fme1EA+e9GfGfg0+Oz1kNOnJvR7qu0o4/cjkrB+DhztrFykFjfL147PjCjwRerdRlJku35LVPFgRv0MTgVKpbi+AGdAYp6qowIRjqQ5tJZCQV5oj9V/dLoC7O8IAHljSkliV8lWJxcNvOIy6ao+oGJextnG/+W790uCysqksvzFJMvtIYbc+IccHV3/4y5IwrtdaDXIhMNYhcmHO7uEBOseV8ndRyakNlrqcFb3aUNqEbvAHJKYi2Q/MAFOn2p7Mn/XCQtnRZAY0P1xKboFHjSUUetyUg6Y1taY8SFLCoNGUyTFChoqmxB7btLKESl0Muzy3YA==|920

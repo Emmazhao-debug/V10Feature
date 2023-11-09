@@ -1,0 +1,45 @@
+{
+  "ID": "39f3c9c2-7b9f-4df9-8e2e-0d2f3412dc88",
+  "Name": "resetcell",
+  "Params": [
+    {
+      "ID": "6237b443-2f1c-4754-98eb-47d96a93714a",
+      "Name": "object"
+    }
+  ],
+  "Commands": [
+    {
+      "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+      "ConditionAndCommandPairList": [
+        {
+          "Condition": {
+            "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+            "param": {
+              "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+              "cellLocations": [
+                {
+                  "SerializeProperty": "=object"
+                }
+              ]
+            }
+          },
+          "CommandList": [
+            {
+              "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+              "PropertyItemsList": [
+                {
+                  "TargetCells": {
+                    "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                    "SerializeProperty": "=object"
+                  },
+                  "Value": "Reset"
+                }
+              ]
+            }
+          ],
+          "ID": "9308e63c-86c9-45a5-b536-d3920f2749a0"
+        }
+      ]
+    }
+  ]
+}

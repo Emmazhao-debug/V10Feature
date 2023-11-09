@@ -1,0 +1,131 @@
+{
+  "Rows": {
+    "Count": 10
+  },
+  "Cols": {
+    "Count": 10
+  },
+  "Values": {
+    "2,1": "类别名称",
+    "7,1": "取消",
+    "7,6": "保存"
+  },
+  "AttachInfos": {
+    "3,1": {
+      "BindingInfo": {
+        "TableName": "类别名称",
+        "ColumnName": "Text",
+        "GUID": "c18f195f-4d79-4308-915e-9dbceed72cd5"
+      },
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon",
+            "Enabled": true
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "7,1": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ClosePopupResult": 1
+          }
+        ],
+        "Text": "取消",
+        "ClickMode": 1
+      }
+    },
+    "7,6": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+            "TableName": "类别名称",
+            "UpdateType": "add",
+            "ShowConfirm": false
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ReloadData": true
+          }
+        ],
+        "Text": "保存",
+        "ClickMode": 1
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "Formatter": 0
+      },
+      {
+        "Foreground": 1,
+        "Underline": true
+      },
+      {
+        "FontFamily": 2,
+        "Foreground": 1,
+        "Underline": true
+      },
+      {
+        "FontFamily": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "@",
+        "Blue",
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "3,1": 0,
+      "7,1": 1,
+      "7,6": 2,
+      "7,7": 3,
+      "7,8": 3,
+      "8,6": 3,
+      "8,7": 3,
+      "8,8": 3
+    },
+    "SheetStyle": {
+      "FontFamily": 2
+    }
+  },
+  "Spans": [
+    "3,1,2,8",
+    "7,1,2,3",
+    "7,6,2,3"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//clsJBOjTIbMejRJf8BRa6PLV3DoNsmjv6YHqEoArXnP0e05nhu1vVytt5rhz/XpfKkxR1Od7vDvC0MZOB2sgl1OAdLxIQsjgWdZxU3vgcY0fqUd1nOweNMaR3zJs4oP0gdmCQBl6HisgVvd6Q/xIHxnA5+lVdx5KPQ4GysdMAmkbYhxKlmdKckYqlqOtG5sSQGdfhxBNLzPyao2/bi4JPO5uJdHq8G1UWks56U5ku1cVq6nP7OXOFkZgKKYWMKAO8QRc8ZOUCcEAdOECj36AeHKyBiwXldDDX49Hf3AKdYCK3lMavVmDEiZqBBnj899/Z8tp9WoB0eJQbcYhgP8d/fwj8wBIibRuZGwRssPWlPoI7NKz15RIzKyrg+PI7fZmyouz/2gNNNtqDB+t17X/Xcg9IyrtQFwPIUGDzMdV/pQ7zCMA8LNhyMnG1Cp6ifN6a8c5RIp/a8cfV2LE6HDzFHz5due33lguUB6c4DmSnJdquQoIe2Bej1BEPxAQUivaBmRwtYfdaFZ2M98/9rago6nAJpieBP087H9dTTbs6KLTjuqz2TuSAvD4AKjdvEDHUbgBsa4B3j5++y6AdCUGw7W4RjOBjkNnDF4G7FVz7qfa09aN0GR8gcJp0Vr0lzw4YliBrzC16V2U6Wn8GXn00+9dTLct4rvowrsEleYoU1ob+s8U42ZrVSPI6kM6ANE0uLhANOIFWnh1L1p55tO2HLKzXbKJrfput5mDMcPnkTA8xxRdcFbGi0XXmPbHryN8b3+UbVYSuoH1Bf9sKr+VoieaU9uMxELPUNmt/x2PSiDxX4jmLZxmigf37HQ3FkygSKu1VIhZJ6VoBXi6KhvjSx2GUXz+OmUmUeNKXuWwTbCxcCDDUG1OvdkTFwIqa5BwR0DAWLmRwV5hY0inTdJgBw==|920

@@ -1,0 +1,359 @@
+{
+  "Rows": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 24.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 24.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 24.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 8.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 50.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 20.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 40.0
+        }
+      }
+    },
+    "Count": 10
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "0": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 24.0
+        }
+      },
+      "1": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      },
+      "2": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 32.0
+        }
+      },
+      "3": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 58.0
+        }
+      },
+      "4": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 18.0
+        }
+      },
+      "5": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 58.0
+        }
+      },
+      "6": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 22.0
+        }
+      },
+      "7": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 16.0
+        }
+      },
+      "8": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 26.0
+        }
+      },
+      "9": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 12.0
+        }
+      },
+      "10": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 12.0
+        }
+      }
+    },
+    "Count": 11,
+    "DefaultSize": 32.0
+  },
+  "Values": {
+    "9,0": "操作一",
+    "9,4": "|",
+    "9,5": "操作二"
+  },
+  "AttachInfos": {
+    "1,1": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "ImagePath": "Navigation/243_image_8.svg",
+        "BuiltIn": true,
+        "Color": "Accent 1 60"
+      }
+    },
+    "1,7": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "TemplateKey": "模板_棋盘式布局卡片页状态按钮"
+      },
+      "TemplateCellSource": "预约状态",
+      "RulesGuidList": [
+        "10349a36-35d9-48c5-8840-909153b4ef5c",
+        "6d9d77fb-10f1-4353-8d84-362c05348295",
+        "b0aa0821-cce3-4acc-a6e9-c2206c278bbe"
+      ]
+    },
+    "5,1": {
+      "TemplateCellSource": "产品名称"
+    },
+    "7,1": {
+      "TemplateCellSource": "详情介绍"
+    },
+    "9,0": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "Text": "操作一",
+        "ClickMode": 1,
+        "TemplateKey": "_RS_Main"
+      }
+    },
+    "9,5": {
+      "CellType": {
+        "$type": "Forguncy.HyperlinkCellType, ServerDesignerCommon",
+        "Text": "操作二",
+        "ClickMode": 1,
+        "TemplateKey": "_RS_Main"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontSize": 18.666666666666664,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "FontSize": 13.333333333333332,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 16.0,
+        "Foreground": 1,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontSize": 12.0,
+        "Foreground": 2,
+        "HorizontalAlignment": 3,
+        "VerticalAlignment": 4,
+        "WordWrap": true,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Foreground": null,
+        "HorizontalAlignment": 5,
+        "Underline": false,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 6,
+        "Foreground": 7,
+        "HorizontalAlignment": 5,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      },
+      {
+        "Background": null,
+        "FontSize": 13.333333333333332,
+        "Foreground": 2,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderLeft": null,
+        "BorderRight": null
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "Text 1 15",
+        "Text 1 50",
+        "Left",
+        "Top",
+        "Center",
+        "等线",
+        "Background 1 -15"
+      ]
+    },
+    "CellStyles": {
+      "1,1": 0,
+      "1,7": 1,
+      "2,7": 2,
+      "2,8": 2,
+      "4,1": 0,
+      "4,2": 0,
+      "5,1": 3,
+      "6,1": 3,
+      "6,2": 3,
+      "6,3": 3,
+      "6,4": 3,
+      "6,5": 3,
+      "6,6": 3,
+      "6,7": 3,
+      "6,8": 3,
+      "7,1": 4,
+      "7,2": 5,
+      "7,3": 5,
+      "7,4": 5,
+      "7,5": 5,
+      "7,6": 5,
+      "7,8": 5,
+      "9,0": 6,
+      "9,4": 7,
+      "9,5": 6
+    },
+    "RowStyles": {
+      "9": 8
+    },
+    "SheetStyle": {
+      "FontFamily": 0,
+      "BorderBottom": null,
+      "BorderTop": null,
+      "BorderLeft": null,
+      "BorderRight": null
+    }
+  },
+  "Spans": [
+    "1,1,3,2",
+    "1,7,1,3",
+    "5,1,1,8",
+    "7,1,1,8",
+    "9,0,1,4",
+    "9,5,1,6"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.TemplatePage, ServerDesignerCommon",
+    "ParentPageName": "绑定数据源_隐藏格子",
+    "ConditionFormatRulesCollection": {
+      "Rules": [
+        {
+          "$type": "Forguncy.ConditionFormat.SpecificTextRule, ServerDesignerCommon",
+          "Value": "待预约",
+          "GUID": "10349a36-35d9-48c5-8840-909153b4ef5c",
+          "StyleInfo": {
+            "Background": "#FFF3AA34",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.SpecificTextRule, ServerDesignerCommon",
+          "Value": "排队中",
+          "Priority": 1,
+          "GUID": "6d9d77fb-10f1-4353-8d84-362c05348295",
+          "StyleInfo": {
+            "Background": "Accent 1 0",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        },
+        {
+          "$type": "Forguncy.ConditionFormat.SpecificTextRule, ServerDesignerCommon",
+          "Value": "已预约",
+          "Priority": 2,
+          "GUID": "b0aa0821-cce3-4acc-a6e9-c2206c278bbe",
+          "StyleInfo": {
+            "Background": "#FF07C160",
+            "Underline": null,
+            "Strikethrough": null
+          }
+        }
+      ]
+    }
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "BackgroundPictures": [
+    {
+      "Name": "22c76645-2af8-4885-9122-6b29cce8be5e",
+      "DisplayName": "背景图1",
+      "StyleInfo": {
+        "CornerRadius": 6.0,
+        "Fill": "#FFF7F9FA"
+      },
+      "IsAutomaticFill": false,
+      "Location": "0,210",
+      "Size": "310,40"
+    }
+  ]
+}//MSTQyxtn+nFvt9muL4vDudgZo4GQy8KRhW6PbqfcWW0ANIjQFwLJzebxbMVJNSqGrRbqjdd8KRRwBZT2LCZjWrCQ6RJFqKLB8i73e3RMLIS7AbL+5czR9HnypzsbgehY5yAyUuJ0yJS0hfE1gflpZiVxnXxnjh/QgAtjFm1upTUXWpiImPghDmJMprtQORngVXNeqcQsQT0veh3aNvmobbFir80bvJov5rJTgGmcnzyMSub9nZSbxcRCy2E0B9IGUuFFT3rmE2rr79NxFVka0/1eFoKNGcBdUMw/aAjlYF8lmoLZV5jJ3c7JgBwrjZmUosk1f4HjPClrseKIATdQE40AD24yYrP/AXfvwRRbLE3r5jtw5V264kk9wQD+508Zc9ZBERNZKm2g+3XOxkJ0W4XHsMD2vUixXPBMS7qXRRKwpqkUKjearr6401PPWu35SmhP29QRQluevv0fF26A4TW3rZ8ziH2sR+5XR80wp9ohVsMReHWWGd1h4+IcYKrs4nreGiTZH5prQQztgxCZ8OAXi9VBjz2YTVvXVb0j3QhB7lEPPTaF+kZ3yG5dPdUZ1bvT/Oy6UNZEKkl/9VYNN+kkwXbfrwIABWKLMAoTvBuPAr/QO0bHQ9sN6maYW4+aKFACBloOLLuGvWZ98RQ4bj9TXJz0kPWeemEoK88Lo4ZfQgKDw+HjtFYEMlwcYmvlcDa8vYrKCE4OSV9gfz7jZLytOzS0auuevVoimCI/ez+is6BSHCBZdUJ9bw63WuKAnAnbQuK5HJsLtdRox5Kfod4m3VcBtdsjlSzfZkULnN6oJHyBOcH554NECoQh40yWwWoLJWBCHWsqAt7YDbC6q+YkR5uOK2hdHf7f+ZgE7sP+ZrpZjsRCeoEG5shEfvQu+UbVAJghDfG1KhRQt+YJ2A==|920

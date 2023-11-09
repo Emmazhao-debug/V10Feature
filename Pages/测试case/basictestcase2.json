@@ -1,0 +1,1635 @@
+{
+  "Rows": {
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "2,1": "执行JS命令",
+    "2,8": "设置行列布局",
+    "2,15": "下载文件",
+    "2,22": "Loading",
+    "2,29": "移动单元格位置",
+    "2,36": "发送http请求",
+    "2,43": "操作单元格命令",
+    "2,50": "操作单元格命令",
+    "18,1": "请先指定按钮\"发送http请求\"上的命令",
+    "19,1": "导入json数据到单元格",
+    "19,8": "导入json数据到Listview",
+    "19,30": "传递listview数据",
+    "21,1": "企业",
+    "21,15": "联系人",
+    "22,30": "目标listview",
+    "25,1": "企业",
+    "25,7": "联系人",
+    "25,14": "电话",
+    "32,30": "源listview"
+  },
+  "AttachInfos": {
+    "2,1": {
+      "CellComment": {
+        "Comments": "Js获取信息变量信息"
+      },
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "ClosePopupCallbackCommand": {
+              "Commands": [
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                          "cellLocations": [
+                            {
+                              "SerializeProperty": "=basictestcase2!IsOK"
+                            }
+                          ]
+                        },
+                        "value": "1"
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
+                          "JavaScript": "var result1=Forguncy.CommandHelper.getVariableValue(\"IsOk\");\r\nvar result2=Forguncy.CommandHelper.getVariableValue(\"当前行信息\");\r\nconsole.log(\"isOk value： \"+result1);\r\nconsole.log(\"当前行信息 value： \"+result2);\r\n",
+                          "ID": "e3d807352587427ebce13ad11bba26a4"
+                        }
+                      ],
+                      "ID": "6420d72d-a5e2-4ef7-a081-be2b2e477162"
+                    },
+                    {
+                      "CommandList": [],
+                      "ID": "31099ebe-a83e-40b1-ac5d-bed8e1af1c37"
+                    }
+                  ]
+                }
+              ],
+              "ParamProperties": {
+                "IsOK": "IsOK",
+                "当前行信息": "当前行信息"
+              }
+            },
+            "PageName": "页面弹出命令"
+          }
+        ],
+        "Text": "执行JS命令",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "2,8": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PopupDisplayMode": 2,
+            "ClosePopupCallbackCommand": {
+              "Commands": [
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                          "cellLocations": [
+                            {
+                              "SerializeProperty": "=basictestcase2!IsOK"
+                            }
+                          ]
+                        },
+                        "value": "1"
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                          "PropertyItemsList": [
+                            {
+                              "Location": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=basictestcase2!7:8"
+                              },
+                              "LayoutType": 1,
+                              "FormulaDefinition": {
+                                "FixedLength": {
+                                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                  "SerializeProperty": "=basictestcase2!IsOK*30"
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      "ID": "72c73894-ee9c-4cee-a98c-fa47c2a353dc"
+                    },
+                    {
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.SetRowColumnLayoutCommand, ServerDesignerCommon",
+                          "PropertyItemsList": [
+                            {
+                              "Location": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=basictestcase2!7:8"
+                              },
+                              "Value": false
+                            }
+                          ]
+                        }
+                      ],
+                      "ID": "bc5fa1e2-351d-4c35-89eb-b87b2094cf49"
+                    }
+                  ]
+                }
+              ],
+              "ParamProperties": {
+                "IsOK": "IsOK",
+                "当前行信息": "当前行信息"
+              }
+            },
+            "PageName": "页面弹出命令"
+          }
+        ],
+        "Text": "设置行列布局",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "2,15": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PopupDisplayMode": 1,
+            "ClosePopupCallbackCommand": {
+              "Commands": [
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                          "cellLocations": [
+                            {
+                              "SerializeProperty": "=basictestcase2!IsOK"
+                            }
+                          ]
+                        },
+                        "value": "1"
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.DownloadFileCommand, ServerDesignerCommon",
+                          "FileName": "外联库半覆盖",
+                          "FileGuid": "6c722ecb97644a10997c6a6454de812f",
+                          "FileExtension": ".xmind"
+                        }
+                      ],
+                      "ID": "464b74e4-dce0-491f-8c59-705af1db4f66"
+                    },
+                    {
+                      "CommandList": [],
+                      "ID": "faf9496c-622f-4f58-a07c-7191817d7828"
+                    }
+                  ]
+                }
+              ],
+              "ParamProperties": {
+                "IsOK": "IsOK",
+                "当前行信息": "当前行信息"
+              }
+            },
+            "PageName": "页面弹出命令"
+          }
+        ],
+        "Text": "下载文件",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "2,22": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PopupDisplayMode": 1,
+            "ClosePopupCallbackCommand": {
+              "Commands": [
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                          "cellLocations": [
+                            {
+                              "SerializeProperty": "=basictestcase2!IsOK"
+                            }
+                          ]
+                        },
+                        "value": "1"
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "LoadingCommand.StartLoadingCommand, LoadingCommand",
+                          "LoadingText": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=basictestcase2!IsOK*5"
+                          },
+                          "LoadingTextColor": "Background 1 0"
+                        },
+                        {
+                          "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                          "ServerCommandName": "waitcommand",
+                          "Parameters": [
+                            {
+                              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                              "ParamName": "wait",
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=basictestcase2!IsOK*5"
+                              }
+                            }
+                          ],
+                          "RefreshAfterFinish": true,
+                          "CheckDataValidation": true
+                        },
+                        {
+                          "$type": "LoadingCommand.EndLoadingCommand, LoadingCommand"
+                        }
+                      ],
+                      "ID": "f7e7242e-2605-46f6-885e-f08dbc08b893"
+                    },
+                    {
+                      "CommandList": [],
+                      "ID": "e2a9403e-23a8-4296-a6ef-ed964d558921"
+                    }
+                  ]
+                }
+              ],
+              "ParamProperties": {
+                "IsOK": "IsOK",
+                "当前行信息": "当前行信息"
+              }
+            },
+            "PageName": "页面弹出命令"
+          }
+        ],
+        "Text": "Loading",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "2,29": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PopupDisplayMode": 1,
+            "ClosePopupCallbackCommand": {
+              "Commands": [
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                          "cellLocations": [
+                            {
+                              "SerializeProperty": "=basictestcase2!IsOK"
+                            }
+                          ]
+                        },
+                        "value": "1"
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "SetCellLocationCommand.SetCellLocationCommand, SetCellLocationCommand",
+                          "SourceCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=basictestcase2!B10"
+                          },
+                          "CellLocation": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=basictestcase2!U10"
+                          }
+                        }
+                      ],
+                      "ID": "a9d75f22-5b4b-4f6e-9f60-c0558b4895de"
+                    },
+                    {
+                      "CommandList": [],
+                      "ID": "4d8a4db1-52e9-4016-9df3-5c9c5fb6f798"
+                    }
+                  ]
+                }
+              ],
+              "ParamProperties": {
+                "IsOK": "IsOK",
+                "当前行信息": "当前行信息"
+              }
+            },
+            "PageName": "页面弹出命令"
+          }
+        ],
+        "Text": "移动单元格位置",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "2,36": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PopupDisplayMode": 1,
+            "ClosePopupCallbackCommand": {
+              "Commands": [
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                          "cellLocations": [
+                            {
+                              "SerializeProperty": "=basictestcase2!IsOK"
+                            }
+                          ]
+                        },
+                        "value": "1"
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "PostDataToWebApi.PostDataCommand, PostDataToWebApi",
+                          "PostData": {
+                            "DataItemType": 1,
+                            "Data": {
+                              "$type": "PostDataToWebApi.ObjectData, PostDataToWebApi",
+                              "Data": []
+                            }
+                          },
+                          "WebUrl": "/ServerCommand/GetTableData",
+                          "Method": "POST",
+                          "SuccessCallback": "// The repsonse data is stored in 'result' variable.\r\n// Please use 'result' to implement your success callback. \r\n//console.log(result);",
+                          "ErrorCallback": "// The error data is stored in 'error' variable.\r\n// Please use 'error' to handle the unexpected situation. \r\nconsole.error(error);",
+                          "NewParameter": "result",
+                          "Header": [],
+                          "Timeout": 100.0
+                        },
+                        {
+                          "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                          "PropertyItemsList": [
+                            {
+                              "TargetCells": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=basictestcase2!U10"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=basictestcase2!result.Message"
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      "ID": "ac1b21f0-77f7-45c3-a62d-4595c9111e2c"
+                    },
+                    {
+                      "CommandList": [],
+                      "ID": "3720a99e-94b4-47bc-abbc-88e94997d377"
+                    }
+                  ]
+                }
+              ],
+              "ParamProperties": {
+                "IsOK": "IsOK",
+                "当前行信息": "当前行信息"
+              }
+            },
+            "PageName": "页面弹出命令"
+          }
+        ],
+        "Text": "发送http请求",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "2,43": {
+      "CellComment": {
+        "Comments": "操作user control\r\n"
+      },
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PopupDisplayMode": 1,
+            "ClosePopupCallbackCommand": {
+              "Commands": [
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                          "cellLocations": [
+                            {
+                              "SerializeProperty": "=basictestcase2!IsOK"
+                            }
+                          ]
+                        },
+                        "value": "1"
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+                          "TargetPageElement": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=basictestcase2!AI10"
+                          },
+                          "TargetType": "Forguncy.UserControlPageCellType, ServerDesignerCommon, Version=10.0.0.0, Culture=neutral, PublicKeyToken=967100671921c115",
+                          "MethodName": "SetUserControlPage",
+                          "ParameterValues": {
+                            "userControlPageName": "弹出组件设置框",
+                            "propertyValues": {
+                              "$type": "System.Collections.Generic.List`1[[Forguncy.UserControlPagePropertyValue, ServerDesignerCommon]], System.Private.CoreLib",
+                              "$values": []
+                            },
+                            "commandHandlers": {
+                              "$type": "System.Collections.Generic.List`1[[Forguncy.UserControlPageCommandHandler, ServerDesignerCommon]], System.Private.CoreLib",
+                              "$values": []
+                            }
+                          }
+                        }
+                      ],
+                      "ID": "f037c350-1951-46e6-aa73-a98d3446dc5d"
+                    },
+                    {
+                      "CommandList": [],
+                      "ID": "5fc82992-487f-4844-8dd6-2780096a91a1"
+                    }
+                  ]
+                }
+              ],
+              "ParamProperties": {
+                "IsOK": "IsOK",
+                "当前行信息": "当前行信息"
+              }
+            },
+            "PageName": "页面弹出命令"
+          }
+        ],
+        "Text": "操作单元格命令",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "2,50": {
+      "CellComment": {
+        "Comments": "操作user control\r\n"
+      },
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PopupDisplayMode": 1,
+            "ClosePopupCallbackCommand": {
+              "Commands": [
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                          "cellLocations": [
+                            {
+                              "SerializeProperty": "=basictestcase2!IsOK"
+                            }
+                          ]
+                        },
+                        "value": "1"
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+                          "TargetPageElement": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=basictestcase2!AI10"
+                          },
+                          "TargetType": "Forguncy.UserControlPageCellType, ServerDesignerCommon, Version=10.0.0.0, Culture=neutral, PublicKeyToken=967100671921c115",
+                          "MethodName": "GetPropertyValue",
+                          "ParameterValues": {
+                            "propertyNameList": {
+                              "$type": "System.Collections.Generic.List`1[[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                              "$values": [
+                                "文本",
+                                "Combo",
+                                "日期",
+                                "数字"
+                              ]
+                            },
+                            "userControlPageName": null
+                          },
+                          "RetrunParamNames": {
+                            "文本": {
+                              "SerializeProperty": "文本"
+                            },
+                            "Combo": {
+                              "SerializeProperty": "Combo"
+                            },
+                            "日期": {
+                              "SerializeProperty": "日期"
+                            },
+                            "数字": {
+                              "SerializeProperty": "数字"
+                            }
+                          }
+                        },
+                        {
+                          "$type": "Forguncy.Model.RunJavaScriptCommand, ServerDesignerCommon",
+                          "JavaScript": "var allvariable=Forguncy.CommandHelper.getAllVariableValues();\r\nconsole.log(allvariable);\r\nfor(var item in allvariable){\r\n    console.log(\"item: \"+allvariable[item]);\r\n}\r\n",
+                          "ID": "90ff12b5042c4ba4a54700042980985c"
+                        }
+                      ],
+                      "ID": "f6eced94-2252-423c-8fe5-b9da78c5b4e0"
+                    },
+                    {
+                      "CommandList": [],
+                      "ID": "c410552d-25ff-4827-9519-d43ae8353613"
+                    }
+                  ]
+                }
+              ],
+              "ParamProperties": {
+                "IsOK": "IsOK",
+                "当前行信息": "当前行信息"
+              }
+            },
+            "PageName": "页面弹出命令"
+          }
+        ],
+        "Text": "操作单元格命令",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "9,1": {
+      "CellType": {
+        "$type": "Forguncy.ImageCellType, ServerDesignerCommon",
+        "ImagePath": "camera.jpg"
+      }
+    },
+    "9,34": {
+      "CellType": {
+        "$type": "Forguncy.UserControlPageCellType, ServerDesignerCommon",
+        "UserControlPageName": "组件弹出框",
+        "PropertyValues": [
+          {
+            "Name": "文本",
+            "Value": "information"
+          },
+          {
+            "Name": "Combo",
+            "Value": "Item2"
+          },
+          {
+            "Name": "日期",
+            "Value": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=TODAY()"
+            }
+          },
+          {
+            "Name": "数字",
+            "Value": "1200"
+          }
+        ]
+      }
+    },
+    "19,1": {
+      "CellComment": {
+        "Comments": "Js获取信息变量信息"
+      },
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "ClosePopupCallbackCommand": {
+              "Commands": [
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                          "cellLocations": [
+                            {
+                              "SerializeProperty": "=basictestcase2!IsOK"
+                            }
+                          ]
+                        },
+                        "value": "1"
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "JsonDataSource.SetJsonDataToCellCommand, JsonDataSource",
+                          "CellInfos": [
+                            {
+                              "Cell": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=basictestcase2!B23"
+                              },
+                              "PropertyName": "企业"
+                            },
+                            {
+                              "Cell": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=basictestcase2!P23"
+                              },
+                              "PropertyName": "联系人"
+                            }
+                          ],
+                          "SourceCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=basictestcase2!U10"
+                          },
+                          "SampleJson": "{\"ID\":2,\"企业\":\"北京汽车\",\"联系人\":\"Smith Sarah\",\"电话\":null,\"地址\":\"CA\",\"备注\":\"其他\"}"
+                        }
+                      ],
+                      "ID": "2d610dc0-19ad-4320-ba11-165d9ba33459"
+                    },
+                    {
+                      "CommandList": [],
+                      "ID": "3b92a8c9-7830-429a-9dd5-a9b136269706"
+                    }
+                  ]
+                }
+              ],
+              "ParamProperties": {
+                "IsOK": "IsOK",
+                "当前行信息": "当前行信息"
+              }
+            },
+            "PageName": "页面弹出命令"
+          }
+        ],
+        "Text": "导入json数据到单元格",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "19,8": {
+      "CellComment": {
+        "Comments": "Js获取信息变量信息"
+      },
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "ClosePopupCallbackCommand": {
+              "Commands": [
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                          "cellLocations": [
+                            {
+                              "SerializeProperty": "=basictestcase2!IsOK"
+                            }
+                          ]
+                        },
+                        "value": "1"
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "JsonDataSource.ImportJsonDataToListviewCommand, JsonDataSource",
+                          "Listview": "Listview1",
+                          "ListviewColumnInfos": [
+                            {
+                              "ListViewColumnCell": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=basictestcase2!B27"
+                              },
+                              "PropertyName": "企业"
+                            },
+                            {
+                              "ListViewColumnCell": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=basictestcase2!H27"
+                              },
+                              "PropertyName": "联系人"
+                            },
+                            {
+                              "ListViewColumnCell": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=basictestcase2!O27"
+                              },
+                              "PropertyName": "电话"
+                            }
+                          ],
+                          "SourceCell": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=basictestcase2!U10"
+                          },
+                          "SampleJson": "{\"ID\":2,\"企业\":\"北京汽车\",\"联系人\":\"Smith Sarah\",\"电话\":null,\"地址\":\"CA\",\"备注\":\"其他\"}"
+                        }
+                      ],
+                      "ID": "5ce26e9e-bb31-44f0-8361-d16438430c19"
+                    },
+                    {
+                      "CommandList": [],
+                      "ID": "45816b00-0521-4752-b952-0c5c6b943331"
+                    }
+                  ]
+                }
+              ],
+              "ParamProperties": {
+                "IsOK": "IsOK",
+                "当前行信息": "当前行信息"
+              }
+            },
+            "PageName": "页面弹出命令"
+          }
+        ],
+        "Text": "导入json数据到Listview",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "19,30": {
+      "CellComment": {
+        "Comments": "Js获取信息变量信息"
+      },
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "ClosePopupCallbackCommand": {
+              "Commands": [
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionPageElementParam, ServerDesignerCommon",
+                          "cellLocations": [
+                            {
+                              "SerializeProperty": "=basictestcase2!IsOK"
+                            }
+                          ]
+                        },
+                        "value": "1"
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                          "PropertyItemsList": [
+                            {
+                              "TargetCells": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=basictestcase2!AV34"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=basictestcase2!ReturnValue1"
+                              }
+                            }
+                          ],
+                          "Disabled": true
+                        },
+                        {
+                          "$type": "Forguncy.Model.RequestServerCommand, ServerDesignerCommon",
+                          "ServerCommandName": "waitcommand",
+                          "Parameters": [
+                            {
+                              "$type": "Forguncy.Model.RequestServerCommandObjectParam, ServerDesignerCommon",
+                              "ParamName": "wait",
+                              "Value": "5"
+                            }
+                          ],
+                          "CheckDataValidation": false,
+                          "Disabled": true
+                        },
+                        {
+                          "$type": "PassListviewDataCommand.PassListviewDataCommand, PassListviewDataCommand",
+                          "PassRowMode": 1,
+                          "PassValueItems": [
+                            {
+                              "SourceCell": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=basictestcase2!AI35"
+                              },
+                              "TargetCell": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=basictestcase2!AI25"
+                              }
+                            },
+                            {
+                              "SourceCell": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=basictestcase2!AM35"
+                              },
+                              "TargetCell": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=basictestcase2!AM25"
+                              }
+                            },
+                            {
+                              "SourceCell": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=basictestcase2!AQ35"
+                              },
+                              "TargetCell": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=basictestcase2!AT25"
+                              }
+                            }
+                          ],
+                          "Source": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=basictestcase2!AI35"
+                          },
+                          "Target": {
+                            "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                            "SerializeProperty": "=basictestcase2!AE25"
+                          }
+                        }
+                      ],
+                      "ID": "3893015f-7e96-47dd-b0d2-f1e17875acea"
+                    },
+                    {
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                          "ListviewName": "Listview3",
+                          "UpdateType": 6,
+                          "UpdateListviewCommandRunTimeMethodSetting": {
+                            "MethodName": "ClearAllSelectedRows",
+                            "ParameterValues": {
+                              "mode": 1
+                            }
+                          }
+                        }
+                      ],
+                      "ID": "9a8583e1-08aa-4e42-bbf2-afc9f2d03589"
+                    }
+                  ]
+                }
+              ],
+              "ParamProperties": {
+                "IsOK": "IsOK",
+                "ReturnValue1": "ReturnValue1"
+              }
+            },
+            "PageName": "页面弹出命令 (2)"
+          }
+        ],
+        "Text": "传递listview数据",
+        "TemplateKey": "_RS_Normal_Style6"
+      }
+    },
+    "22,1": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "22,15": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "23,30": {
+      "ListViewInfo": {
+        "Name": "Listview2",
+        "TableName": "targetTable",
+        "RowIndex": 23,
+        "ColumnIndex": 30,
+        "RowCount": 9,
+        "ColumnCount": 26,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "24,30": {
+      "NameUsedInJavaScript": "ID",
+      "BindingInfo": {
+        "TableName": "targetTable",
+        "ColumnName": "ID",
+        "GUID": "c6d53d34-10b2-4737-aa04-94a3d1718b26"
+      }
+    },
+    "24,34": {
+      "NameUsedInJavaScript": "Text",
+      "BindingInfo": {
+        "TableName": "targetTable",
+        "ColumnName": "Text",
+        "GUID": "ddacc2b4-c064-4360-8a03-971e47ef3a8e"
+      }
+    },
+    "24,38": {
+      "NameUsedInJavaScript": "Integer",
+      "BindingInfo": {
+        "TableName": "targetTable",
+        "ColumnName": "Integer",
+        "GUID": "6d90975b-9fb5-4af1-aeaa-fbad102f26ed"
+      }
+    },
+    "24,45": {
+      "NameUsedInJavaScript": "Date_and_Time",
+      "BindingInfo": {
+        "TableName": "targetTable",
+        "ColumnName": "Date_and_Time",
+        "GUID": "97a7bd20-2c86-4025-a1fc-fa4b947237e3"
+      }
+    },
+    "25,1": {
+      "ListViewInfo": {
+        "Name": "Listview1",
+        "RowIndex": 25,
+        "ColumnIndex": 1,
+        "RowCount": 7,
+        "ColumnCount": 26,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "26,1": {
+      "NameUsedInJavaScript": "企业"
+    },
+    "26,7": {
+      "NameUsedInJavaScript": "联系人"
+    },
+    "26,14": {
+      "NameUsedInJavaScript": "电话"
+    },
+    "33,30": {
+      "ListViewInfo": {
+        "Name": "Listview3",
+        "TableName": "originaltable",
+        "RowIndex": 33,
+        "ColumnIndex": 30,
+        "RowCount": 9,
+        "ColumnCount": 16,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "IsRowHeaderCheckBoxVisible": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "33,47": {
+      "CellType": {
+        "$type": "SelectionPanel.SelectionPanel, SelectionPanel",
+        "ListViewName": "Listview3"
+      }
+    },
+    "34,34": {
+      "BindingInfo": {
+        "TableName": "originaltable",
+        "ColumnName": "ID",
+        "GUID": "008f2297-19b9-466e-8f20-4c8135e58cf1"
+      }
+    },
+    "34,38": {
+      "BindingInfo": {
+        "TableName": "originaltable",
+        "ColumnName": "Text",
+        "GUID": "8e8afa59-3e39-4431-9c26-a036b1668a9d"
+      }
+    },
+    "34,42": {
+      "BindingInfo": {
+        "TableName": "originaltable",
+        "ColumnName": "Integer",
+        "GUID": "2f61cc08-813c-477f-b3e2-ac4e400817e7"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "WordWrap": true
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "BorderBottom": 0,
+        "BorderTop": 0,
+        "BorderLeft": 0,
+        "BorderRight": 0
+      },
+      {
+        "Background": 2,
+        "WordWrap": true
+      },
+      {
+        "Formatter": 3
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 3
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "HorizontalAlignment": 4,
+        "WordWrap": true
+      },
+      {
+        "Background": 5
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "black",
+        "Accent 5 80",
+        "@",
+        "Center",
+        "Accent 6 80"
+      ],
+      "Borders": [
+        {
+          "Color": 1
+        }
+      ]
+    },
+    "CellStyles": {
+      "2,1": 0,
+      "2,2": 1,
+      "2,3": 1,
+      "2,4": 1,
+      "2,5": 1,
+      "2,8": 0,
+      "2,9": 1,
+      "2,10": 1,
+      "2,11": 1,
+      "2,12": 1,
+      "2,15": 0,
+      "2,16": 1,
+      "2,17": 1,
+      "2,18": 1,
+      "2,19": 1,
+      "2,22": 0,
+      "2,23": 1,
+      "2,24": 1,
+      "2,25": 1,
+      "2,26": 1,
+      "2,29": 0,
+      "2,30": 1,
+      "2,31": 1,
+      "2,32": 1,
+      "2,33": 1,
+      "2,36": 0,
+      "2,37": 1,
+      "2,38": 1,
+      "2,39": 1,
+      "2,40": 1,
+      "2,43": 0,
+      "2,44": 1,
+      "2,45": 1,
+      "2,46": 1,
+      "2,47": 1,
+      "2,50": 0,
+      "2,51": 1,
+      "2,52": 1,
+      "2,53": 1,
+      "2,54": 1,
+      "3,1": 1,
+      "3,2": 1,
+      "3,3": 1,
+      "3,4": 1,
+      "3,5": 1,
+      "3,8": 1,
+      "3,9": 1,
+      "3,10": 1,
+      "3,11": 1,
+      "3,12": 1,
+      "3,15": 1,
+      "3,16": 1,
+      "3,17": 1,
+      "3,18": 1,
+      "3,19": 1,
+      "3,22": 1,
+      "3,23": 1,
+      "3,24": 1,
+      "3,25": 1,
+      "3,26": 1,
+      "3,29": 1,
+      "3,30": 1,
+      "3,31": 1,
+      "3,32": 1,
+      "3,33": 1,
+      "3,36": 1,
+      "3,37": 1,
+      "3,38": 1,
+      "3,39": 1,
+      "3,40": 1,
+      "3,43": 1,
+      "3,44": 1,
+      "3,45": 1,
+      "3,46": 1,
+      "3,47": 1,
+      "3,50": 1,
+      "3,51": 1,
+      "3,52": 1,
+      "3,53": 1,
+      "3,54": 1,
+      "6,0": 2,
+      "6,1": 2,
+      "6,2": 2,
+      "6,3": 2,
+      "6,4": 2,
+      "6,5": 2,
+      "6,6": 2,
+      "6,7": 2,
+      "6,8": 2,
+      "6,9": 2,
+      "6,10": 2,
+      "6,11": 2,
+      "6,12": 2,
+      "6,13": 2,
+      "6,14": 2,
+      "6,15": 2,
+      "6,16": 2,
+      "6,17": 2,
+      "6,18": 2,
+      "6,19": 2,
+      "6,20": 2,
+      "6,21": 2,
+      "6,22": 2,
+      "6,23": 2,
+      "6,24": 2,
+      "6,25": 2,
+      "6,26": 2,
+      "6,27": 2,
+      "6,28": 2,
+      "6,29": 2,
+      "6,30": 2,
+      "6,31": 2,
+      "6,32": 2,
+      "6,33": 2,
+      "6,34": 2,
+      "6,35": 2,
+      "6,36": 2,
+      "6,37": 2,
+      "6,38": 2,
+      "6,39": 2,
+      "6,40": 2,
+      "6,41": 2,
+      "6,42": 2,
+      "6,43": 2,
+      "6,44": 2,
+      "6,45": 2,
+      "6,46": 2,
+      "6,47": 2,
+      "6,48": 2,
+      "6,49": 2,
+      "6,50": 2,
+      "6,51": 2,
+      "6,52": 2,
+      "6,53": 2,
+      "6,54": 2,
+      "6,55": 2,
+      "6,56": 2,
+      "6,57": 2,
+      "6,58": 2,
+      "6,59": 2,
+      "7,0": 2,
+      "7,1": 2,
+      "7,2": 2,
+      "7,3": 2,
+      "7,4": 2,
+      "7,5": 2,
+      "7,6": 2,
+      "7,7": 2,
+      "7,8": 2,
+      "7,9": 2,
+      "7,10": 2,
+      "7,11": 2,
+      "7,12": 2,
+      "7,13": 2,
+      "7,14": 2,
+      "7,15": 2,
+      "7,16": 2,
+      "7,17": 2,
+      "7,18": 2,
+      "7,19": 2,
+      "7,20": 2,
+      "7,21": 2,
+      "7,22": 2,
+      "7,23": 2,
+      "7,24": 2,
+      "7,25": 2,
+      "7,26": 2,
+      "7,27": 2,
+      "7,28": 2,
+      "7,29": 2,
+      "7,30": 2,
+      "7,31": 2,
+      "7,32": 2,
+      "7,33": 2,
+      "7,34": 2,
+      "7,35": 2,
+      "7,36": 2,
+      "7,37": 2,
+      "7,38": 2,
+      "7,39": 2,
+      "7,40": 2,
+      "7,41": 2,
+      "7,42": 2,
+      "7,43": 2,
+      "7,44": 2,
+      "7,45": 2,
+      "7,46": 2,
+      "7,47": 2,
+      "7,48": 2,
+      "7,49": 2,
+      "7,50": 2,
+      "7,51": 2,
+      "7,52": 2,
+      "7,53": 2,
+      "7,54": 2,
+      "7,55": 2,
+      "7,56": 2,
+      "7,57": 2,
+      "7,58": 2,
+      "7,59": 2,
+      "9,20": 3,
+      "19,1": 0,
+      "19,2": 1,
+      "19,3": 1,
+      "19,4": 1,
+      "19,5": 1,
+      "19,8": 0,
+      "19,9": 1,
+      "19,10": 1,
+      "19,11": 1,
+      "19,12": 1,
+      "19,30": 0,
+      "19,31": 1,
+      "19,32": 1,
+      "19,33": 1,
+      "19,34": 1,
+      "20,1": 1,
+      "20,2": 1,
+      "20,3": 1,
+      "20,4": 1,
+      "20,5": 1,
+      "20,8": 1,
+      "20,9": 1,
+      "20,10": 1,
+      "20,11": 1,
+      "20,12": 1,
+      "20,30": 1,
+      "20,31": 1,
+      "20,32": 1,
+      "20,33": 1,
+      "20,34": 1,
+      "22,1": 4,
+      "22,15": 5,
+      "22,16": 1,
+      "22,17": 1,
+      "22,18": 1,
+      "22,19": 1,
+      "22,20": 1,
+      "22,21": 1,
+      "22,22": 1,
+      "22,23": 1,
+      "22,24": 1,
+      "22,25": 1,
+      "22,26": 1,
+      "23,15": 1,
+      "23,16": 1,
+      "23,17": 1,
+      "23,18": 1,
+      "23,19": 1,
+      "23,20": 1,
+      "23,21": 1,
+      "23,22": 1,
+      "23,23": 1,
+      "23,24": 1,
+      "23,25": 1,
+      "23,26": 1,
+      "23,38": 6,
+      "23,39": 6,
+      "23,40": 6,
+      "23,41": 6,
+      "23,42": 6,
+      "23,43": 6,
+      "23,44": 6,
+      "23,45": 7,
+      "23,46": 6,
+      "23,47": 6,
+      "23,48": 6,
+      "23,49": 6,
+      "23,50": 6,
+      "23,51": 6,
+      "23,52": 6,
+      "24,45": 1,
+      "25,1": 6,
+      "25,2": 6,
+      "25,3": 6,
+      "25,4": 6,
+      "25,5": 6,
+      "25,6": 6,
+      "25,7": 7,
+      "25,8": 6,
+      "25,9": 6,
+      "25,10": 6,
+      "25,11": 6,
+      "25,12": 6,
+      "25,13": 6,
+      "25,14": 7,
+      "25,15": 6,
+      "25,16": 6,
+      "25,17": 6,
+      "25,18": 6,
+      "25,19": 6,
+      "25,20": 6,
+      "25,21": 6,
+      "26,7": 1,
+      "26,14": 1,
+      "33,30": 8,
+      "33,31": 1,
+      "33,32": 1,
+      "33,33": 1,
+      "33,34": 1,
+      "33,35": 1,
+      "33,36": 1,
+      "33,37": 1,
+      "33,38": 1,
+      "33,39": 1,
+      "33,40": 1,
+      "33,41": 1,
+      "33,42": 1,
+      "33,43": 1,
+      "33,44": 1,
+      "33,45": 1,
+      "34,30": 1,
+      "34,31": 1,
+      "34,32": 1,
+      "34,33": 1,
+      "34,34": 1,
+      "34,35": 1,
+      "34,36": 1,
+      "34,37": 1,
+      "34,38": 1,
+      "34,39": 1,
+      "34,40": 1,
+      "34,41": 1,
+      "34,42": 1,
+      "34,43": 1,
+      "34,44": 1,
+      "34,45": 1,
+      "35,30": 1,
+      "35,31": 1,
+      "35,32": 1,
+      "35,33": 1,
+      "35,34": 1,
+      "35,35": 1,
+      "35,36": 1,
+      "35,37": 1,
+      "35,38": 1,
+      "35,39": 1,
+      "35,40": 1,
+      "35,41": 1,
+      "35,42": 1,
+      "35,43": 1,
+      "35,44": 1,
+      "35,45": 1,
+      "36,30": 1,
+      "36,31": 1,
+      "36,32": 1,
+      "36,33": 1,
+      "36,34": 1,
+      "36,35": 1,
+      "36,36": 1,
+      "36,37": 1,
+      "36,38": 1,
+      "36,39": 1,
+      "36,40": 1,
+      "36,41": 1,
+      "36,42": 1,
+      "36,43": 1,
+      "36,44": 1,
+      "36,45": 1,
+      "37,30": 1,
+      "37,31": 1,
+      "37,32": 1,
+      "37,33": 1,
+      "37,34": 1,
+      "37,35": 1,
+      "37,36": 1,
+      "37,37": 1,
+      "37,38": 1,
+      "37,39": 1,
+      "37,40": 1,
+      "37,41": 1,
+      "37,42": 1,
+      "37,43": 1,
+      "37,44": 1,
+      "37,45": 1,
+      "38,29": 1,
+      "38,30": 1,
+      "38,31": 1,
+      "38,32": 1,
+      "38,33": 1,
+      "38,34": 1,
+      "38,35": 1,
+      "38,36": 1,
+      "38,37": 1,
+      "38,38": 1,
+      "38,39": 1,
+      "38,40": 1,
+      "38,41": 1,
+      "38,42": 1,
+      "38,43": 1,
+      "38,44": 1,
+      "38,45": 1,
+      "39,30": 1,
+      "39,31": 1,
+      "39,32": 1,
+      "39,33": 1,
+      "39,34": 1,
+      "39,35": 1,
+      "39,36": 1,
+      "39,37": 1,
+      "39,38": 1,
+      "39,39": 1,
+      "39,40": 1,
+      "39,41": 1,
+      "39,42": 1,
+      "39,43": 1,
+      "39,44": 1,
+      "39,45": 1,
+      "40,30": 1,
+      "40,31": 1,
+      "40,32": 1,
+      "40,33": 1,
+      "40,34": 1,
+      "40,35": 1,
+      "40,36": 1,
+      "40,37": 1,
+      "40,38": 1,
+      "40,39": 1,
+      "40,40": 1,
+      "40,41": 1,
+      "40,42": 1,
+      "40,43": 1,
+      "40,44": 1,
+      "40,45": 1,
+      "41,30": 8,
+      "41,31": 1,
+      "41,32": 1,
+      "41,33": 1,
+      "41,34": 1,
+      "41,35": 1,
+      "41,36": 1,
+      "41,37": 1,
+      "41,38": 1,
+      "41,39": 1,
+      "41,40": 1,
+      "41,41": 1,
+      "41,42": 1,
+      "41,43": 1,
+      "41,44": 1,
+      "41,45": 8
+    },
+    "RowStyles": {
+      "6": 9,
+      "7": 9
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "2,1,2,5",
+    "2,8,2,5",
+    "2,15,2,5",
+    "2,22,2,5",
+    "2,29,2,5",
+    "9,1,7,9",
+    "9,20,7,9",
+    "2,36,2,5",
+    "2,43,2,5",
+    "9,34,8,25",
+    "2,50,2,5",
+    "19,1,2,5",
+    "22,1,2,12",
+    "22,15,2,12",
+    "19,8,2,5",
+    "27,1,5,26",
+    "26,1,1,6",
+    "26,7,1,7",
+    "26,14,1,8",
+    "19,30,2,5",
+    "25,30,7,26",
+    "24,30,1,4",
+    "24,34,1,4",
+    "24,38,1,7",
+    "24,45,1,8",
+    "34,30,1,4",
+    "34,34,1,4",
+    "34,38,1,4",
+    "34,42,1,4",
+    "35,30,7,16",
+    "33,47,5,10",
+    "23,30,1,4",
+    "23,34,1,4",
+    "23,38,1,7",
+    "23,45,1,8",
+    "25,1,1,6",
+    "25,7,1,7",
+    "25,14,1,8",
+    "33,30,1,4",
+    "33,34,1,4",
+    "33,38,1,4",
+    "33,42,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//DmCQKftWosrhd71r1fJRIEC5LZuQr7A2ZqFDycoINC1MSpdEv40qZw5n7rNV3+vOHxwt0XDehGe6ibSWUAm89iwwNkHlzh/YJEDEATdEnUu3veah6VEJi8Q8SBD06T6OfLaP51FbnLeeq7p9clxcUEztupUWy55DWFZDZ5AhKxEZ6qp0IUQhjTP+3jUsE08OVTCjnIKEFuspfi9A/VSna0fnLLY3OUmQ+rjPZUyfnVKeMsks1BjsEtfJCM9QN2Q6p7AKYwsXXw1/4Oxx77e3ai9WU/C28gzFSuFPMgmqmpveY6sV6aCGoETQc0kGbSaAPGKPg+QOIPDsHXj2cIcPECUl9MQBMSqhf42yjmKpuqrfr+7WbGhNIGTuQuhHOEtPv+QqABh5bk+J2btgfh+ce3lK9xVUE5tiN627RzAfyLfj7xuliaBdG5lodBqGw3cPJSDT7QyMtj1GCcom7Mla3G06PYgGdhOVsLWZaalpqE43baKOEUE33faJ/M4aNXa74LkGT2vxTvxqhCVCbAVOtymXwFCNvJO2Vm/4CAedMUXc7mY4H97PR0Enpsf6b9RQ8yQu1h44BO9DRUVfByVDE3TS54tb9YwD7GTxdSg2/qK14uc2xOd75Dd9zXHhzwy23iqXehQFbH68Aoy6SnbdS4NI4YStkrVfgNNxlRLSRODXIqxrJSjpg1YEA+GfNLLUy4d/axYN3Jc591BHMeFL7U7/TjGUUEtUvObyhZso7PIbTwi6fUTPRrei3SFi79ixS+aVFcH1ELRvZy7ILup6c2IXgFMn7qzekh4yCymxRCWD9NXfND9yOZ8QyxHG1aqKoprJFRGdkKM0zq5Hl+l1305QreuP3AkTC2b/XkinKFaFcEzV1kMBNeZobT5+wmk4PCqIbaE/itVX9VumT/wuTg==|920

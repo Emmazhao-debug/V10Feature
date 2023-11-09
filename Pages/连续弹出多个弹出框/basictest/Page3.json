@@ -1,0 +1,93 @@
+{
+  "Rows": {
+    "Count": 20
+  },
+  "Cols": {
+    "Count": 20
+  },
+  "Values": {
+    "0,2": "passvalue",
+    "11,4": "close"
+  },
+  "AttachInfos": {
+    "1,2": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1"
+      }
+    },
+    "11,4": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ClosePopupReturnValues": [
+              {
+                "Name": "answer",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=Page3!C2"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "close",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0,
+        "Formatter": 1
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "@"
+      ]
+    },
+    "CellStyles": {
+      "1,2": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "1,2,2,11",
+    "11,4,2,7"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//jfU+Zm/rppdXQUFmEN3hpWU9XtrtlLg/Vd9+JOGPXb88uOkiHVcVFolFCedLquqX9QA+sQ3wLU1pyDgyKbOTdgYzK0cAUb6mXJ6WK8FAC2xBmsz1B0cNzlk7jXappe7JntbPQTZR6KjxXClbTBd8dUiqRoNjKGDkfV15+qq64wSg81INcZSINdxxq7oUJDc4rv2iYUn1wxYWjoAG78A0mbmQz150HW5LgLKRN/KlVcLRfoYkWooHbzTSHWylXTqSdxZldtRllgKzuRC9yFtFl+KTgJNEmnHLYlnBRZUT95oHfymTtJgicJCwD1Qel+R6k9Gho/tjgsSHIeRpYdcYF8Zk4euciiugvImxnCosH2E65yUcdhUyJp0cmejHpZcRoMFzDVxXoMhO2eiOnec8Ka0So2ExsQ2hjRpfTJ1FP22FMdUCQgRNvpopIa6PvxOn0uN/2hUSyEYKQjavH0w9XZ1F0DGmN7BtNkr2IFCRgx4qdXaXWxqeP2fbN1WcBcIqhOnt+c23OBX0IF1VaUJCwId8JKOVGiiqjg6S1zp9zC39uaM0uMexppFRSKAUNjdLh+toYEkbTdpfN8OqkDI50pAhIsYIpq4FIgPqAmxLqKvA7n05UqKtmeI2K/ABJeGTmoW3Av8N3CveJGX/ayp6Ssq5xeDABG+Uzwpls3WsnPewajvfq1nr/21C/mp7+keMmRuLLkgut34s/rMrOzLjl5atZ4v5Y2xaYdAN8gkeerWjOoEnrWCCAbsu2sd4wbPwPIeSDYZ89X/675AOgdnqcdSa9EZuvtm3WrEy5FJFeSytYAX6M+pYrm0mvfFhygxat2ndBQY23nkm4M9YScI7E85gw0YfXvHQM7CmXY4i/X2wHZQdkceqbvq3KdfLgqw28Rt4cGRedz7u1SxzNeg3ng==|920

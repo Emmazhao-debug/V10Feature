@@ -1,0 +1,215 @@
+{
+  "Rows": {
+    "Count": 20
+  },
+  "Cols": {
+    "Count": 20
+  },
+  "Values": {
+    "2,3": "level2",
+    "14,3": "ok",
+    "14,12": "cancel"
+  },
+  "AttachInfos": {
+    "2,3": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "ClosePopupCallbackCommand": {
+              "Commands": [
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionContextPropertyParam, ServerDesignerCommon",
+                          "contextProperty": {
+                            "Display": "IsOK",
+                            "ContextInfoType": 2
+                          }
+                        },
+                        "value": "1"
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                          "TableName": "Table1",
+                          "UpdateType": "add",
+                          "ShowConfirm": false,
+                          "UpdateBindingValues": [
+                            {
+                              "BindingInfo": {
+                                "TableName": "Table1",
+                                "ColumnName": "Text",
+                                "GUID": "bf4ad6fd-7e17-47d4-b383-ec87d6514ef2"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=level2!IsOK"
+                              }
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "Table1",
+                                "ColumnName": "Text1",
+                                "GUID": "7ef911f0-08e8-45a6-9673-b050ab23d17d"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=level2!ok_003"
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      "ID": "9ddddc2d-41f9-41df-8b70-b331cbd40744"
+                    },
+                    {
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.UpdateDataTableCommand, ServerDesignerCommon",
+                          "TableName": "Table1",
+                          "UpdateType": "add",
+                          "ShowConfirm": false,
+                          "UpdateBindingValues": [
+                            {
+                              "BindingInfo": {
+                                "TableName": "Table1",
+                                "ColumnName": "Text",
+                                "GUID": "730e145b-bddb-4219-bcf0-30fb19e9441e"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=level2!IsOK"
+                              }
+                            },
+                            {
+                              "BindingInfo": {
+                                "TableName": "Table1",
+                                "ColumnName": "Text1",
+                                "GUID": "f941bf6a-b8f0-4abf-acdf-6da6c668def7"
+                              },
+                              "Value": {
+                                "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                                "SerializeProperty": "=level2!cancel_003"
+                              }
+                            }
+                          ]
+                        }
+                      ],
+                      "ID": "2f8d65f9-f1f8-4908-bb1e-3d9be691a5e8"
+                    }
+                  ]
+                }
+              ],
+              "ParamProperties": {
+                "IsOK": "IsOK",
+                "ok_003": "ok_003",
+                "cancel_003": "cancel_003"
+              }
+            },
+            "PageName": "level3"
+          }
+        ],
+        "Text": "level2",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "14,3": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ClosePopupReturnValues": [
+              {
+                "Name": "ok_002",
+                "Value": "00010_level2"
+              }
+            ]
+          }
+        ],
+        "Text": "ok",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "14,12": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ClosePopupResult": 1,
+            "ClosePopupReturnValues": [
+              {
+                "Name": "cancel_002",
+                "Value": "000101_level2"
+              }
+            ]
+          }
+        ],
+        "Text": "cancel",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "14,12": 0,
+      "14,13": 0,
+      "14,14": 0,
+      "14,15": 0,
+      "14,16": 0,
+      "15,12": 0,
+      "15,13": 0,
+      "15,14": 0,
+      "15,15": 0,
+      "15,16": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "14,3,2,5",
+    "14,12,2,5",
+    "2,3,2,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//sHUa0CoDiMTaqhdOiJCjxlo0gXdHutwJB+fVrgffFsqSdcjpav1oW5fMybPcGoUHQPKOVeKwQeMi6jZG6SCLJHMK787LBDL6wzJN7gxaHigZuIEfhLChSAskGDdzr+C0mEv1Q5cS9XKp5I+a5JcrMJWNlLUxzqh9vIQLqa//ei9E8hQZM1GLTPMBS5vpprHuaaYjwxorIkEageuutJY3huwzxN3hqyoz17LA33lq7wTcL0SS30cQjOvlWjaXU4cr/B2IAevSOf5ib8f7fexNTyErMQvF+Oeq0RaIrJpuuXZS90UjjBTthKyiyMyEwYr7dtS6J3e8CwWv56Z1DSCRuE9Jn333u47rt3o80w0tjMYQYySzG7QnI/GhemP85TuY2+n5yywe4yCfx0FL4YZuYlKnJGHhc1uo0/AgBocquw6mjekbo+q1aug4KfI+7gKjUv6HYU+xtLrQ6ePDikDJ7UcK5PyDFIw7sAH2ZUnv15hFNmCF08CDdRvjWTYQoWJF1hdQU/ruPM4ZvtvMfaT/KZVYZxorgZUSmJjEf/u74y8mmy/mEwZEqmoc5FkfLgB6cGHt9M/LDBowecLDQZAY1fbftzHN7hGyE85dxr5llt/IbnPmxKvEhslM1kqPE0gFdRPbgAjMvwhrWAHoXxYKA8jaCggB6WHmkRPh2pPsFfk6ihw6prJHQZCF3jvFMOb5gcAUWfoXYNk6Mo16yFRkDEAyZFR1c/kXe3SMt5naVowmh7QtA1JDgh8zPavXiULfYoupWy3yxEyNdy4ZVi8kO6FVNHosWWvnPejrN48EeP9wRBIX0PhjNe1/YVKu1SF8v1L9D3c4NG/4XR2dx1Id38U5JzEUH/eMuARh5W8CiYdHjNZR25gObH4gF89/wJc+cxzoP8AcqylmCYv11JhIMg==|920

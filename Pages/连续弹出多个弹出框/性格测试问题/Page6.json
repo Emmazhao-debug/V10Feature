@@ -1,0 +1,157 @@
+{
+  "Rows": {
+    "Count": 20
+  },
+  "Cols": {
+    "RowColumnAttachedInfos": {
+      "19": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 42.0
+        }
+      },
+      "20": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 41.0
+        }
+      },
+      "21": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 41.0
+        }
+      },
+      "22": {
+        "GridRowColumnDefinition": {
+          "DesignLengthInPixel": 41.0
+        }
+      }
+    },
+    "Count": 23
+  },
+  "Values": {
+    "18,14": "保存",
+    "18,20": "取消"
+  },
+  "AttachInfos": {
+    "0,0": {
+      "CellType": {
+        "$type": "Forguncy.UserControlPageCellType, ServerDesignerCommon",
+        "UserControlPageName": "性格跳转题数"
+      }
+    },
+    "18,14": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.OperateCellTypeCommand, ServerDesignerCommon",
+            "TargetPageElement": {
+              "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+              "SerializeProperty": "=Page6!A1"
+            },
+            "TargetType": "Forguncy.UserControlPageCellType, ServerDesignerCommon, Version=10.0.0.0, Culture=neutral, PublicKeyToken=967100671921c115",
+            "MethodName": "GetPropertyValue",
+            "ParameterValues": {
+              "propertyNameList": {
+                "$type": "System.Collections.Generic.List`1[[System.String, System.Private.CoreLib]], System.Private.CoreLib",
+                "$values": [
+                  "result",
+                  "Idvalue"
+                ]
+              },
+              "userControlPageName": null
+            },
+            "RetrunParamNames": {
+              "result": {
+                "SerializeProperty": "result"
+              },
+              "Idvalue": {
+                "SerializeProperty": "Idvalue"
+              }
+            }
+          },
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ClosePopupReturnValues": [
+              {
+                "Name": "result",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=Page6!result"
+                }
+              },
+              {
+                "Name": "idvalue",
+                "Value": {
+                  "$type": "Forguncy.Model.FormulaReferObject, ServerDesignerCommon",
+                  "SerializeProperty": "=Page6!Idvalue"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "保存",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "18,20": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon",
+            "ClosePopupResult": 1
+          }
+        ],
+        "Text": "取消",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "FontFamily": 0
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body"
+      ]
+    },
+    "CellStyles": {
+      "18,0": 0
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "0,0,17,23",
+    "18,14,2,4",
+    "18,20,2,2",
+    "18,0,1,8"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//M9rK4HNpv8oFcGYZK5b2JC4VdwI6pLv99ptCcMQnzDaEeWY/zQkMzY7YOlZie99sGC+fGEyezFr8QLpRMiNUbSmqwSVaaDn6Ffztb7QdXLlOPQ8v0Hc39vwklq/nJNOMW3JPaMseJU4KK/azX7ZqfU7cBrz8Du5QFGLIHMM72gZVxJwSxk13632MUn7gBii4ptro3pWnfFciZXgQpVWbezQHmsAjxj+Ti9PW2RIowm1u3ZO9oXUp23V7nsZkwSlkq0+AQ/H3+5+tkqe+GZWJSbi9kMPkOI52JjwX4apnFkR7tkwPDGt1oflu6UsBBcOiF8FULC8GJuqo34UDYrT4RwXli3M5zfB6npYQF96eKUx6xMJCedloftBbiiG4sZ4YMASCCsHuWXsril0yKLNYFN3l608kW9a8RKpPG+B7WfhgJUPdCsx7zQWcBEl9OM08MAfs5HhOmVERYj7IgVbnbMgpFGhmyrTVBOy5FIsVdea+YzLyoc+ixG2IHaSAUocZBZ05s+WB8/OQIlvKvDNhkGA0bEUsNk3Zrro95MzXfANKT8pjGZv1iiJemnT9/DhsH7edxlvgfUdNwqsSehhW0pfO1MqGFKn9S8R2NGiHOr0QRjjUGe6dXXd4zPpzoP2+KkOTyVq+7r+lg4bI+hLdIs/9kja5j4wieuSENL0bTCUT1+WGmbuzRCGflZzNLSb+3TL9q+gfLczoJBuQaQHLsB+XfV+q+m2h0J6ds62+wfxLod9/vH8ihuIn7yYsOgf3sigt1p9dcbnwod1Qs/mrNtkxKPRzkT0r4OV9YkKJSe0WxD+igAgW9xzCN5wlLFPzrZgX8RAdVN4xyD8BfqvIejzcJ+8KfU/3ByPTcF0osAonPrRfeOPhYwvCFRVA511QZgWxzlt47vrjxoUGUzQqNw==|920

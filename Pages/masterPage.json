@@ -1,0 +1,430 @@
+{
+  "Rows": {
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "Values": {
+    "1,26": "Details",
+    "4,36": "1000",
+    "4,44": "detailspage",
+    "5,31": "detailspage",
+    "7,36": "2000",
+    "11,45": "Page1"
+  },
+  "AttachInfos": {
+    "1,26": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "ClosePopupCallbackCommand": {
+              "Commands": [
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                          "MessageFormula": "Add successfully!"
+                        }
+                      ],
+                      "ID": "c873cddd-463a-4cb1-9a8f-b236f55eef94"
+                    },
+                    {
+                      "JSText": "var result=confirm(\"Are you sure you want add this record\");\r\nreturn result;",
+                      "CommandList": [],
+                      "ID": "506143d5-0c6b-4e18-aa64-a3e1bf53a428"
+                    },
+                    {
+                      "JSText": "",
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                          "PropertyItemsList": [
+                            {
+                              "Value": "0110"
+                            }
+                          ]
+                        }
+                      ],
+                      "ID": "eb8269ad-0d1f-456f-83bd-3615a198da49"
+                    }
+                  ]
+                }
+              ],
+              "ParamProperties": {
+                "IsOK": "IsOK"
+              }
+            },
+            "PageName": "detailspage",
+            "PassValues": [
+              {
+                "TargetCell": {
+                  "SerializeProperty": "=detailspage!T3"
+                }
+              },
+              {
+                "TargetCell": {
+                  "SerializeProperty": "=detailspage!T7"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "Details",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "4,3": {
+      "ListViewInfo": {
+        "Name": "Listview1",
+        "TableName": "basictesttable",
+        "RowIndex": 4,
+        "ColumnIndex": 3,
+        "RowCount": 14,
+        "ColumnCount": 32,
+        "TopCondition": null,
+        "ListViewStyleName": "_RS_Medium2",
+        "ShowColumnHeaderInDesigner": true,
+        "ShowEditStatusIcon": true,
+        "UseSimpleBar": true,
+        "ColumnOperation": 2
+      }
+    },
+    "4,36": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "CellDefaultValue": "1000"
+      }
+    },
+    "4,44": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "PopupDisplayMode": 2,
+            "PageName": "detailspage",
+            "PassValues": [
+              {
+                "TargetCell": {
+                  "SerializeProperty": "=detailspage!T3"
+                }
+              },
+              {
+                "TargetCell": {
+                  "SerializeProperty": "=detailspage!T7"
+                }
+              }
+            ]
+          }
+        ],
+        "Text": "detailspage",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "5,3": {
+      "NameUsedInJavaScript": "ID",
+      "BindingInfo": {
+        "TableName": "basictesttable",
+        "ColumnName": "ID",
+        "GUID": "881e6d7c-5b3e-48f4-a23c-72caeaddd7dd"
+      }
+    },
+    "5,9": {
+      "NameUsedInJavaScript": "Name",
+      "BindingInfo": {
+        "TableName": "basictesttable",
+        "ColumnName": "Name",
+        "GUID": "cff36350-0789-4160-9ba5-b786bc1154ed"
+      }
+    },
+    "5,14": {
+      "NameUsedInJavaScript": "Birthday",
+      "BindingInfo": {
+        "TableName": "basictesttable",
+        "ColumnName": "Birthday",
+        "GUID": "6edcac8a-e24b-4e39-9b35-d3ac3f19412e"
+      }
+    },
+    "5,20": {
+      "NameUsedInJavaScript": "Address",
+      "BindingInfo": {
+        "TableName": "basictesttable",
+        "ColumnName": "Address",
+        "GUID": "d787bcb4-762a-451d-994f-908aa3a807be"
+      }
+    },
+    "5,25": {
+      "NameUsedInJavaScript": "Phone_Number",
+      "BindingInfo": {
+        "TableName": "basictesttable",
+        "ColumnName": "Phone_Number",
+        "GUID": "268d5b6e-7825-4b4d-9df7-ce0f3abfb27b"
+      }
+    },
+    "5,31": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "ClosePopupCallbackCommand": {
+              "Commands": [
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.UpdateListviewCommand, ServerDesignerCommon",
+                          "ListviewName": "Listview1",
+                          "UpdateType": 6,
+                          "UpdateListviewCommandRunTimeMethodSetting": {
+                            "MethodName": "Reload",
+                            "ParameterValues": {
+                              "clearFilter": false,
+                              "clearSort": false
+                            }
+                          }
+                        },
+                        {
+                          "$type": "Forguncy.Model.SetCellPropertyCommand, ServerDesignerCommon",
+                          "PropertyItemsList": [
+                            {
+                              "Value": "after reloading"
+                            }
+                          ]
+                        }
+                      ],
+                      "ID": "d8f526a7-771c-4151-98be-8471363dbd52"
+                    }
+                  ]
+                }
+              ],
+              "ParamProperties": {
+                "IsOK": "IsOK"
+              }
+            },
+            "PageName": "detailspage",
+            "PassValues": [
+              {
+                "TargetCell": {
+                  "SerializeProperty": "=detailspage!T3"
+                }
+              },
+              {
+                "TargetCell": {
+                  "SerializeProperty": "=detailspage!T7"
+                }
+              }
+            ],
+            "LoadBindingDataOption": 1
+          }
+        ],
+        "Text": "detailspage",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    },
+    "7,36": {
+      "CellType": {
+        "$type": "Forguncy.TextCellType, ServerDesignerCommon",
+        "SavedValidators": [
+          {
+            "$type": "Forguncy.CellTypes.Models.UniqueValidadator, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_LightLine_Translucent_SmallRoundCorner_Normal1",
+        "CellDefaultValue": "2000"
+      }
+    },
+    "11,45": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "NavigateType": "back"
+          }
+        ],
+        "Text": "Page1",
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Styles": [
+      {
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "FontFamily": 0,
+        "BorderBottom": null,
+        "BorderTop": null,
+        "BorderRight": null
+      },
+      {
+        "BorderBottom": null,
+        "BorderTop": null
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 1
+      },
+      {
+        "FontFamily": 0
+      },
+      {
+        "FontFamily": 0,
+        "Formatter": 2
+      }
+    ],
+    "Types": {
+      "Strs": [
+        "Body",
+        "@",
+        "[AUTO]General"
+      ]
+    },
+    "CellStyles": {
+      "4,3": 0,
+      "4,4": 0,
+      "4,5": 0,
+      "4,6": 0,
+      "4,7": 0,
+      "4,8": 0,
+      "4,9": 1,
+      "4,10": 0,
+      "4,11": 0,
+      "4,12": 0,
+      "4,13": 0,
+      "4,14": 1,
+      "4,15": 0,
+      "4,16": 0,
+      "4,17": 0,
+      "4,18": 0,
+      "4,19": 0,
+      "4,20": 1,
+      "4,21": 0,
+      "4,22": 0,
+      "4,23": 0,
+      "4,24": 0,
+      "4,25": 1,
+      "4,26": 0,
+      "4,27": 0,
+      "4,28": 0,
+      "4,29": 0,
+      "4,30": 2,
+      "4,36": 3,
+      "4,37": 4,
+      "4,38": 4,
+      "4,39": 4,
+      "4,40": 4,
+      "4,41": 4,
+      "4,43": 5,
+      "4,44": 4,
+      "5,9": 4,
+      "5,14": 4,
+      "5,20": 4,
+      "5,25": 4,
+      "5,36": 4,
+      "5,37": 4,
+      "5,38": 4,
+      "5,39": 4,
+      "5,40": 4,
+      "5,41": 4,
+      "5,43": 4,
+      "6,36": 4,
+      "6,37": 4,
+      "6,38": 4,
+      "6,39": 4,
+      "6,40": 4,
+      "6,41": 4,
+      "7,36": 3,
+      "7,37": 4,
+      "7,38": 4,
+      "7,39": 4,
+      "7,40": 4,
+      "7,41": 4,
+      "8,36": 4,
+      "8,37": 4,
+      "8,38": 4,
+      "8,39": 4,
+      "8,40": 4,
+      "8,41": 4
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "5,3,1,6",
+    "5,9,1,5",
+    "5,14,1,6",
+    "5,20,1,5",
+    "5,25,1,6",
+    "1,26,2,5",
+    "1,17,2,7",
+    "4,36,2,6",
+    "7,36,2,6",
+    "6,3,12,32",
+    "5,31,1,4",
+    "4,44,2,5",
+    "11,45,3,10",
+    "4,3,1,6",
+    "4,9,1,5",
+    "4,14,1,6",
+    "4,20,1,5",
+    "4,25,1,6",
+    "4,31,1,4"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  },
+  "CustomNames": [
+    {
+      "Name": "cellname",
+      "Formula": "masterPage!$R$2"
+    },
+    {
+      "Name": "cell1",
+      "Formula": "masterPage!$AK$5"
+    },
+    {
+      "Name": "cell2",
+      "Formula": "masterPage!$AK$8"
+    }
+  ]
+}//vEZBV/Xi86Y8SwRPNI/D9elMpscrmZ7Eh53/ttk9uK2C4X6P//2CSGF9dOlVY/5hbpAeTd/VqiG+Nw4pUHTIR52kmetHtJlyFcsQpjar+bdw5wDi5oaANWRW4AdRCCuEBW/I06GcKGIeg88bV6jKyvMO4mk+WDobb5ZNx+halvviSafMTcXlag2rzaKzjZXcaNDGYKnNweHpv4jOTkgqCRT3EgZtPtDa57zWHLvFUvdlvd8PLV3Voi4k5ukv6BxtvpAFQi5uUDcHNpAuCkNYhgXdePBzNQj/mB2lMgqI2wEYMnlwCntKWDixVjRl1GkrXv1nC+U1cdoaqdc1H/8KU3yhnho+rDMLFLfmAP8kdCDrr1kRZ8MmLSvUzzauxQjHaYb9GE++SA+xShYQWTBd8tFCHBUxm+wiZ8f7vddLYvXxLnSOK6klbcuO6ytEisFmxAkWeVms5vFzuHMGy0NowKPqiE4rGpKQaRk4mnDdMD/+hiUxc54URqCVL/sAb3y7pPNcuiMv8ytAx8vv7P2QdKSasBwRSnIFbPTBcv8SgSWNUo/I5qh8rDFiz78Oc2U56nLnH8AzxswaWzYzgTDHTjz9G+zakXhZDLR+FCp29G0tRx3czbogaeOB+qaqxKrYkpm0V644U9sDiiLPtRljlbDPPCUQ69NFgT+2ytdJqhrKMQ0qZlej6NdDKQYJkwgN4In9Y9wV78abfsMvwEbpR9B7re8xKjnBdEWTl1JUoX4qsuzJZm3HtChDboLWj5zPDZugOC3JKdQVF/JHzAh5+eKXphvmswjnm4V16r/wN3nkiIpfVzBdHG09XFlqt5A7pf5sho8em+4fAwuwOa3+4xy1UpX1fAsKLL1HEVH4eRBjhRkbu+ZvB9CSgo0yevKD1l1vJkooPAYRmysfDVYaoA==|920
