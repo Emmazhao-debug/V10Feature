@@ -346,7 +346,17 @@
   },
   {
     "ModuleName": "PCPage/父页面",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "GRAPECITY\\EmmaZhao",
+      "Email": "Emma.zhao@developertools.com"
+    },
+    "LockDateTime": "2023-11-09T15:43:56.8974768+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\父页面.json",
+      "Pages\\父页面.rd"
+    ]
   },
   {
     "ModuleName": "PCPage/level1",
