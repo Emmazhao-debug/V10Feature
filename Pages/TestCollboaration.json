@@ -1,0 +1,57 @@
+{
+  "Rows": {
+    "Count": 45
+  },
+  "Cols": {
+    "Count": 60
+  },
+  "AttachInfos": {
+    "2,2": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ClosePopupCommand, ServerDesignerCommon"
+          }
+        ],
+        "TemplateKey": "_RS_Normal_Style2"
+      }
+    }
+  },
+  "StyleDatas": {
+    "Types": {
+      "Strs": [
+        "Body"
+      ]
+    },
+    "SheetStyle": {
+      "FontFamily": 0
+    }
+  },
+  "Spans": [
+    "2,2,2,5"
+  ],
+  "PageInfo": {
+    "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
+    "PermissionData": {
+      "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionData, Forguncy.RbacPermission.Core",
+      "permissionResource": {
+        "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionResource, Forguncy.RbacPermission.Core"
+      },
+      "permissionBindings": [
+        {
+          "$type": "Forguncy.RbacPermission.Core.Impl.Page.PagePermissionBinding, Forguncy.RbacPermission.Core",
+          "roleNames": [
+            "FGC_LoginUser"
+          ]
+        }
+      ]
+    },
+    "RowBreakLines": [],
+    "RepeatRangeSettings": []
+  },
+  "PrintInfo": {
+    "PaperSize": {},
+    "Margin": {}
+  }
+}//F7885Ybg/+eDj6XxP/v5frtWOmnM8NUZEGEe6K3WDZ2HkJYYwwIC9ejAibz4UUomUuhRt2Eo3RKVL3mqBwPZhde67pSYAcPDSCJUX673ktAKfl7sMrf+3Ea4A/mNbx6lZhDwQeeyuPn6DUqJ5vmXFFyYZqWvXAozH2A5ukEhDWW/PStVGR55C3GVTh1TwU4ooGbT2v8TmstChcntasdVTEsAwW3qVKpHk/DVq/2qNHsVOFB4Z+pQpho11MK+bI6XMV9dwfaCGdtRAECBriqAJnTZa7yhRfT/6py4XK6eVAyU1jZvRllIOiSIPNfvg7EUpB8tZdu9yep4i1csA0CmqsayG78c9aS4jIttbcvWGp/2YJK0dLflc08zcMDKCNtvDHLPaGjdQbnbBk5SVElhRzkWyxnd5whMBv3PH3MWEF0Dj//EmMut7H0HnwsrQFRXTjw8K/UW4Mxgt8xpBJrjjYxolmfjqG4uhC2JplcvVZaMZiHu8ujb0JsXk/Y8o7o0Nclh8J3csGrwiwHAlXTR7KCGqUiKlBAmWDVuITsvEypuXHS07+iMDZKIf6/gHQTbfmJxD4gIYhPeWeIdH3slKpOFV1f/aPokXFb4sL4PNnl/ZUxZ9Y/qVCeaglFHpnS8CfOLvtvoOOVx3jGZ1B/fm22hRrxdxfnUB1JzqSZQIES6YQuPujttcxOCJ6h+TB6KoMK8jUWk3Q3ZIcLWGVC/tm6YQXDaVzUNuDTQDtpAMBHlUTRlFy5m5QLu2Thn03eksbjmo8dsQrYcs4bGbrtIBHGdJ2iKNzOOCdY6j+BcPOIEet5agbhdaF/0thXS2wg0n7gsnU+bd4UC9zhafDmRYlKZrr+4IkXGHdvwsr2juyV0xZUsGC6GW9ZbwCkkps1KHCxZGlsE04A4hxCmdAlIOg==|920
