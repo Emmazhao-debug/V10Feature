@@ -23,6 +23,59 @@
         ],
         "TemplateKey": "_RS_Normal_Style2"
       }
+    },
+    "5,2": {
+      "CellType": {
+        "$type": "Forguncy.ButtonCellType, ServerDesignerCommon",
+        "CommandList": [
+          {
+            "$type": "Forguncy.Model.ShowPopupCommand, ServerDesignerCommon",
+            "ClosePopupCallbackCommand": {
+              "Commands": [
+                {
+                  "$type": "Forguncy.Model.ConditionCommand, ServerDesignerCommon",
+                  "ConditionAndCommandPairList": [
+                    {
+                      "Condition": {
+                        "$type": "Forguncy.Model.IfCondition, ServerDesignerCommon",
+                        "param": {
+                          "$type": "Forguncy.Model.IfConditionContextPropertyParam, ServerDesignerCommon",
+                          "contextProperty": {
+                            "Display": "IsOK",
+                            "ContextInfoType": 2
+                          }
+                        },
+                        "value": "1"
+                      },
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                          "MessageFormula": "value chage comand"
+                        }
+                      ],
+                      "ID": "4fa1aec9-eb8c-4b7b-b0af-292d1b09834c"
+                    },
+                    {
+                      "CommandList": [
+                        {
+                          "$type": "Forguncy.Model.ShowMessageCommand, ServerDesignerCommon",
+                          "MessageFormula": "nothing happen!"
+                        }
+                      ],
+                      "ID": "5abc6eae-2d77-4c42-8629-08b7ca4e24e7"
+                    }
+                  ]
+                }
+              ],
+              "ParamProperties": {
+                "IsOK": "IsOK"
+              }
+            },
+            "PageName": "基础功能测试"
+          }
+        ],
+        "TemplateKey": "_RS_Normal_Style2"
+      }
     }
   },
   "StyleDatas": {
@@ -36,7 +89,8 @@
     }
   },
   "Spans": [
-    "2,2,2,5"
+    "2,2,2,5",
+    "5,2,2,5"
   ],
   "PageInfo": {
     "$type": "Forguncy.Model.Pages.NormalPage, ServerDesignerCommon",
@@ -61,4 +115,4 @@
     "PaperSize": {},
     "Margin": {}
   }
-}//sXQNj5rniV8lnL2iXmx3KubldhS58d+29ZnkMKKtAmVw1SH45uyV/WZdL2m/I91kq8+uWJU3O4tb59qGWLXzLdqdk/kgDgUNBWkIDiGBPMlezsMwUgrHo8dJgzaT/2Pr0h8WE1Qq+9l9ssLy0Ma3ERkqTxFx8oYwbOIZ+OmNbT3mI3Dq5P9VDxdC6iA7eOM2ZqRuHR0wLpCHXLFodNmww2F7aEN7WMdaP8CPtfoZJ/WrkLu6WrvZSimz48ap3iR3S1dP8NUBOakUYFj9vKbVJ+hLsUKlWaNHMU4CvNh11Cicz/1vZq2sun3HHWyG0G30j6LXeVz52mfaThSxPT55xvnM5XdeY9xrpqsCfp7BBRDimPs1M7BVPnciVBz6nlRZgKZNXEsmYa8apsorLzd9UN/drIfgMrlfvfCHZmlU4j9bSdpDC8pPXie5HTO2Cx+YOZA4FU/MxOoDty9Kjz/k+xSQoq8iVczEbznDl6gE9QvcpThQnojpqP/dqUvEyKb+jL9XP+nRHm3tdXYDp1rtfS1c/JM1nuKdcKfEg2LcJa8crXeQCnjRNOWM9eGNVmazOzEX1Flp0f2PQJe5Y26k/P0R9e39OFxuwFe+ZpPVHOGJ95SDb5Jtv8lVXpuLVC6T6GqEODwzQp86DbyBNuTdQtc0eWRCb6+RqZQH/S9WEP25xE7bRxPNz1Gu/zSHpnAo/L4rYZOPUKe1IfN9Jd9NynLhP/mxyrju2c7BuE+Onb+J1Wcy+NnZ8ZceNHuyhSrtzz8t67Hia/6hzy32rTnsyCPiN6mM8S7yqL15O1mkrNxe/Bfqj9ORfmYWZlF9IzSrlTQCXSVHg+9fhadtafoASKb9aZZmipb7KRNnjk00MNSzPU/Kah+xCfeW7ZCDt5/l3UzP5MRgurOxXGWWGAkdwA==|920
+}//UwSqDIQzpjHudz6cvhj0oOy6kczA1o4nkE8UQ/OS4KIsbpNLYma/jDv3vn/ozuD6gwEAb5RVruVxHWSv5yAhFtsHhm2dePp+lWsPCOpiOzVFUYTvDv36pl5uyJ5rAghvZ/H6DCIv9I4XKa0j82wmP/FT67Rvh+GpsVq8HPfZZ+10ozomkPyadHzARJl6WgueWRYWL2Bviz8NmvlCeJAimOdjlDbgGcVUVw9qWuZKrQOtbqEY2EayYGTCjpxldzBlKqGFQ8eSvWWAQAfbX9T4xHKofoLLgjtKXTzIwAvUZDy95ObEH2v3nKuv4qZPAa4+D1N0FD6pOLdLBmeSvP7CkMtrR2eqYmvfAgL5XtPgNguxZeKxWJrRl9CzdBpdI6Yg4YsOOrDLZKkLv2osbfwmNO0p76U71gBkMIllhXaS3sieoqxsyhKJlYdm7o+Zmdi3VBTIy/DAw5WeAzbHYbYvCqQlpU5QsgvatxRkVLfJVv1x8jvv/IXaFjUPW7zZPLTw2cf+jleFFWsW4trTNeRQUIuS0mXYvnBVwYfBl9MiX9wk66DI8Iw+zDyzxEZwIoGhxdUZBxXpeiHWXDm2ZtG5fRpDXhEpbACECQEPw4C//eDV/y2FXsVfTaZ/jdCBvBrAlTwTSIDdyIUBfg11Za8AzIdIzKk8kxhxDiHF1rCXrFyqOslwuG7qTuXytrHUKGFnZDm89HUAQtDarND0KIyJk8AN6q2xQkd2+7nh7magLrsceuo2jxzOVSpIPIFWoWrWH/Vjqg9rkGurPgdP9MP3XuVe5ay0veyD82R13Ep2qab/D1njBAtx5lr0hMPdH1yB799op3Dzzrpeg7TfbQyYSLe2GUwAJGsenKWzW1iBNmR/ce5N2RtxsPTEb9jiLbsRsBYzsHp4YnkhHpzuJlCCAw==|920
