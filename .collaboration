@@ -682,6 +682,16 @@
   },
   {
     "ModuleName": "PCPage/TestCollboaration",
-    "ModuleType": 1
+    "State": 1,
+    "LockedBy": {
+      "UserName": "GRAPECITY\\EmmaZhao",
+      "Email": "Emma.zhao@developertools.com"
+    },
+    "LockDateTime": "2023-11-14T12:03:54.7158244+08:00",
+    "ModuleType": 1,
+    "ToRemoveFiles": [
+      "Pages\\TestCollboaration.json",
+      "Pages\\TestCollboaration.rd"
+    ]
   }
 ]
